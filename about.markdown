@@ -6,7 +6,7 @@ permalink: /about/
 
 Welcome to my blog!
 
-How are you step here..!!
+How dare you step here..!!
 
 You made it on this farther corner of the internet so you must really have some free time in your hands.
 

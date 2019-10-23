@@ -7,9 +7,7 @@ categories: java9 collections
 excerpt_separator: <!--more-->
 ---
 
-In this post, I have written about some of the improvements to the collections with Java 9.
-
-I think it should be enough to get a Java Developer started with some Java 9 features before talking about the elephant in the room: Modularity.
+In this post, I have written about some of the improvements to the collections with Java 9. I think it should be enough to get a Java Developer started with some Java 9 features before talking about the elephant in the room: Modularity.
 
 <!--more-->
 

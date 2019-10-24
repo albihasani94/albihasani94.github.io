@@ -191,7 +191,7 @@ The devil is in the details!
 
 Pretty much the same as the API for `List.of`.
 The only change is that the data structure worked on is Set.
-Unlike a list, a set is an ordered collection and does not allow duplicates.
+Unlike a list, a set is an unordered collection and does not allow duplicates.
 
 The API would become streamlined as:
 

@@ -3,7 +3,8 @@ layout: post
 title:  "Static Factory Collection Methods"
 date:   2019-10-23
 permalink: /static-factory-collection-methods
-categories: java9 collections
+categories: [java9, collections]
+tags: [java9, collections]
 excerpt_separator: <!--more-->
 ---
 
@@ -48,7 +49,8 @@ List<String> animals = new ArrayList<>();
 animals.add("Dog");
 animals.add("Lemur");
 animals.add("Duck");
-System.out.println(animals); // [Dog, Lemur, Duck]
+System.out.println(animals);
+// [Dog, Lemur, Duck]
 ```
 
 This is classic Java you have learned in school. Create a list of Strings. Add the items one by one. Drum roll. Credits.
@@ -59,7 +61,8 @@ It would be perfect in a reality where developers are paid for lines of code. (@
 
 ```java
 Set<String> animals = new HashSet<>(Arrays.asList("Dog", "Lemur", "Duck"));
-System.out.println(animals); // [Duck, Dog, Lemur]
+System.out.println(animals);
+// [Duck, Dog, Lemur]
 ```
 
 Now, this is what evolution does for you. People got lazy writing all that ceremony and decided there is a shorter way of doing it. The problem with this approach is that a method outside the Set or List interface needs to be called. That method resides in the Arrays class. Added to that, you have to create a List before getting a result of the Set.
@@ -69,7 +72,8 @@ Now, this is what evolution does for you. People got lazy writing all that cerem
 {% highlight java %}
 {% raw %}
 Set<String> animals = new HashSet<>(){{add("Dog"); add("Lemur"); add("Duck");}};
-System.out.println(animals); // [Duck, Dog, Lemur]
+System.out.println(animals);
+// [Duck, Dog, Lemur]
 {% endraw %}
 {% endhighlight %}
 
@@ -79,7 +83,8 @@ Don't try this at home! This is what a Java geek would come up with. It makes me
 
 ```java
 List<String> animals = List.of("Dog", "Lemur", "Duck");
-System.out.println(animals); // [Dog, Lemur, Duck]
+System.out.println(animals);
+// [Dog, Lemur, Duck]
 ```
 
 Not only this works, but it is also simple for the user of the language. That's clean, concise, and it just does what it is implying. A list of these types will be created. No ceremony. Everyone who expected a great party should go home.
@@ -97,7 +102,8 @@ animals.add("Elephant");
 That must be quite a big elephant so that it couldn't fit in our list. The returned list, as we will see, is not a simple ArrayList.
 
 ```java
-System.out.println(animals.getClass()); // class java.util.ImmutableCollections$ListN
+System.out.println(animals.getClass());
+// class java.util.ImmutableCollections$ListN
 ```
 
 These factory methods are designed for small, fixed-size collections. The reason we got the exception in the first place is that these static factory methods return immutable collections. An immutable collection, as an immutable object, is an object whose state cannot be changed after it is constructed.

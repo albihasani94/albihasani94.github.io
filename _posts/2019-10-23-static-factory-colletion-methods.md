@@ -209,6 +209,8 @@ Set.of(E1, E2.. E10);
 Set.of(E... elements);
 ```
 
+Subsequent calls of `Set.of()` on a sequence of elements would return a Set with a different iteration order each time.
+
 The same benefits and caveats that apply to immutable lists apply to the immutable sets created through this factory method.
 
 #### Map.of

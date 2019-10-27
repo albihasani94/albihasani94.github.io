@@ -79,6 +79,12 @@ System.out.println(animals);
 
 Don't try this at home! This is what a Java geek would come up with. It makes me laugh, yet it works. This instantiation makes use of the instance-initializer construct of an anonymous inner class.
 
+On the top, we have been clever enough to write this genius code.
+
+Under the covers, we have created an instance of a class which extends HashSet in the outer braces, then we provided an instance initialization block in the inner braces.
+
+This is considered an anti-pattern according to [some](https://blog.jooq.org/2014/12/08/dont-be-clever-the-double-curly-braces-anti-pattern/), including myself. The instance initialized using this code will hold a hidden reference to the surrounding class, making memory leaks more likely.
+
 ### Java 9 to the Rescue!
 
 ```java
@@ -209,7 +215,7 @@ Set.of(E1, E2.. E10);
 Set.of(E... elements);
 ```
 
-Subsequent calls of `Set.of()` on a sequence of elements would return a Set with a different iteration order each time.
+Subsequent calls of `Set.of()` on a sequence of elements would return a Set  with a different iteration order each time.
 
 The same benefits and caveats that apply to immutable lists apply to the immutable sets created through this factory method.
 

@@ -16,7 +16,7 @@ It seems ages since Java 9 was released because Oracle and the Community have be
 
 These improvements have been covered by others, most masterfully from the likes of Sander Mak, Nicolai Parlog, and Miro Cupak. This post is going to be my take on it.
 
-This series of improvements and additions to the language have each come as a result of the JDK Enhancement Proposal process. The summary of this process is found on the OpenJDK project and interestingly enough the very first [proposal](https://openjdk.java.net/jeps/1) describes the process.
+This series of improvements and additions to the language have each come as a result of the JDK Enhancement Proposal process. The summary of this process is found on the OpenJDK project and interestingly enough the very first [proposal](https://openjdk.java.net/jeps/1){:target="_blank"} describes the process.
 
 In the summary section, it states:
 
@@ -34,7 +34,7 @@ Now back to our Java 9 polishing improvements, the first feature that we're talk
 
 ## List.of(), Set.of(), and a little taste of Map.of()
 
-This feature is part of [JEP 269](https://openjdk.java.net/jeps/269): Convenience Factory Methods for Collections.
+This feature is part of [JEP 269](https://openjdk.java.net/jeps/269){:target="_blank"}: Convenience Factory Methods for Collections.
 
 I am going to single out its goal:
 
@@ -83,7 +83,7 @@ On the top, we have been clever enough to write this genius code.
 
 Under the covers, we have created an instance of a class which extends HashSet in the outer braces, then we provided an instance initialization block in the inner braces.
 
-This is considered an anti-pattern according to [some](https://blog.jooq.org/2014/12/08/dont-be-clever-the-double-curly-braces-anti-pattern/), including myself. The instance initialized using this code will hold a hidden reference to the surrounding class, making memory leaks more likely.
+This is considered an anti-pattern according to [some](https://blog.jooq.org/2014/12/08/dont-be-clever-the-double-curly-braces-anti-pattern/){:target="_blank"}, including myself. The instance initialized using this code will hold a hidden reference to the surrounding class, making memory leaks more likely.
 
 ### Java 9 to the Rescue!
 
@@ -127,7 +127,7 @@ These factory methods are designed for small, fixed-size collections. The reason
 With Java 9, the most convenient way to create immutable lists is through this factory method.
 What's more interesting lies under the API for this method.
 
-Let's try a couple of use cases with this method. For these scenarios, I'm going to run the jshell [tool](https://docs.oracle.com/javase/9/jshell/introduction-jshell.htm) which came with Java 9.
+Let's try a couple of use cases with this method. For these scenarios, I'm going to run the jshell [tool](https://docs.oracle.com/javase/9/jshell/introduction-jshell.htm){:target="_blank"} which came with Java 9.
 
 ```shell
 jshell> List<Integer> singleElementList = List.of(1);
@@ -254,6 +254,6 @@ As a writer of this article, I am impressed with the effort that goes into maint
 
 I hope to have achieved your understanding of these methods. There is a big noise out there, I would like to be part of a signal.
 
-You can find all the code of this article as jshell interpretable commands [here](https://gist.github.com/albihasani94/2448fed86f1df71fbfdddc2d0b0b4138).
+You can find all the code of this article as jshell interpretable commands [here](https://gist.github.com/albihasani94/2448fed86f1df71fbfdddc2d0b0b4138){:target="_blank"}.
 
 *P.S. Don't support me*

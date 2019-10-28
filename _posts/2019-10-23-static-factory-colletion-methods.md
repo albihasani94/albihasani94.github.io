@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Static Factory Collection Methods"
-date:   2019-10-28
+date:   2019-10-23
 permalink: /static-factory-collection-methods
 categories: [java9, collections]
 tags: [java9, collections]

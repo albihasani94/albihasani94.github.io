@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "As a matter of JEP"
-date:   2019-10-23
+date:   2019-10-28
 permalink: /as-a-matter-of-jep
 categories: [java9]
 tags: [java9]

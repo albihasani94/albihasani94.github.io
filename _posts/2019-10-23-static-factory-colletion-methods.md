@@ -8,29 +8,15 @@ tags: [java9, collections]
 excerpt_separator: <!--more-->
 ---
 
-In this post, I have written about some of the improvements to the collections with Java 9. I think it should be enough to get a Java Developer started with some Java 9 features before talking about the elephant in the room: Modularity.
+In this post, I have written about some of the improvements to the collections with Java 9. I think it should be enough to get a Java Developer started with some nice features before talking about the elephant in the room: Modularity.
 
 <!--more-->
 
-It seems ages since Java 9 was released because Oracle and the Community have been delivering one major version of Java on a six-month schedule. There couldn't be a better time to step in the future of Java and save Java 8 from the risk of becoming our "Windows XP" in the not-so-far future. There is no reason not to as Java versions have often taken a strong stance towards backward-compatibility while delivering rock-solid enhancements.
+It seems ages since Java 9 was released because Oracle and the Community have been delivering one major version of Java on a six-month schedule. 
+
+There couldn't be a better time to step in the future of Java and save Java 8 from the risk of becoming our "Windows XP" in the not-so-far future. There is no reason not to as Java versions have often taken a strong stance towards backward-compatibility while delivering rock-solid enhancements.
 
 These improvements have been covered by others, most masterfully from the likes of Sander Mak, Nicolai Parlog, and Miro Cupak. This post is going to be my take on it.
-
-This series of improvements and additions to the language have each come as a result of the JDK Enhancement Proposal process. The summary of this process is found on the OpenJDK project and interestingly enough the very first [proposal](https://openjdk.java.net/jeps/1){:target="_blank"} describes the process.
-
-In the summary section, it states:
-
-> *This document defines a process for collecting, reviewing, sorting, and recording the results of proposals for enhancements to the JDK and for related efforts, such as process and infrastructure improvements.*
-
-An enhancement is singled out as:
-
-> *An enhancement is an effort to design and implement a nontrivial change to the JDK code base or to do some other kind of work whose goals, progress, and result are worth communicating broadly.*
-
-A JEP must include a **summary** and a **description**. It could also include **goals**, **non-goals**, **success metrics**, and **motivation** if applicable.
-
-In my opinion, this process is very transparent to anyone interested in learning more about Java internal development and staying in the know about what's about to come to the language.
-
-Now back to our Java 9 polishing improvements, the first feature that we're talking about affects collections.
 
 ## List.of(), Set.of(), and a little taste of Map.of()
 
@@ -41,6 +27,8 @@ I am going to single out its goal:
 > Provide static factory methods on the collection interfaces that will create compact, unmodifiable collection instances.
 
 This goal is concise and we would need to see how we dealt with collection creation in prior versions of Java to better understand the simplicity aimed for.
+
+If you are more interested in the JEP process, you can read this short explanatory [post]({% post_url 2019-10-28-as-a-matter-of-jep %}){:target="_blank"}.
 
 ### The Ceremony
 

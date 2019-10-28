@@ -39,7 +39,10 @@ defaults:
 - scope:
     path: ''
   values:
-    image: "/assets/images/duke.png"
+    image: 
+      path: "/assets/images/duke.png"
+      height: 256
+      width: 256
 
 # Exclude from processing.
 # The following items will not be processed, by default.

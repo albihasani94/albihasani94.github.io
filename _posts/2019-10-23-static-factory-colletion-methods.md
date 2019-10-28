@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Static Factory Collection Methods"
-date:   2019-10-23
+date:   2019-10-28
 permalink: /static-factory-collection-methods
 categories: [java9, collections]
 tags: [java9, collections]
@@ -28,7 +28,7 @@ I am going to single out its goal:
 
 This goal is concise and we would need to see how we dealt with collection creation in prior versions of Java to better understand the simplicity aimed for.
 
-If you are more interested in the JEP process, you can read this short explanatory [post]({% post_url 2019-10-28-as-a-matter-of-jep %}){:target="_blank"}.
+If you are more interested in the JEP process, you can read this short explanatory [post]({% post_url 2019-10-28-as-a-matter-of-jep %}).
 
 ### The Ceremony
 

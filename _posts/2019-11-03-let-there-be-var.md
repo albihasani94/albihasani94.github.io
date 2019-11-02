@@ -39,11 +39,7 @@ What's wrong? Nothing. This code just is not fun to write.
 
 ## How do we make it fun to write?
 
-Give developers autonomy, office perks, a big kitchen, a PS4 playground, and a high salary.
-
-All nice. *But* still from a developer perspective is not as much fun to write.
-
-Now let's look at this.
+Let's take a look at this.
 
 ```java
 var url = new URL("https://www.albinhasani.net/");
@@ -64,7 +60,7 @@ Don't get me wrong, I am a strong advocate of good naming in all cases, this cas
 
 ![how dare you?](/assets/images/how-dare-you-stand-where-he-stood.jpg)
 
-## Life with var
+## Living with var
 
 Local-Variable Type inference, as the name suggests, can only be used for local variables in methods, not fields or method return types.
 

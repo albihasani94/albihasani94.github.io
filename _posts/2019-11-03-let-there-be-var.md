@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Let there be var"
-date:   2019-11-02
+date:   2019-11-03
 permalink: /let-there-be-var
 categories: [java10, var]
 tags: [java10, var]

@@ -1,16 +1,12 @@
 ---
 layout: post
 title:  "Let there be var"
-date:   2019-10-26
+date:   2019-11-02
 permalink: /draft-there
 categories: [java10, var]
 tags: [java10, var]
-excerpt_separator: <!--more-->
+excerpt: "Being late to the game with var in Java? No problem."
 ---
-
-If you are late to the game with var in Java you can discover its use cases and necessity in this article.
-
-<!--more-->
 
 *This is old news.*
 
@@ -60,7 +56,11 @@ while ((inputLine = reader.readLine()) != null) {
 }
 ```
 
-This immediately removes some clutter from the program. It needs strong emphasis to be put on the variable naming though. However a bad name it may be, everyone could guess that a `BufferedReader magicMaker` is a BufferedReader, but one would need `var reader` explicitly named to guess what this variable may be about without looking at the right side of the assignment. Don't get me wrong, I am a strong advocate of good naming in all cases, this case only needs some extra attention.
+This immediately removes some clutter from the program. It needs strong emphasis to be put on the variable naming though. 
+
+However a bad name it may be, everyone could guess that a `BufferedReader magicMaker` is a BufferedReader, but one would need `var reader` explicitly named to guess what this variable may be about without looking at the right side of the assignment. 
+
+Don't get me wrong, I am a strong advocate of good naming in all cases, this case only needs some extra attention.
 
 ![how dare you?](/assets/images/how-dare-you-stand-where-he-stood.jpg)
 

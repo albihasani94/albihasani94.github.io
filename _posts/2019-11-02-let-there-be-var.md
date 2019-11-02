@@ -14,9 +14,9 @@ I have heard this excerpt at a talk by Brian Goetz and you can't blame him. From
 
 ## Local Variable Type Inference
 
-To understand the roots of this feature, one ought to have to have heard about *Project Amber.* This nice gem-y name project is all about introducing new language features to keep Java modern and more attractive to developers. *(Java you have always been good, it's just that these improvements will do no bad either).*
+To understand the roots of this feature, one ought to have to have heard about [*Project Amber*.](https://openjdk.java.net/projects/amber/){:target="_blank"} This nice gem-y name project is all about introducing new language features to keep Java modern and more attractive to developers. *(Java you have always been good, it's just that these improvements will do no bad either).*
 
-Local-Variable type inference is part of this project under the umbrella of [JEP 286](https://openjdk.java.net/jeps/286).
+Local-Variable type inference is part of this project under the umbrella of [JEP 286](https://openjdk.java.net/jeps/286){:target="_blank"}.
 
 Did this invention happen in Java? Not by a long shot. Java's evil twin brother (C#) has had var for more than a decade now, and other languages in the JVM ecosystem like Scala, Groovy and Kotlin already support a form of local-variable type inference.
 
@@ -64,9 +64,9 @@ Don't get me wrong, I am a strong advocate of good naming in all cases, this cas
 
 ![how dare you?](/assets/images/how-dare-you-stand-where-he-stood.jpg)
 
-## The birth of var
+## Life with var
 
-This type of type inference can only be used for local variables in methods, not fields or method return types.
+Local-Variable Type inference, as the name suggests, can only be used for local variables in methods, not fields or method return types.
 
 It has been around for some time in Java in some kind. You could write code like this with the addition of streams.
 

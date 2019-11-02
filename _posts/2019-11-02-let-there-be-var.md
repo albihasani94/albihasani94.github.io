@@ -91,7 +91,7 @@ var bytes = Files.readAllBytes(path);
 var list = new ArrayList<String>();
 ```
 
-The var identifier is not a keyword which means that its usages as a field, method, or package name will not be affected. Code that uses var as a class or interface name will be affected. As if anyone did that already (Looking at you caveman working on Java).
+The var identifier is not a keyword which means that its usages as a field, method, or package name will not be affected. Code that uses var as a class or interface name will be affected. As if anyone did that already(Looking at you caveman working on Java).
 
 ## Benefits
 

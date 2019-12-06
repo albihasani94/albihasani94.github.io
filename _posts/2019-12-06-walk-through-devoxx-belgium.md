@@ -6,7 +6,7 @@ permalink: /walk-through-devoxx-belgium
 categories: [java10, var]
 tags: [java, conference]
 excerpt: "A little more than two weeks ago I was in Devoxx Belgium."
-image: assets/images/devoxx-sumup.jpg
+image: assets/images/how-dare-you-stand-where-he-stood.jpg
 ---
 
 It had it all. The core Java talks, the bytecode wonders, the soft skills, a look at the future, and Venkat.

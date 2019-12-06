@@ -16,7 +16,7 @@ Briefly I am going to share a few interesting bits and pieces.
 
 ## Qualities of a Highly Effective Architect
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/QeKheNfO3Yg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="480" height="270" src="https://www.youtube-nocookie.com/embed/QeKheNfO3Yg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 This is probably my favorite talk of the conference. Not technical in the surface, only pure behavior driven talk. You listen to this talk and you find yourself in most of the situations Venkat so sincerely describes with bits of humor too.
 
@@ -35,7 +35,7 @@ Venkat has stopped by some points I think one should try to learn:
 
 ## Evolving a Pragmatic, Clean Architecture - A Craftsman's Guide
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/KOqIUNUq2Gg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="480" height="270" src="https://www.youtube-nocookie.com/embed/KOqIUNUq2Gg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Victor Rentea does some fine talk going through an evolving design for enterprise applications.
 
@@ -55,7 +55,7 @@ The takeaway message of this talk is also interesting: **Put passion in all that
 
 ## Bol.com and the Accelerated Legacy Challenge
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/iQ6ThO1-Rn4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="480" height="270" src="https://www.youtube-nocookie.com/embed/iQ6ThO1-Rn4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 This talk has my most favorite metaphor of the conference lol.
 
@@ -67,7 +67,7 @@ The talk goes on to mention the history of Bol.com and how they've grown up and 
 
 ## Agile is STILL a Dirty Word!
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/rUXQmY8f2Ow" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="480" height="270" src="https://www.youtube-nocookie.com/embed/rUXQmY8f2Ow" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 This talk by James Birnie who works for Codurance, holds his own experience through many of the Agile fallacies.
 
@@ -75,7 +75,7 @@ Anti-agile organizational smells you may have come across yourself, agile goals 
 
 ## Designing functional and fluent API: example of the Visitor Pattern
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/gq23w9nycBs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="480" height="270" src="https://www.youtube-nocookie.com/embed/gq23w9nycBs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 José Paumard goes deep in this technical talk. He explains this pattern in so much detail.
 
@@ -95,7 +95,7 @@ Frankly, I agree.
 
 ## What Lies Beneath
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/5AFgNuGwLos" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="480" height="270" src="https://www.youtube-nocookie.com/embed/5AFgNuGwLos" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 I enjoyed this session so much. As the previous talk, it goes in deep level and it makes you wonder.
 

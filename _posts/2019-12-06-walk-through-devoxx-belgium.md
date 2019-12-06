@@ -103,7 +103,7 @@ I learned that so much goes into a simple division operation in Java. I'm not go
 
 ## Ask the Java Architect
 
-<iframe width="480" height="270" src="https://www.youtube.com/embed/qKeMB7OoGJk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="480" height="270" src="https://www.youtube-nocookie.com/embed/qKeMB7OoGJk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 The "Ask the Architect" series is a favorite of mine. Unfortunayely, this one missed Mark Reinhold.
 
@@ -113,7 +113,7 @@ I personally asked two questions (after the talk, ofc) to Stuart Marks and God h
 
 ## Java Language Futures: Late 2019 Edition
 
-<iframe allowfullscreen="" frameborder="0" height="270" src="https://www.youtube.com/embed/J6fegDQPgps" width="480"></iframe>
+<iframe width="480" height="270" src="https://www.youtube-nocookie.com/embed/J6fegDQPgps" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 I'm still waiting to try out the new features I saw in this talk.
 

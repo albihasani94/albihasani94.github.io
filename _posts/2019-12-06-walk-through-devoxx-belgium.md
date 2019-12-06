@@ -113,7 +113,7 @@ I personally asked two questions (after the talk, ofc) to Stuart Marks and God h
 
 ## Java Language Futures: Late 2019 Edition
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/J6fegDQPgps" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe allowfullscreen="" frameborder="0" height="270" src="https://www.youtube.com/embed/J6fegDQPgps" width="480"></iframe>
 
 I'm still waiting to try out the new features I saw in this talk.
 

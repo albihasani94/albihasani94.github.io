@@ -103,7 +103,7 @@ I learned that so much goes into a simple division operation in Java. I'm not go
 
 ## Ask the Java Architect
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/qKeMB7OoGJk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="480" height="270" src="https://www.youtube.com/embed/qKeMB7OoGJk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 The "Ask the Architect" series is a favorite of mine. Unfortunayely, this one missed Mark Reinhold.
 

@@ -1,12 +1,12 @@
 ---
 layout: post
 title:  "A walk through Devoxx Belgium"
+image: /assets/images/you-shall-not-pass.jpg
 date:   2019-11-06
 permalink: /walk-through-devoxx-belgium
 categories: [java10, var]
 tags: [java, conference]
 excerpt: "A little more than two weeks ago I was in Devoxx Belgium."
-image: /assets/images/how-dare-you-stand-where-he-stood.jpg
 ---
 
 It had it all. The core Java talks, the bytecode wonders, the soft skills, a look at the future, and Venkat.
@@ -123,7 +123,5 @@ Java is 25 years old, and now it is not going to die anytime soon.
 Record and Pattern Matching are very interesting additions to the language and I can't wait to get my hands on them.
 
 ## Summing Up
-
-![devoxx sumup](/assets/images/devoxx-sumup.jpg)
 
 This Devoxx edition was great. Being at a conference is very nice and knowing how much there is to learn(and unlearn) is amazing.

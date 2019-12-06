@@ -123,4 +123,6 @@ Record and Pattern Matching are very interesting additions to the language and I
 
 ## Summing Up
 
+![devoxx sumup](/assets/images/devoxx-sumup.jpg)
+
 This Devoxx edition was great. Being at a conference is very nice and knowing how much there is to learn(and unlearn) is amazing.

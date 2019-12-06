@@ -1,12 +1,12 @@
 ---
 layout: post
 title:  "A walk through Devoxx Belgium"
-image: /assets/images/you-shall-not-pass.jpg
 date:   2019-11-06
 permalink: /walk-through-devoxx-belgium
 categories: [java10, var]
 tags: [java, conference]
 excerpt: "A little more than two weeks ago I was in Devoxx Belgium."
+image: /assets/images/devoxx-sumup.jpg
 ---
 
 It had it all. The core Java talks, the bytecode wonders, the soft skills, a look at the future, and Venkat.

@@ -2,10 +2,10 @@
 layout: post
 title:  "A walk through Devoxx Belgium"
 date:   2019-11-06
-permalink: /walk-through-devoxx-belgium
+permalink: walk-through-devoxx-belgium
 categories: [java10, var]
 tags: [java, conference]
-excerpt: "A little more than two weeks ago I was in Devoxx Belgium."
+excerpt: "A little more than three weeks ago I was in Devoxx Belgium."
 image: /assets/images/devoxx-sumup.jpg
 ---
 

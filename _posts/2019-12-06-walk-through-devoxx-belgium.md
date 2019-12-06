@@ -7,7 +7,7 @@ categories: [java10, var]
 tags: [java, conference]
 excerpt: "A little more than two weeks ago I was in Devoxx Belgium."
 image:
-  path: /assets/images/devoxx-sumup.jpg
+  path: assets/images/devoxx-sumup.jpg
 ---
 
 It had it all. The core Java talks, the bytecode wonders, the soft skills, a look at the future, and Venkat.

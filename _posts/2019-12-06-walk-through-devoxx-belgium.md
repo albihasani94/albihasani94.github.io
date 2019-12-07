@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "A walk through Devoxx Belgium"
-date: 2019-11-06
+date: 2019-12-06
 permalink: walk-through-devoxx-belgium
 categories: [java10, var]
 tags: [java, conference]

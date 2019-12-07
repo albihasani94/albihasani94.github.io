@@ -55,3 +55,8 @@ show_excerpts: true # set to false to remove excerpts on the homepage
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+image:
+  path: assets/images/devoxx-sumup.jpg
+  height: 500
+  width: 500

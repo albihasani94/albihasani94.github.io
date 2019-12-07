@@ -7,8 +7,7 @@ categories: [java10, var]
 tags: [java, conference]
 excerpt: "A little more than three weeks ago I was in Devoxx Belgium."
 description: "Try with desc"
-image:
-  path: /assets/images/how-dare-you-stand-where-he-stood.jpg
+image: /assets/images/you-shall-not-pass.jpg
 author: "albi"
 ---
 

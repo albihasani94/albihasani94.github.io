@@ -12,6 +12,7 @@ image:
   height: 500
   width: 500
 author: "albi"
+lang: en
 ---
 
 A little more than three weeks ago I was in Devoxx Belgium. It had it all. The core Java talks, the bytecode wonders, the soft skills, a look at the future, and Venkat.

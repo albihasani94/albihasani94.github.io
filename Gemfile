@@ -18,8 +18,6 @@ gem "minima", "~> 2.5.1"
 #   gem "jekyll-feed", "~> 0.12"
 # end
 
-gem "jekyll-sitemap", "~> 1.3"
-
 # # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # # and associated library.
 # install_if -> { RUBY_PLATFORM =~ %r!mingw|mswin|java! } do

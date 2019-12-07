@@ -6,10 +6,7 @@ permalink: walk-through-devoxx-belgium
 categories: [java10, var]
 tags: [java, conference]
 description: "A little more than three weeks ago I was in Devoxx Belgium."
-image:
-    path: assets/sleepdungeon/og_image.png
-    width: 500
-    height: 500
+image: assets/sleepdungeon/og_image.png
 ---
 
 A little more than three weeks ago I was in Devoxx Belgium. It had it all. The core Java talks, the bytecode wonders, the soft skills, a look at the future, and Venkat.

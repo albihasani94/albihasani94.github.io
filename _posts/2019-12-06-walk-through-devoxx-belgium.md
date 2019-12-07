@@ -10,6 +10,7 @@ image:
   path: /assets/images/devoxx-sumup.jpg
   height: 1200
   width: 627
+description: "Try with desc"
 ---
 
 A little more than three weeks ago I was in Devoxx Belgium. It had it all. The core Java talks, the bytecode wonders, the soft skills, a look at the future, and Venkat.

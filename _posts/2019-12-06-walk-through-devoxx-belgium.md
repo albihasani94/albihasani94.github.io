@@ -7,7 +7,7 @@ categories: [java10, var]
 tags: [java, conference]
 description: "A little more than three weeks ago I was in Devoxx Belgium."
 image:
-    path: assets/sleepdungeon/og_image.png
+    path: /assets/sleepdungeon/og_image.png
     width: 500
     height: 500
 ---

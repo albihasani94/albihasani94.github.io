@@ -29,9 +29,11 @@ twitter_username: albihasani94
 github_username:  albihasani94
 
 # Build settings
+markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
   - jekyll-seo-tag
 
 show_excerpts: true # set to false to remove excerpts on the homepage
@@ -55,8 +57,3 @@ show_excerpts: true # set to false to remove excerpts on the homepage
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-
-image:
-  path: assets/images/devoxx-sumup.jpg
-  height: 500
-  width: 500

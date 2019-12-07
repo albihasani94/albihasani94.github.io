@@ -8,7 +8,7 @@ tags: [java, conference]
 excerpt: "A little more than three weeks ago I was in Devoxx Belgium."
 description: "Try with desc"
 image:
-  path: /assets/images/devoxx-sumup.jpg
+  path: assets/images/how-dare-you-stand-where-he-stood.jpg
   height: 1200
   width: 627
 author: "albi"

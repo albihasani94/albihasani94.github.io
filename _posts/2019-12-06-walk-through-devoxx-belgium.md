@@ -1,16 +1,17 @@
 ---
 layout: post
-title:  "A walk through Devoxx Belgium"
-date:   2019-11-06
+title: "A walk through Devoxx Belgium"
+date: 2019-11-06
 permalink: walk-through-devoxx-belgium
 categories: [java10, var]
 tags: [java, conference]
 excerpt: "A little more than three weeks ago I was in Devoxx Belgium."
+description: "Try with desc"
 image:
   path: /assets/images/devoxx-sumup.jpg
   height: 1200
   width: 627
-description: "Try with desc"
+author: "albi"
 ---
 
 A little more than three weeks ago I was in Devoxx Belgium. It had it all. The core Java talks, the bytecode wonders, the soft skills, a look at the future, and Venkat.

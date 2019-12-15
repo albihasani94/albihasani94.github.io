@@ -32,7 +32,6 @@ github_username:  albihasani94
 theme: minima
 plugins:
   - jekyll-feed
-  - jekyll-sitemap
   - jekyll-seo-tag
 
 show_excerpts: true # set to false to remove excerpts on the homepage
@@ -45,8 +44,14 @@ show_excerpts: true # set to false to remove excerpts on the homepage
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-exclude:
-  - assets/*/RAW_ASSETS/*
-  - scripts
-  - Gemfile
-  - Gemfile.lock
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

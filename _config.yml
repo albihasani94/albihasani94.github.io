@@ -56,3 +56,8 @@ show_excerpts: true # set to false to remove excerpts on the homepage
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+image:
+  path: assets/sleepdungeon/og_image.png
+  width: 192
+  height: 192

@@ -2,8 +2,7 @@
 layout: post
 title: "Hello World"
 date: 2019-10-20
-permalink: /hello-world.html
-image: assets/images/devoxx-sumup.jpg
+permalink: /hello-world
 ---
 
 Hi friends. I'm going to share a new part of my work: a blog.

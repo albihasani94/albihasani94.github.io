@@ -6,7 +6,6 @@ permalink: walk-through-devoxx-belgium.html
 categories: [java10, var]
 tags: [java, conference]
 description: "A little more than three weeks ago I was in Devoxx Belgium."
-lang: en
 image: assets/images/devoxx-sumup.jpg
 ---
 

@@ -11,7 +11,7 @@ image: assets/images/devoxx-sumup.jpg
 
 A little more than three weeks ago I was in Devoxx Belgium. It had it all. The core Java talks, the bytecode wonders, the soft skills, a look at the future, and Venkat.
 
-This is my second conference of my journey in the Java community. The first one being last year in Voxxed Athens. I have it as a personal goal to go to at least one major conference each year. With a mediterranean edition in Athens and the probably most major one of Europe in Belgium taken off the list, the next year will be an interesting choice.
+This is the second conference of my journey in the Java community. The first one being last year in Voxxed Athens. I have it as a personal goal to go to at least one major conference each year. With a mediterranean edition in Athens and probably the most major one of Europe in Belgium taken off the list, the next year will be an interesting choice.
 
 Briefly I am going to share a few interesting bits and pieces.
 
@@ -19,9 +19,9 @@ Briefly I am going to share a few interesting bits and pieces.
 
 <iframe width="480" height="270" src="https://www.youtube-nocookie.com/embed/QeKheNfO3Yg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-This is probably my favorite talk of the conference. Not technical in the surface, only pure behavior driven talk. You listen to this talk and you find yourself in most of the situations Venkat so sincerely describes with bits of humor too.
+This is probably my favorite talk of the conference. Not technical on the surface, only pure behavior-driven talk. You listen to this talk and you find yourself in most of the situations Venkat so sincerely describes with bits of humor too.
 
-TL;DR Software is made by people. We are responsible for much more that we can imagine. We have a deep impact on the organizations we work for, far beyond the reach of our code. Be humble, respect people, and fight every day to make working better and easier for each one around you, and you will be happy to see the results.
+TL;DR Software is made by people. We are responsible for much more than we can imagine. We have a deep impact on the organizations we work for, far beyond the reach of our code. Be humble, respect people, and fight every day to make working better and easier for each one around you, and you will be happy to see the results.
 
 Venkat has stopped by some points I think one should try to learn:
 
@@ -48,7 +48,7 @@ Half-jokingly he shares some philosophy:
 >
 > Code is organic.
 >
-> It needs continous care.
+> It needs continuous care.
 
 I'd like to call that the Zen of Victor.
 
@@ -98,7 +98,7 @@ Frankly, I agree.
 
 <iframe width="480" height="270" src="https://www.youtube-nocookie.com/embed/5AFgNuGwLos" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-I enjoyed this session so much. As the previous talk, it goes in deep level and it makes you wonder.
+I enjoyed this session so much. Like the previous talk, it goes on a deep level and it makes you wonder.
 
 I learned that so much goes into a simple division operation in Java. I'm not gonna spoil the talk..
 
@@ -106,7 +106,7 @@ I learned that so much goes into a simple division operation in Java. I'm not go
 
 <iframe width="480" height="270" src="https://www.youtube-nocookie.com/embed/qKeMB7OoGJk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-The "Ask the Architect" series is a favorite of mine. Unfortunayely, this one missed Mark Reinhold.
+The "Ask the Architect" series is a favorite of mine. Unfortunately, this one missed Mark Reinhold.
 
 Brian Goetz, Stuart Marks, and Ron Pressler answered questions and it's really nice to see where Java is going in hands of these people.
 

@@ -2,7 +2,7 @@
 layout: post
 title: "Hello World"
 date: 2019-10-20
-permalink: /hello-world
+permalink: /hello-world.html
 description: test description
 lang: en
 image:

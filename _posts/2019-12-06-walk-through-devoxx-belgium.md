@@ -7,7 +7,7 @@ categories: [java10, var]
 tags: [java, conference]
 description: "A little more than three weeks ago I was in Devoxx Belgium."
 image: 
-    path: assets/images/devoxx-sumup.jpg
+    path: /assets/images/devoxx-sumup.jpg
     width: 500
     height: 500
 ---

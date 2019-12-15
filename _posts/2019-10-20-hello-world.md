@@ -3,7 +3,7 @@ layout: post
 title: "Hello World"
 date: 2019-10-20
 permalink: /hello-world.html
-image: assets/sleepdungeon/og_image.png
+image: assets/images/devoxx-sumup.jpg
 ---
 
 Hi friends. I'm going to share a new part of my work: a blog.

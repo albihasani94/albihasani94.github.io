@@ -113,7 +113,6 @@ By writing records, you immediately take care of the need for the likes of const
 
 ```java
 record PersonRecord (String name, int age){
-
 }
 
 PersonRecord person = new PersonRecord("Albi", 25);

@@ -20,7 +20,7 @@ Do you ever get bored of writing classes that look like behemoths just to store 
 Do you not even have the slightest dislike about the IDE generated boilerplate?  
 Do you not wish there was a simpler way to do this?
 
-If your answer is yes, join my talk at [JUG Tirana](https://www.meetup.com/Java-User-Group-Tirana/events/267691374/){:target="_blank"}.
+If your answer is yes, join me at tonight at [JUG Tirana](https://www.meetup.com/Java-User-Group-Tirana/events/267691374/){:target="_blank"}.
 
 It's ok if you think Java is too verbose. Even us, Java developers at heart, do that sometimes.  
 And the IDE generated boilerplate for all these classes? Ooof.

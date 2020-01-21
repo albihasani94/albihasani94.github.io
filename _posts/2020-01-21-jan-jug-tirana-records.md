@@ -6,7 +6,7 @@ permalink: jan-jug-tirana-coming-records.html
 categories: [java14, records]
 tags: [java, records]
 description: "Presentation Notes for my talk at Tirana JUG"
-image: assets/the-duke.png
+image: assets/images/the-duke.png
 excerpt: "Get beyond the “verbose” classes of Java as we know it, to a future which has a special place for data aggregates in Java."
 ---
 

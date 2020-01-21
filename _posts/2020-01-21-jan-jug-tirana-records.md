@@ -7,12 +7,14 @@ categories: [java14, records]
 tags: [java, records]
 description: "Presentation Notes for my talk at Tirana JUG"
 image: assets/images/the-duke.png
-excerpt: "Get beyond the “verbose” classes of Java as we know it, to a future which has a special place for data aggregates in Java."
+excerpt_separator: <!--more-->
 ---
 
-### Abstract
-
 Get beyond the “verbose” classes of Java as we know it, to a future which has a special place for data aggregates in Java.
+
+<!--more-->
+
+### Abstract
 
 Do you ever get bored of writing classes that look like behemoths just to store your data?\
 Do you not even have the slightest dislike about the IDE generated boilerplate?\

@@ -6,10 +6,10 @@ permalink: jan-jug-tirana-records.html
 categories: [java14, records]
 tags: [java, records]
 description: "Presentation Notes for my talk at Tirana JUG"
-image: 
-    path: assets/images/the-duke.png
-    height: 500
-    width: 281
+image:
+  path: assets/images/the-duke.png
+  height: 500
+  width: 281
 excerpt_separator: <!--more-->
 ---
 

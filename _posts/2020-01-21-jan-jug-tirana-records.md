@@ -43,6 +43,8 @@ Source code on [Github](https://github.com/albihasani94/coming-clean-on-records)
 
 Slides on [Slideshare](https://www.slideshare.net/AlbinHasani/coming-clean-on-records-at-tirana-jug){:target="_blank"}.
 
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/kecpeO4ysib5eF" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/AlbinHasani/coming-clean-on-records-at-tirana-jug" title="Coming Clean on Records at Tirana JUG" target="_blank">Coming Clean on Records at Tirana JUG</a> </strong> from <strong><a href="https://www.slideshare.net/AlbinHasani" target="_blank">Albin Hasani</a></strong> </div>
+
 ### Another Take
 
 Blog post [here](https://www.albinhasani.net/coming-clean-on-records.html){:target="_blank"}.

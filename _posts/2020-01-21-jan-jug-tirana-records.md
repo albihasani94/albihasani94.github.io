@@ -37,8 +37,12 @@ Coming to a JDK near you in Java 14.
 
 ### Source Code
 
-Source code available on [Github](https://github.com/albihasani94/coming-clean-on-records){:target="_blank"}.
+Source code on [Github](https://github.com/albihasani94/coming-clean-on-records){:target="_blank"}.
 
 ### Slides
 
-Slides available on [Slideshare](https://www.slideshare.net/AlbinHasani/coming-clean-on-records-at-tirana-jug){:target="_blank"}.
+Slides on [Slideshare](https://www.slideshare.net/AlbinHasani/coming-clean-on-records-at-tirana-jug){:target="_blank"}.
+
+### Another Take
+
+Blog post [here](https://www.albinhasani.net/coming-clean-on-records.html){:target="_blank"}.

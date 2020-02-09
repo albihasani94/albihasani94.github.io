@@ -106,7 +106,7 @@ private static void sayYourShape(Shape shape) {
 
 ![No and then!](https://media.giphy.com/media/bzaEWi1Z1xzby/giphy.gif)
 
-It is already too much to handle. You have the object, then you test if it is an instance of a class, then even with this information you have to cast the object into the exact reference you know this object is an instance of, this never made too much sense, or at least wasn't fun to write.
+It is already too much to handle. You have the object, then you test if it is an instance of a class, then even with this information you have to cast the object into the exact reference you know this object is an instance of. This never made too much sense, or at least wasn't fun to write.
 
 Other languages, and more recently C#, have added a pattern matching feature. This feature, built in the language, paves the way to cleaner control flow statements.
 

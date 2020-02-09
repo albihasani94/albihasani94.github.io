@@ -35,13 +35,13 @@ public class Rectangle extends Shape { }
 Let's put into each shape a distinctive method.
 
 ```java
-public static void sayIamACircle() {
+public void sayIamACircle() {
     System.out.println("I am a circle");
 }
-public static void sayIamATriangle() {
+public void sayIamATriangle() {
     System.out.println("I am a triangle");
 }
-public static void sayIamARectangle() {
+public void sayIamARectangle() {
     System.out.println("I am a rectangle");
 }
 ```

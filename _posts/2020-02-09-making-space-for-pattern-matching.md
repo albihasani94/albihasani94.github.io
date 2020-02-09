@@ -2,11 +2,11 @@
 layout: post
 title: "Making Space for Pattern Matching"
 date: 2020-02-09
-permalink: making-space-pattern-matching.html
+permalink: making-space-for-pattern-matching.html
 categories: [java14, pattern matching]
 tags: [java, pattern matching]
 description: "As a Java Developer, the risk of getting used to ceremony is a serious thing. Some people are actively involved in putting this risk into sleep."
-image: assets/images/the-duke.png
+image: assets/images/no-and-then.jpg
 excerpt_separator: <!--more-->
 ---
 

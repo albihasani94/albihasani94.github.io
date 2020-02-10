@@ -27,9 +27,9 @@ public class Shape { }
 And we have three descendants of this class.
 
 ```java
-public class Circle extends Shape { }
-public class Triangle extends Shape { }
-public class Rectangle extends Shape { }
+class Circle extends Shape { }
+class Triangle extends Shape { }
+class Rectangle extends Shape { }
 ```
 
 Let's put into each shape a distinctive method.
@@ -61,7 +61,7 @@ Nothing interesting here.
 ```java
 sayYourShape(triangle);
 
-private static void sayYourShape(Shape shape) { }
+void sayYourShape(Shape shape) { }
 ```
 
 ### What we have to do
@@ -69,7 +69,7 @@ private static void sayYourShape(Shape shape) { }
 > Test if an object is a representative of a class
 
 ```java
-private static void sayYourShape(Shape shape) {
+void sayYourShape(Shape shape) {
     if (shape instanceof Triangle) {
     }
 }
@@ -80,7 +80,7 @@ private static void sayYourShape(Shape shape) {
 > Cast the object into a reference of this class
 
 ```java
-private static void sayYourShape(Shape shape) {
+void sayYourShape(Shape shape) {
     if (shape instanceof Triangle) {
         Triangle triangle = (Triangle) shape;
     }
@@ -92,7 +92,7 @@ private static void sayYourShape(Shape shape) {
 > Play with the new reference
 
 ```java
-private static void sayYourShape(Shape shape) {
+void sayYourShape(Shape shape) {
     if (shape instanceof Triangle) {
         Triangle triangle = (Triangle) shape;
         triangle.sayIamATriangle();
@@ -115,7 +115,7 @@ Let's go back to our speaking circles.
 ## Look who's speaking
 
 ```java
-private static void sayYourShapeImproved(Shape shape) {
+void sayYourShapeImproved(Shape shape) {
     if (shape instanceof Triangle triangle) {
         triangle.sayIamATriangle();
     }
@@ -142,7 +142,7 @@ You will write similar code to this.
 
 ```java
 sealed interface Shape permits Circle, Triangle, Rectangle { }
-private record Triangle (int base, int height) implements Rectangle;
+record Triangle (int base, int height) implements Rectangle;
 
 int area (Shape shape) {
     if (shape instanceof Triangle(int base, int height)) {

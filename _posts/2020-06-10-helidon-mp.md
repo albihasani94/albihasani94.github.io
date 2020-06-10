@@ -607,4 +607,6 @@ And oh my, GraalVM is so fast.
 
 This is the first time I've taken a serious look at MicroProfile, and it brings back some Java EE memories without having to use an application server at all. I think that developer experience is good with Helidon, the community is very welcoming, and there is a mindset for the lightweight approach and performance that goes into each decision.
 
+The code is out [there](https://github.com/albihasani94/helidon-mp-playground){:target="_blank"}.
+
 On a personal note, it feels refreshing to get to write after such a long time. Since the last time I did Earth has seen a global disease outbreak, the quarantine, [UFOs](https://www.theguardian.com/world/2020/apr/27/pentagon-releases-three-ufo-videos-taken-by-us-navy-pilots){:target="_blank"} were confirmed by the US government, there were massive protests in USA, and they burnt down an [Arby's](https://twitter.com/officialmcafee/status/1266324846826397699){:target="_blank"}. We have to come together as humans, be kind, and this too shall pass.

@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Helidon MP, child of Java EE and the Cloud"
-date: 2020-06-07
-permalink: helidon-mp.html
+date: 2020-06-10
+permalink: helidon-mp
 categories: [java, helidon]
 tags: [java, helidon, cloud, graalvm, docker]
 description: "What is Helidon? Turning to etymology, Helidon comes from Greece and it means the swallow bird in English."

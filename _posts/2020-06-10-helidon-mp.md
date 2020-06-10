@@ -573,7 +573,7 @@ To get a taste of GraalVM, I would start to strip down some application features
 
 That doesn't look so good for production, but the GraalVM support for Helidon MP is still in early phases so I would expect better interoperability by the end of the year. Helidon SE should fully support GraalVM native images.
 
-Only later I learned that that this is known and the [roadmap](https://github.com/oracle/helidon/issues/716){:target="_blank"} for native images with Helidon MP does not yet support [JPA and JTA](https://github.com/oracle/helidon/issues/1293){:target="_blank"} at this time.
+Only later I learned that this is known and the [roadmap](https://github.com/oracle/helidon/issues/716){:target="_blank"} for native images with Helidon MP does not yet support [JPA and JTA](https://github.com/oracle/helidon/issues/1293){:target="_blank"} at this time.
 
 The build produces a single executable file, and that's all you need to run.
 

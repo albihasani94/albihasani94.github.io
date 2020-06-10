@@ -571,7 +571,7 @@ After subsequent runs, I still could not get the graalvm build to work. Reading 
 
 To get a taste of GraalVM, I would start to strip down some application features. After removing `datasource` and `jpa` integration in a separate [branch](https://github.com/albihasani94/helidon-mp-playground/tree/native-image){:target="_blank"}, I was able to get it going.
 
-That doesn't look so good for production, but the GraalVM support for Helidon MP is still in early phases so I would expect better interoperability by the end of the year. Helidon SE should fully support GraalVM native images.
+That doesn't look so good for production, but the GraalVM support for Helidon MP is still a work in progress so I would expect better interoperability by the end of the year. Helidon SE should fully support GraalVM native images.
 
 Only later I learned that this is known and the [roadmap](https://github.com/oracle/helidon/issues/716){:target="_blank"} for native images with Helidon MP does not yet support [JPA and JTA](https://github.com/oracle/helidon/issues/1293){:target="_blank"} at this time.
 

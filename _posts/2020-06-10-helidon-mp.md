@@ -419,7 +419,7 @@ Build the image.
 docker build -t helidon--mp .
 ```
 
-I seemed to never this command working. To get it right, I had to take some notes on static weaving and one of the Helidon creators on Slack pointed me to a solution.
+I seemed to never get this command working. To get it right, I had to take some notes on static weaving and one of the Helidon creators on Slack pointed me to a solution.
 The problem is that, when configuring the JPA integration, we enabled static weaving. 
 
 Heading to EclipseLink [documentation](https://www.eclipse.org/eclipselink/documentation/2.7/concepts/app_dev005.htm#CCHJEDFH){:target="_blank"}: "Weaving is a technique of manipulating the byte-code of compiled Java classes. The EclipseLink JPA persistence provider uses weaving to enhance both JPA entities and Plain Old Java Object (POJO) classes for such things as lazy loading, change tracking, fetch groups, and internal optimizations."

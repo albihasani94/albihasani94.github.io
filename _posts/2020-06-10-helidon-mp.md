@@ -14,7 +14,7 @@ What is Helidon? Turning to etymology, Helidon comes from Greece and it means th
 
 <!--more-->
 
-According to the Cambridge Dictionary, [swallow](https://dictionary.cambridge.org/dictionary/english/swallow){:target="_blank"} is a small bird with pointed wings and a tail with two points that flies quickly and catches insects to eat as it flies.
+According to the Cambridge Dictionary, [swallow](https://dictionary.cambridge.org/dictionary/english/swallow){:target="_blank"} is a small bird with pointed wings and a tail with two points that flies quickly and catches insects to eat as it flies.
 
 ![helidon-bird](/assets/images/swallow_noun.jpg)
 

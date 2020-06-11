@@ -444,8 +444,7 @@ RUN mvn package -DskipTests
 ```
 
 The first invocation pulls the dependencies layer separately from the second invocation which builds the application layer.
-For the first invocation, there is no build. No build means no target folder output. When the eclipselink plugin runs, it attempts to perform weaving on the classes produced
-by mvn command. Since there is no target folder, this fails and I would get this message:
+For the first invocation, there is no build. No build means no target folder output. When the eclipselink plugin runs, it attempts to perform weaving on the classes produced by mvn command. Since there is no target folder, this fails and I would get this message:
 
 ```bash
 [ERROR] Failed to execute goal

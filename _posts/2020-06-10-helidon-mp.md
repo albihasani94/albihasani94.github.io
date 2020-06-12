@@ -416,7 +416,7 @@ The quickstart provides a `Dockerfile` to make things smoother. What is there fo
 Build the image.
 
 ```bash
-docker build -t helidon--mp .
+docker build -t helidon-mp .
 ```
 
 I seemed to never get this command working. To get it right, I had to take some notes on static weaving and one of the Helidon creators on Slack pointed me to a solution.
@@ -490,7 +490,7 @@ public JsonObject getDefaultMessage() {
 Now I'm doing a rebuild of the docker image.
 
 ```bash
-docker build -t helidon--mp .
+docker build -t helidon-mp .
 ```
 
 And test it

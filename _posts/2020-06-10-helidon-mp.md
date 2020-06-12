@@ -541,7 +541,7 @@ To start the application
 To make the most out of jlink size-reduction, we would create a docker image with the custom runtime image.
 
 ```bash
-docker build -t helidon-quickstart-mp-jlink -f Dockerfile.jlink .
+docker build -t helidon-mp-jlink -f Dockerfile.jlink .
 ```
 
 On a side note, startup time inside the docker container is also reduced to `3694 ms`.

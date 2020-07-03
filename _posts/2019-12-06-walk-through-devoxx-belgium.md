@@ -6,10 +6,13 @@ permalink: walk-through-devoxx-belgium.html
 categories: [java10, var]
 tags: [java, conference]
 description: "A little more than three weeks ago I was in Devoxx Belgium."
+excerpt_separator: <!--more-->
 image: assets/images/devoxx-sumup.jpg
 ---
 
 A little more than three weeks ago I was in Devoxx Belgium. It had it all. The core Java talks, the bytecode wonders, the soft skills, a look at the future, and Venkat.
+
+<!--more-->
 
 This is the second conference of my journey in the Java community. The first one being last year in Voxxed Athens. I have it as a personal goal to go to at least one major conference each year. With a mediterranean edition in Athens and probably the most major one of Europe in Belgium taken off the list, the next year will be an interesting choice.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Programming is like arcade"
-date: 2020-07-02
+date: 2020-07-03
 permalink: programming-is-like-arcade
 categories: [programming, non-technical]
 tags: [programming, non-technical]

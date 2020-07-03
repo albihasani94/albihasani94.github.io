@@ -48,7 +48,7 @@ You alternate the times when you choose to play, but at the end you expect an in
 
 ## Getting to meet the arcade masters
 
-![I'm batman](https://media.tenor.com/videos/fc2ea2b2328899dddbbe3a7c283fcc5c/mp4)
+![I'm batman](https://media1.tenor.com/images/16d2a256f9e50654b2b8be4963f0bdc5/tenor.gif?itemid=5103771)
 
 Who are them?
 

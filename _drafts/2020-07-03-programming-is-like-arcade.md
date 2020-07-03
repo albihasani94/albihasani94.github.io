@@ -44,7 +44,7 @@ You can open a window in the arcade room and you can see what's behind that in t
 
 You try to do something different, you hold your breath when you encounter a new boss, and you let the arcade masters know that the latest challenge is worth it, as it keeps you at the edge of your seat. 
 
-You alternate the times when you choose to play, but at the end you expect an intervention from the systes owner, you keep waiting the arcade masters to tailor the game better for you and fix it all in a button.
+You alternate the times when you choose to play, but at the end you expect an intervention from the system owner, you keep waiting for the arcade masters to tailor the game better for you and fix it all in a button.
 
 ## Getting to meet the arcade masters
 
@@ -74,6 +74,6 @@ Doing so, you become free of structure and a plan from outside, this is buying y
 
 With great power comes great responsibility.
 
-You have to keep investing on the arcade game. You decide the hours that you are playing, the coins you put in are yours at the end of the day, and you have to decide what time percentage you're going to program new game levels, and what time percentage you're gonna have to play with them. Finding that share is like beating the most clever boss in the arcade of programming.
+You have to keep investing in the arcade game. You decide the hours that you are playing, the coins you put in are yours at the end of the day, and you have to decide what time percentage you're going to program new game levels, and what time percentage you're gonna have to play with them. Finding that share is like beating the most clever boss in the arcade of programming.
 
-*Seriously, this is not 100% true. Programming is not arcade, it has far more serious social and economical impact that you simply don't match in an arcade room. I was just bored so I wrote this.*
+*Seriously, this is not 100% true. Programming is not an arcade, it has far more serious social and economical impact that you simply don't match in an arcade room. I was just bored so I wrote this.*

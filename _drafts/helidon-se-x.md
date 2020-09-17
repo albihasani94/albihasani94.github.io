@@ -10,22 +10,24 @@ image: assets/images/road_runner.jpg
 excerpt_separator: <!--more-->
 ---
 
-In this follow-up to the Helidon series, we're going to explore the other Helidon sibling.
+In this follow-up to the Helidon MP post, I'm going to explore the other Helidon sibling.
 
 <!--more-->
 
-Since the last article I posted, I have taken a look around and there seem to be a rich community of java lightweight frameworks where the three most attractice to me seem Helidon, Micronaut, and Quarkus. Helidon comes in two flavors:
+As the java lightweight frameworks progress, I have taken a look around and there seem to be a rich community of them where the three most attractice to me seem Helidon, Micronaut, and Quarkus.
+
+Helidon comes in two flavors:
 
 - Helidon MP which represents the Microprofile implementation (I found myself digging the MicroProfile flavor, that must be one of the perks of being a die-hard Java EE fan)
-- Helidon SE is the non-blocking reactive way of building things
+- Helidon SE is the non-blocking reactive way of building things (hence the reason for this post)
 
-Helidon MP is more similar to Quarkus in terms of developer experience, and Micronaut its own thing, more like the Spring Boot appoach.
+Helidon MP is more similar to Quarkus in terms of developer experience, and Micronaut its own thing, more like the approach Spring Boot takes.
 
 Where does Helidon SE fit in all of this?
 
 Helidon SE is a microframework that embraces the latest Java SE features: reactive streams, asynchronous and functional programming, and fluent-style APIs.
 
-To dig more into this, we're going to build a project and play with its feature set.
+To dig more into this, I'm going to build a project and play with its feature set.
 
 ## Creating the project
 
@@ -33,7 +35,7 @@ To dig more into this, we're going to build a project and play with its feature 
 mvn -U archetype:generate -DinteractiveMode=false \
     -DarchetypeGroupId=io.helidon.archetypes \
     -DarchetypeArtifactId=helidon-quickstart-se \
-    -DarchetypeVersion=2.0.0 \
+    -DarchetypeVersion=2.0.2 \
     -DgroupId=com.albi \
     -DartifactId=helidon-se \
     -Dpackage=com.albi.helidon.se
@@ -80,7 +82,7 @@ $ tree .
 mvn package
 ```
 
-## Run it
+## Unleash
 
 ```bash
 java -jar target/helidon-se.ja
@@ -97,6 +99,6 @@ $ curl -X GET http://localhost:8080/greet
 
 ## Hold on a sec
 
-The first thing that catches the eye is that the project has a `Main` class. This class is the application starting point and provides access to methods
+One of the things that catch the eye in the project structure is the `Main` class. This class is the application starting point and provides access to methods
 
-## Let's switch to OpenAPI to get a better view of our API.
+## OpenAPI to get a better view of our API

@@ -198,4 +198,105 @@ Up to this point, we have explored out-of-the-box capabilities that Helidon SE o
 
 It's natural to add another service to this package so we see how it responds to our needs.
 
+Now, the building block of adding another service is implementing the `Service` interface, located in the `io.helidon.webserver` namespace.
+
+```java
+class MovieService implements Service { }
+```
+
+This is a functional interface, with a single abstract method, called `update`.
+
+```java
+@FunctionalInterface
+public interface Service {
+    void update(Rules var1);
+}
+```
+
+This offers the possibility of adding a one line imlpementation of a service, if fit.
+
+For example, adding a new route would be as easy as:
+
+```java
+return Routing.builder()
+    //...
+    .register("/greet", greetService)
+    .register("/inline", rules -> rules.get((request, response) -> response.send("Hello world")))
+    .build();
+```
+
+Performing a GET request on this route will return the requested message.
+
+```bash
+$ curl -X GET http://localhost:8080/inline
+Hello world
+```
+
+This is not the case for services with some more specialized application logic, and rich processing needs, but it is good to know that you can write code in this model for simple things.
+
+A better-suited implementation for most cases would be the continuation of the `MovieService` class.
+
+```java
+@Override
+public void update(Routing.Rules rules) {
+    rules
+            .get("/list", this.getListHandler())
+            .get("/test", this.getTestHandler());
+}
+```
+
+The second argument to the `get` method is a `Handler` interface implementation.
+
+```java
+private Handler getListHandler() {
+    return (request, response) -> response.send(
+            JSON.createArrayBuilder(
+                List.of("Batman", "Man of Steel", "Shrek"))
+                .build()
+    );
+}
+```
+
+Let's set this service up:
+
+```java
+MovieService movieService = new MovieService();
+return Routing.builder()
+    //...
+    .register("/movies", movieService)
+    .build()
+```
+
+Quick testing follows.
+
+```bash
+$ curl -X GET http://localhost:8080/movies/test
+{"message":"test"}
+```
+
+For a more serious movie-goers experience, test the endpoint containing the list of movies.
+
+```bash
+$ curl -X GET http://localhost:8080/movies/list
+["Batman","Man of Steel","Shrek"]
+```
+
+In this example, services proved to be an effective way of of organizing route configuration code and adding multiple methods for a route in a single point of access, the service implementation class.
+
+### Revisiting the inline service
+
+In the example above, of writing an inline service for the routing builder, you can swap service registration with specific handler for method.
+
+For example, `register` would become `get` and the Service implementation would become a Handler implementation.
+
+```java
+return Routing.builder()
+    //...
+    .register("/greet", greetService)
+    .register("/movies", movieService)
+    .get("/inline", (request, response) -> response.send("Hello world"))
+    .build();
+```
+
+This is a little bit more convinient, regarding the inline route configuration experience.
 

@@ -283,6 +283,112 @@ $ curl -X GET http://localhost:8080/movies/list
 
 In this example, services proved to be an effective way of of organizing route configuration code and adding multiple methods for a route in a single point of access, the service implementation class.
 
+### A potential downside
+
+Our code example seems like a move away from the simplicity of automatic JSON transformations that other libraries like Spring REST or JAX-RS provide. This is due to the fact that we have added support for JSONP, which requires the converters such as `JsonObject` and `JsonArray`.
+
+After digging a bit, it seems that this issue is resolved after Helidon added support for Jackson. To add this feature into the project, we'd have to include this module in our maven pom file.
+
+```xml
+<dependency>
+    <groupId>io.helidon.media</groupId>
+    <artifactId>helidon-media-jackson</artifactId>
+</dependency>
+```
+
+Remember when we declared JsonP support in the web server creation? We'd have to change that now to JacksonSupport.
+
+```java
+WebServer server = WebServer.builder(createRouting(config))
+    .config(config.get("server"))
+    .addMediaSupport(JacksonSupport.create())
+    .build();
+```
+
+That's supposed to be enough for us to remove the Jsonp wrappers from our Movie service class.
+
+```java
+private Handler getListHandler() {
+    return (request, response) -> response.send(List.of("Batman", "Man of Steel", "Shrek"));
+}
+```
+
+Let's check if the issue is resolved.
+
+```bash
+$ curl -X GET http://localhost:8080/movies/list
+["Batman","Man of Steel","Shrek"]
+```
+
+It was simple as that. This brings the data transformation on par with the other players' simplicity, keeping the functional lightweight touch that Helidon adds.
+
+To make it more json-object-y like, we would create a Movie class, which would make a great record, one Jackson fully supports them.
+
+After that the repose would be like:
+
+```bash
+[
+  {
+    "title": "The Dark Knight",
+    "year": 2006
+  },
+  {
+    "title": "Man of Steel",
+    "year": 2011
+  },
+  {
+    "title": "Shrek",
+    "year": 2003
+  }
+]
+```
+
+### Error Handling
+
+What happens if the movies are not available? Let's say the database is down and you cannot get your movies data (oh no), how do you let the consumer of your API know about it?
+
+I'm gonna add a flawed request for this purpose.
+
+```java
+rules
+    .get("/list", this.getListHandler())
+    .get("/list/flawed", this::getFlawedList)
+    .get("/test", this.getTestHandler());
+```
+
+```java
+private void getFlawedList(ServerRequest request, ServerResponse response) {
+    throw new UnsupportedOperationException("Sorry movies are closed");
+}
+```
+
+Let's take the server for a spin and see what hapens.
+
+```bash
+$ curl -X GET http://localhost:8080/movies/list/flawed
+value cannot be null!
+```
+
+This message hardly helps anyone understand what has happened, beyond the fact that something has made our server angry.
+
+Checking the logs, this comes down to the fact that the response cannot be null. Simply adding a message to the exception, and re-performing the GET request, you would get the following response:
+
+```bash
+$ curl -X GET http://localhost:8080/movies/list/flawed
+Sorry movies are closed
+```
+
+This is a more readable message, automatically transformed from the thrown exception to the json response, but the logs still pop-up an important warning:
+
+```java
+2020.09.22 01:04:44 WARNING io.helidon.webserver.RequestRouting Thread[nioEventLoopGroup-3-1,10,main]: Default error handler: Unhandled exception encountered.
+java.util.concurrent.ExecutionException: Unhandled 'cause' of this exception encountered.
+```
+
+This lets us know that there no handler for this exception that has occurred. Going back to the pattern that Helidon follows, we're going to extend our method with a failure handler.
+
+
+
 ### Revisiting the inline service
 
 In the example above, of writing an inline service for the routing builder, you can swap service registration with specific handler for method.
@@ -299,4 +405,3 @@ return Routing.builder()
 ```
 
 This is a little bit more convinient, regarding the inline route configuration experience.
-

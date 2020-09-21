@@ -10,18 +10,18 @@ image: assets/images/road_runner.jpg
 excerpt_separator: <!--more-->
 ---
 
-In this follow-up to the Helidon MP post, I'm going to explore the other Helidon sibling.
+In this follow-up to the Helidon MP post, I'm going to explore the other Helidon sibling: Helidon SE.
 
 <!--more-->
 
-As the java lightweight frameworks progress, I have taken a look around and there seem to be a rich community of them where the three most attractice to me seem Helidon, Micronaut, and Quarkus.
+As the java lightweight frameworks progress, taking a look around it seems to be a rich community of choices where the three most attractive to me seem Helidon, Micronaut, and Quarkus.
 
 Helidon comes in two flavors:
 
-- Helidon MP which represents the Microprofile implementation (I found myself digging the MicroProfile flavor, that must be one of the perks of being a die-hard Java EE fan)
+- Helidon MP which stands for the Microprofile implementation (I found myself digging the MicroProfile flavor, that must be one of the perks of being a die-hard Java EE fan)
 - Helidon SE is the non-blocking reactive way of building things (hence the reason for this post)
 
-Helidon MP is more similar to Quarkus in terms of developer experience, and Micronaut its own thing, more like the approach Spring Boot takes.
+Helidon MP is more similar to Quarkus in terms of developer experience, while Micronaut has its own thing; more like the approach Spring Boot takes.
 
 Where does Helidon SE fit in all of this?
 
@@ -85,10 +85,10 @@ mvn package
 ## Unleash
 
 ```bash
-java -jar target/helidon-se.ja
+java -jar target/helidon-se.java
 ```
 
-## Serving first request
+## Serve the first request
 
 ```bash
 $ curl -X GET http://localhost:8080/greet
@@ -99,6 +99,103 @@ $ curl -X GET http://localhost:8080/greet
 
 ## Hold on a sec
 
-One of the things that catch the eye in the project structure is the `Main` class. This class is the application starting point and provides access to methods
+One of the things that catch the eye in the project structure is the `Main` class. This class is the application starting point and contains the methods to configure and start the web server.
 
-## OpenAPI to get a better view of our API
+Exploring the main class, you get access to setting up components such as: config, routing, health checks, and logging.
+
+The logging part aside, I have noticed the following flow of setting things up:
+
+### # 1. Create the config
+
+Creating the config is straightforward.
+
+```java
+Config config = Config.create();
+```
+
+By default this bare statement will pick up `application.yaml` from the classpath.
+
+Its default configuration seems minimal:
+
+```yaml
+app:
+  greeting: "Hello"
+
+server:
+  port: 8080
+  host: 0.0.0.0
+```
+
+The greeting variable is already defined and ready for the application code to make use of it.
+
+This value would be grabbed by the system properties if it was set, and again the system property would have been overriden if an environment variable had been set.
+
+You can create different configuration sources and use them instead by specifying tighter control employing the config builder.
+
+### # 2. Build routing
+
+Let's move on to building a routing configuration.
+
+```java
+private static Routing createRouting(Config config) {
+    MetricsSupport metrics = MetricsSupport.create();
+    GreetService greetService = new GreetService(config);
+    HealthSupport health = HealthSupport.builder()
+            .addLiveness(HealthChecks.healthChecks())
+            .build();
+
+    return Routing.builder()
+            .register(health)
+            .register(metrics)
+            .register("/greet", greetService)
+            .build();
+    }
+```
+
+Here, using provided support for `metrics` and `health`, we register these services at their respective routes: `/metrics` and `/health`. The next route is our own, providing the `greetService`.
+
+Note that we pass the existing `config` that we created to our service, in order to make it available for the routing component.
+
+### # 3. Build the web server
+
+We got what we need to build the web server.
+
+```java
+WebServer server = WebServer.builder(createRouting(config))
+        .config(config.get("server"))
+        .addMediaSupport(JsonpSupport.create())
+        .build();
+```
+
+Again, note that also the web server makes use of the config, based on `application.yaml`, to retrieve the server configuration.
+
+Here, we add the routing we created as an argument to the builder method of WebServer. Also, we add support for JSONP.
+
+### # 4. Start the web server
+
+It seems like we're good to go.
+
+```java
+server.start()
+        .thenAccept(ws -> {
+            System.out.println(
+                    "WEB server is up! http://localhost:" + ws.port() + "/greet");
+            ws.whenShutdown().thenRun(()
+                    -> System.out.println("WEB server is DOWN. Good bye!"));
+        })
+        .exceptionally(t -> {
+            System.err.println("Startup failed: " + t.getMessage());
+            t.printStackTrace(System.err);
+            return null;
+        });
+```
+
+Here, an attempt is made to start the server and we provide handlers to the outcome of this action. These handlers are passed as lambda functions to the respective results of success and error: `thenAccept` and `exceptionally`.
+
+## Adding another service
+
+Up to this point, we have explored out-of-the-box capabilities that Helidon SE offers, and have seen a fraction of its programming model.
+
+It's natural to add another service to this package so we see how it responds to our needs.
+
+

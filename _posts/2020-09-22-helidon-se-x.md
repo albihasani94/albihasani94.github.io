@@ -461,7 +461,7 @@ In this post I've taken a quick look to the web server component of Helidon SE. 
 
 If one were to explore other included components such as metrics and health, could do so by accessing the `/metrics` and `/health` endpoints.
 
-I did not include examples for reactive db client support, or the reactive web server. The first seems like the approach Spring Data takes with r2dbc. As far as I know, reactive mongodb client is supported, and traditional jdbc drivers are supported inside a wrapper.
+I did not include examples for reactive db client support. That first seems like the approach Spring Data takes with r2dbc. As far as I know, reactive mongodb client is supported, and traditional jdbc drivers are supported inside a wrapper.
 
 The Helidon SE flavor it is indeed a move away from the Helidon MP flavor. It is even more micro than that, and takes an event-driven approach. In my opinion, it's a viable option for doing simple things fast, once you get a used a little bit to its programming model.
 

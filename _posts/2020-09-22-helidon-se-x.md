@@ -289,6 +289,23 @@ $ curl -X GET http://localhost:8080/movies/list
 
 In this example, services proved to be an effective way of of organizing route configuration code and adding multiple methods for a route in a single point of access, the service implementation class.
 
+### Revisiting the inline service
+
+In the example above, of writing an inline service for the routing builder, you can swap service registration with specific handler for method.
+
+For example, `register` would become `get` and the Service implementation would become a Handler implementation.
+
+```java
+return Routing.builder()
+    //...
+    .register("/greet", greetService)
+    .register("/movies", movieService)
+    .get("/inline", (request, response) -> response.send("Hello world"))
+    .build();
+```
+
+This is a little bit more convinient, regarding the inline route configuration experience.
+
 ## A potential downside
 
 Our code example seems like a move away from the simplicity of automatic JSON transformations that other libraries like Spring REST or JAX-RS provide. This is due to the fact that we have added support for JSONP, which requires the converters such as `JsonObject` and `JsonArray`.
@@ -437,23 +454,6 @@ $ curl -X GET http://localhost:8080/movies/list/flawed
 ```
 
 The `thenAccept` block could be expanded further to set response status based on the data returned by the completeableFuture, such as `NOT_FOUND` in case of empty list or perform other mappings.
-
-### Revisiting the inline service
-
-In the example above, of writing an inline service for the routing builder, you can swap service registration with specific handler for method.
-
-For example, `register` would become `get` and the Service implementation would become a Handler implementation.
-
-```java
-return Routing.builder()
-    //...
-    .register("/greet", greetService)
-    .register("/movies", movieService)
-    .get("/inline", (request, response) -> response.send("Hello world"))
-    .build();
-```
-
-This is a little bit more convinient, regarding the inline route configuration experience.
 
 ## What to take out of it
 

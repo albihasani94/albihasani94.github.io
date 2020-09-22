@@ -25,7 +25,7 @@ Helidon MP is more similar to Quarkus in terms of developer experience, while Mi
 
 Where does Helidon SE fit in all of this?
 
-In its words, Helidon SE is a microframework that embraces the latest Java SE features: reactive streams, asynchronous and functional programming, and fluent-style APIs.
+Helidon SE is a microframework that embraces the latest Java SE features: reactive streams, asynchronous and functional programming, and fluent-style APIs.
 
 To dig more into this, I'm going to build a project and tinker around with its web server, which is built on top of [Netty](https://netty.io){:target="_blank"}.
 

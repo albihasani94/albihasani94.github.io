@@ -457,12 +457,12 @@ This is a little bit more convinient, regarding the inline route configuration e
 
 ## What to take out of it
 
-In this post I've taken a quick look to the web server component of Helidon SE. It offers a nice way of setting routes and services up
+In this post I've taken a quick look to the web server component of Helidon SE. It offers a nice way of setting routes and services up.
 
 If one were to explore other included components such as metrics and health, could do so by accessing the `/metrics` and `/health` endpoints.
 
-I did not include demos for reactive db client support, or the reactive web server. The first seems like the approach Spring Data takes with r2dbc. As far as I know, reactive mongodb client is supported, and traditional jdbc drivers are supported inside a wrapper.
+I did not include examples for reactive db client support, or the reactive web server. The first seems like the approach Spring Data takes with r2dbc. As far as I know, reactive mongodb client is supported, and traditional jdbc drivers are supported inside a wrapper.
 
 The Helidon SE flavor it is indeed a move away from the Helidon MP flavor. It is even more micro than that, and takes an event-driven approach. In my opinion, it's a viable option for doing simple things fast, once you get a used a little bit to its programming model.
 
-If you take a look at the bigger scheme of things, there are odds that Helidon SE will co-exist with [Micronaut] framework in the future. What makes me believe this is Graeme Rocher, the creator of Micronaut joining [Oracle](https://twitter.com/graemerocher/status/1278770836996886528), and statements like [this](https://twitter.com/graemerocher/status/1286398505922297856). The future is exciting.
+If you take a look at the bigger scheme of things, there are odds that Helidon SE will co-exist with Micronaut framework in the future. What makes me believe this is Graeme Rocher, the creator of Micronaut joining [Oracle](https://twitter.com/graemerocher/status/1278770836996886528){:target="_blank"}, and statements like [this](https://twitter.com/graemerocher/status/1286398505922297856){:target="_blank"}. The future is exciting.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Helidon SE, another breed of speedy"
-date: 2020-06-25
+date: 2020-09-22
 permalink: helidon-se
 categories: [java, helidon]
 tags: [java, helidon, cloud, graalvm, docker]
@@ -10,7 +10,7 @@ image: assets/images/road_runner.jpg
 excerpt_separator: <!--more-->
 ---
 
-In this follow-up to the Helidon MP post, I'm going to explore the other Helidon sibling: Helidon SE.
+In this follow-up to the [Helidon MP]({% post_url 2020-06-10-helidon-mp %}) post, I'm going to explore the other Helidon sibling: Helidon SE.
 
 <!--more-->
 
@@ -27,9 +27,11 @@ Where does Helidon SE fit in all of this?
 
 Helidon SE is a microframework that embraces the latest Java SE features: reactive streams, asynchronous and functional programming, and fluent-style APIs.
 
-To dig more into this, I'm going to build a project and play with its feature set.
+To dig more into this, I'm going to build a project and tinker around with its web server specifically.
 
 ## Creating the project
+
+We're going to use the maven archetype of helidon-quickstart for setting things up.
 
 ```bash
 mvn -U archetype:generate -DinteractiveMode=false \
@@ -41,7 +43,9 @@ mvn -U archetype:generate -DinteractiveMode=false \
     -Dpackage=com.albi.helidon.se
 ```
 
-## Exploring the structure
+### Exploring the structure
+
+The generated project contains the following directory structure.
 
 ```bash
 $ tree .
@@ -76,19 +80,21 @@ $ tree .
                             └── MainTest.java
 ```
 
-## Build the thing
+Besides the application logic classes which we will dive in a bit, it's good to know that there are provided deployment files for docker images and specific deployments with jlink and GraalVM profiles.
+
+### Build
 
 ```bash
 mvn package
 ```
 
-## Unleash
+### Serve
 
 ```bash
 java -jar target/helidon-se.java
 ```
 
-## Serve the first request
+### Perform the first request
 
 ```bash
 $ curl -X GET http://localhost:8080/greet
@@ -97,7 +103,7 @@ $ curl -X GET http://localhost:8080/greet
 }
 ```
 
-## Hold on a sec
+## Dissecting the Main class
 
 One of the things that catch the eye in the project structure is the `Main` class. This class is the application starting point and contains the methods to configure and start the web server.
 
@@ -105,7 +111,7 @@ Exploring the main class, you get access to setting up components such as: confi
 
 The logging part aside, I have noticed the following flow of setting things up:
 
-### # 1. Create the config
+### 1. Create the config
 
 Creating the config is straightforward.
 
@@ -132,7 +138,7 @@ This value would be grabbed by the system properties if it was set, and again th
 
 You can create different configuration sources and use them instead by specifying tighter control employing the config builder.
 
-### # 2. Build routing
+### 2. Build routing
 
 Let's move on to building a routing configuration.
 
@@ -156,7 +162,7 @@ Here, using provided support for `metrics` and `health`, we register these servi
 
 Note that we pass the existing `config` that we created to our service, in order to make it available for the routing component.
 
-### # 3. Build the web server
+### 3. Build the web server
 
 We got what we need to build the web server.
 
@@ -171,7 +177,7 @@ Again, note that also the web server makes use of the config, based on `applicat
 
 Here, we add the routing we created as an argument to the builder method of WebServer. Also, we add support for JSONP.
 
-### # 4. Start the web server
+### 4. Start the web server
 
 It seems like we're good to go.
 
@@ -283,7 +289,7 @@ $ curl -X GET http://localhost:8080/movies/list
 
 In this example, services proved to be an effective way of of organizing route configuration code and adding multiple methods for a route in a single point of access, the service implementation class.
 
-### A potential downside
+## A potential downside
 
 Our code example seems like a move away from the simplicity of automatic JSON transformations that other libraries like Spring REST or JAX-RS provide. This is due to the fact that we have added support for JSONP, which requires the converters such as `JsonObject` and `JsonArray`.
 
@@ -327,6 +333,7 @@ To make it more json-object-y like, we would create a Movie class, which would m
 After that the repose would be like:
 
 ```bash
+$ curl -X GET http://localhost:8080/movies/list
 [
   {
     "title": "The Dark Knight",
@@ -378,7 +385,7 @@ $ curl -X GET http://localhost:8080/movies/list/flawed
 Sorry movies are closed
 ```
 
-This is a more readable message, automatically transformed from the thrown exception to the json response, but the logs still pop-up an important warning:
+This is a more readable message, automatically transformed from the thrown exception to the json response, but the logs still pop up an important warning:
 
 ```java
 2020.09.22 01:04:44 WARNING io.helidon.webserver.RequestRouting Thread[nioEventLoopGroup-3-1,10,main]: Default error handler: Unhandled exception encountered.
@@ -387,7 +394,49 @@ java.util.concurrent.ExecutionException: Unhandled 'cause' of this exception enc
 
 This lets us know that there no handler for this exception that has occurred. Going back to the pattern that Helidon follows, we're going to extend our method with a failure handler.
 
+To do that, I will set up a method that has the original purpose to supply a CompleteableFuture, but in this case it will fail.
 
+```java
+private CompletableFuture<List<Movie>> getFlawedList() {
+    return CompletableFuture.failedFuture(new RuntimeException("Sorry movies are closed"));
+}
+```
+
+And I am going to make sense of this exception.
+
+```java
+private void getFlawedListHandler(ServerRequest request, ServerResponse response) {
+    this.getFlawedList()
+            .thenAccept(response::send)
+            .exceptionally(error -> {
+                response.status(Http.Status.NOT_FOUND_404);
+                response.send(
+                        new MovieNotFound("Could not get movies", LocalDateTime.now().toString())
+                );
+                return null;
+            });
+}
+```
+
+Then update the rules with this route.
+
+```java
+rules
+    .get("/list", this::getListHandler)
+    .get("/list/flawed", this::getFlawedListHandler)
+```
+
+If the completeableFuture is successful, this will trigger the `thenAccept` block and perform that action, in this case directly send the response. In case an exception occurs on the way, the `exceptionally` block will catch it and make something out of it. What we do here is set a custom response status code, and return send a custom error message with the response.
+
+```bash
+$ curl -X GET http://localhost:8080/movies/list/flawed
+{
+  "message": "Could not get movies",
+  "incidentTime": "2020-09-22T21:43:51.347416"
+}
+```
+
+The `thenAccept` block could be expanded further to set response status based on the data returned by the completeableFuture, such as `NOT_FOUND` in case of empty list or perform other mappings.
 
 ### Revisiting the inline service
 
@@ -405,3 +454,12 @@ return Routing.builder()
 ```
 
 This is a little bit more convinient, regarding the inline route configuration experience.
+
+## health
+
+## metrics
+
+## what's next
+
+The reactive driver support..
+

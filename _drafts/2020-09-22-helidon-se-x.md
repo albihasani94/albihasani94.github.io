@@ -350,7 +350,7 @@ $ curl -X GET http://localhost:8080/movies/list
 ]
 ```
 
-### Error Handling
+## Error Handling
 
 What happens if the movies are not available? Let's say the database is down and you cannot get your movies data (oh no), how do you let the consumer of your API know about it?
 

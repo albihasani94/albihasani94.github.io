@@ -93,7 +93,7 @@ Looking at it more carefully, this message is doing a good job of telling us in 
 
 That is not so.. *helpful*.
 
-[dark image here]
+![dark-npe](/assets/images/dark_npe.jpeg)
 
 Getting close to the point, you could make use of what this JEP has in store do explore an alternate universe where NPEs are helpful.
 

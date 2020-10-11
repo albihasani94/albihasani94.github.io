@@ -73,32 +73,50 @@ Our hero has a number and a name: JEP [358](https://openjdk.java.net/jeps/358){:
 
 This is one of the goodies that landed with JDK 14 earlier in March this year.
 
-To make a case why we might need it, let's add another reference to the equation and do something extra with it.
+To make a case why we might need it, let's add another domain to the equation and do something extra with it.
 
 ```java
-String anotherNotNullReference = "hello nulls";
+var firstPerson = new Person("Albi", 26);
+var secondPerson = new Person(null, 100);
 
-Stream.of(notANullReference,
-        aNullReference,
-        anotherNotNullReference)
-        .forEach(printLength);
+printNameLength.accept(firstPerson);
+printNameLength.accept(secondPerson);
+
+private static Consumer<Person> printNameLength = person ->
+    System.out.printf("Length of name for person %s is %s", person.name, person.name.length());
+
+record Person(String name, int age) {
+}
 ```
 
-What we got is a third reference, which is not null in this case, and a stream of these String references. We want to find the combined length of these Strings.
+What we got is a an object reference `Person`, which also contains a reference to its `name` field.
 
-As we know, because of our null reference, this program is set for failure.
+As we know, because of our null reference, this program is likely set for failure.
 
 ```java
 Exception in thread "main" java.lang.NullPointerException
-    at com.albi.helpful.npe.App.lambda$static$0(App.java:21)
-    at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
-    at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:658)
-    at com.albi.helpful.npe.App.main(App.java:17)
+    at com.albi.helpful.npe.App.lambda$static$1(App.java:29)
+    at com.albi.helpful.npe.App.main(App.java:19)
 ```
 
 This message is telling us in which method and line the incident happened.
 
-Looking more carefully, besides following the flow of the iterations and debugging, which could get complex in a short time, we do not know which one of the references in the stream caused it.
+Let's misuse this code and add another null, this time by setting a complete reference to null.
+
+```java
+Person thirdPerson = null;
+printNameLength.accept(thirdPerson);
+```
+
+Again let's run this piece of code.
+
+```java
+Exception in thread "main" java.lang.NullPointerException
+    at com.albi.helpful.npe.App.lambda$static$1(App.java:29)
+    at com.albi.helpful.npe.App.main(App.java:23)
+```
+
+Looking more carefully, besides following the flow of the iterations and debugging, which could get complex in a short time, we do not know which one of the references in the object caused it. These two NPE messages seem almost identical, apart from the line where they happened. But nothing sets the two lines apart to tell which is the faulty operation.
 
 That is not so.. *helpful*.
 
@@ -108,16 +126,27 @@ Getting close to the point, you could make use of what this JEP has in store do 
 
 Running the same program with a special flag: `-XX:+ShowCodeDetailsInExceptionMessages` would shed some light on this investigation.
 
+The first run:
+
 ```java
 Exception in thread "main" java.lang.NullPointerException:
-  Cannot invoke "String.length()" because "input" is null
-    at com.albi.helpful.npe.App.lambda$static$0(App.java:21)
-    at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
-    at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:658)
-    at com.albi.helpful.npe.App.main(App.java:17)
+  Cannot invoke "String.length()" because "person.name" is null
+    at com.albi.helpful.npe.App.lambda$static$1(App.java:29)
+    at com.albi.helpful.npe.App.main(App.java:19)
 ```
 
-It is there. This indeed helpful message makes it loud that `input` argument is null, therefore the JVM cannot call `String.lenth()` on it. A real eye-opener.
+It is there. This indeed helpful message makes it loud that `name` field is null, therefore the JVM cannot call `String.lenth()` on it. A real eye-opener.
+
+The second run:
+
+```java
+Exception in thread "main" java.lang.NullPointerException:
+  Cannot read field "name" because "person" is null
+    at com.albi.helpful.npe.App.lambda$static$1(App.java:29)
+    at com.albi.helpful.npe.App.main(App.java:23)
+```
+
+This sets them apart. The second case is another story because the whole reference is `null`, and it is this faulty segment that caused it. There was no way we could have found it without debugging.
 
 Making it so easy, the developers can focus on actually fixing the NPE, rather than starting a quest to find the reference that caused it. In most cases, this feature will serve it for us. Going back to the statement from Hoare, the Java language designers take it seriously to offer the best programming experience to developers, if not for reversing decisions of the past which could not be abandoned due to the backward-compatibility promise, instead offering a bag of improvements such as this one.
 

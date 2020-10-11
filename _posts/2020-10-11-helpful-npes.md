@@ -118,7 +118,7 @@ Exception in thread "main" java.lang.NullPointerException
 
 Besides following with some logging and debugging, which could get complex in a short time, we do not have a way to find which one of the references in the object caused it just by looking at the message.
 
-Our final goal is to get to something else, the faulty operation. In that direction, these two NPE messages are almost identical, offering nothing apart from the line where they happened.
+Our goal is to get to something else, the faulty operation. These two NPE messages are almost identical, and don't offer much in that direction apart from the line where they happened.
 
 That is not so.. *helpful*.
 

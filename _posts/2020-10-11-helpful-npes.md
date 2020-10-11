@@ -122,3 +122,5 @@ Making it so easy, the developers can focus on actually fixing the NPE, rather t
 Only writing this article I did learn that this feature has become a default on JDK 15, and you don't need the `-XX:+ShowCodeDetailsInExceptionMessages` flag anymore. As a matter of fact, Java is moving so fast even someone like me, who is a usual twitter citizen, missed the news.
 
 <blockquote class="twitter-tweet" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">Helpful NullPointerException (JEP 358) will be set by default in JDK 15.<a href="https://t.co/r8wdTvq59X">https://t.co/r8wdTvq59X</a><a href="https://t.co/kmYk5enRUj">https://t.co/kmYk5enRUj</a> <a href="https://t.co/5lV8DymKpJ">pic.twitter.com/5lV8DymKpJ</a></p>&mdash; David Delabassée (@delabassee) <a href="https://twitter.com/delabassee/status/1276024020392128514?ref_src=twsrc%5Etfw">June 25, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+P.S. Source Code on [Github](https://github.com/albihasani94/helpful-NPE){:target="_blank"}

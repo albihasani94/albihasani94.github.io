@@ -6,7 +6,7 @@ permalink: helpful-npes
 categories: [java, jdk, npe]
 tags: [java, jdk, npe]
 description: "What drives Java developers crazy and goes away when given developers a strong brew of coffee? NullPointerExceptions."
-image: assets/images/npe.jpg
+image: assets/images/what_is_npe.png
 excerpt_separator: <!--more-->
 ---
 

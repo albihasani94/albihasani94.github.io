@@ -81,7 +81,7 @@ String anotherNotNullReference = "hello nulls";
 Stream.of(notANullReference,
         aNullReference,
         anotherNotNullReference)
-        .forEach(printLength); // kaboom
+        .forEach(printLength);
 ```
 
 What we got is a third reference, which is not null in this case, and a stream of these String references. We want to find the combined length of these Strings.

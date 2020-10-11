@@ -124,7 +124,7 @@ That is not so.. *helpful*.
 
 ![dark-npe](/assets/images/dark_npe.jpg)
 
-Getting close to the point, you could make use of what this JEP has in store do explore an alternate universe where NPEs are helpful.
+Getting close to the point, you could make use of what this JEP has in store to explore an alternate universe where NPEs are helpful.
 
 Running the same program with a special flag: `-XX:+ShowCodeDetailsInExceptionMessages` would shed some light on this investigation.
 
@@ -137,7 +137,7 @@ Exception in thread "main" java.lang.NullPointerException:
     at com.albi.helpful.npe.App.main(App.java:19)
 ```
 
-It is there. This indeed helpful message makes it loud that `name` field is null, therefore the JVM cannot call `String.lenth()` on it. A real eye-opener.
+It is there. This indeed helpful message makes it loud that `name` field is null, therefore the JVM cannot call `String.length()` on it. A real eye-opener.
 
 The second run:
 

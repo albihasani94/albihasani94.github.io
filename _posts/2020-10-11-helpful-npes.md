@@ -78,8 +78,10 @@ To make a case why we might need it, let's add another reference to the equation
 ```java
 String anotherNotNullReference = "hello nulls";
 
-Stream.of(notANullReference, aNullReference, anotherNotNullReference)
-        .forEach(printLength);
+Stream.of(notANullReference,
+        aNullReference,
+        anotherNotNullReference)
+        .forEach(printLength); // kaboom
 ```
 
 What we got is a third reference, which is not null in this case, and a stream of these String references. We want to find the combined length of these Strings.

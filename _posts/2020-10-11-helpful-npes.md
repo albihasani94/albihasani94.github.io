@@ -116,7 +116,9 @@ Exception in thread "main" java.lang.NullPointerException
     at com.albi.helpful.npe.App.main(App.java:23)
 ```
 
-Looking more carefully, besides following the flow of the iterations and debugging, which could get complex in a short time, we do not know which one of the references in the object caused it. These two NPE messages seem almost identical, apart from the line where they happened. But nothing sets the two lines apart to tell which is the faulty operation.
+Besides following with some logging and debugging, which could get complex in a short time, we do not have a way to find which one of the references in the object caused it just by looking at the message.
+
+These two NPE messages seem almost identical, apart from the line where they happened. Our final goal is to get to something else, the faulty operation.
 
 That is not so.. *helpful*.
 
@@ -146,7 +148,7 @@ Exception in thread "main" java.lang.NullPointerException:
     at com.albi.helpful.npe.App.main(App.java:23)
 ```
 
-This sets them apart. The second case is another story because the whole reference is `null`, and it is this faulty segment that caused it. There was no way we could have found it without debugging.
+This sets them apart. The second case is another story because the whole reference is `null`, and it is this faulty segment that caused it. There was no way we could have known without debugging.
 
 Making it so easy, the developers can focus on actually fixing the NPE, rather than starting a quest to find the reference that caused it. In most cases, this feature will serve it for us. Going back to the statement from Hoare, the Java language designers take it seriously to offer the best programming experience to developers, if not for reversing decisions of the past which could not be abandoned due to the backward-compatibility promise, instead offering a bag of improvements such as this one.
 

@@ -67,7 +67,7 @@ I am not saying that is entirely the opposite of helpful, but it could have said
 
 ## Java 14 saves the day
 
-Make a wish for a new Java feature and there will be a JEP for it, most probably with a touch of Brian Goetz on it.
+Make a wish for a new Java feature and there will be a JEP for it.
 
 Our hero has a number and a name: JEP [358](https://openjdk.java.net/jeps/358){:target="_blank"}: Helpful NullPointerExceptions.
 

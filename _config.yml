@@ -20,12 +20,12 @@
 
 title: Albi's Blog
 author: Albin Hasani
-email: albinhasani@protonmail.com
+email: hi@albinhasani.net
 description: >- # this means to ignore newlines until "baseurl:"
   Just my thoughts on the matter.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.albinhasani.net" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: albihasani94
+x_username: albihasani94
 github_username:  albihasani94
 linkedin_username: albihasani94
 # Build settings

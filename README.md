@@ -14,7 +14,8 @@ The repository tracks the minimal configuration GitHub Pages needs:
 
 - [`Gemfile`](Gemfile) depends on `github-pages ~> 232` and lists the supported plugins.
 - `Gemfile.lock` is intentionally omitted so GitHub Pages can supply its managed dependency versions.
-- `_config.yml` enables [`jekyll-feed`](https://github.com/jekyll/jekyll-feed), [`jekyll-seo-tag`](https://github.com/jekyll/jekyll-seo-tag), and [`jekyll-sitemap`](https://github.com/jekyll/jekyll-sitemap) — all whitelisted for GitHub Pages builds.
+- `_config.yml` enables [`jekyll-feed`](https://github.com/jekyll/jekyll-feed), [`jekyll-seo-tag`](https://github.com/jekyll/jekyll-seo-tag),
+  and [`jekyll-sitemap`](https://github.com/jekyll/jekyll-sitemap) — all whitelisted for GitHub Pages builds.
 
 ## Updating the site
 

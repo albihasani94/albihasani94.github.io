@@ -24,7 +24,7 @@ email: hi@albinhasani.net
 description: >- # this means to ignore newlines until "baseurl:"
   Just my thoughts on the matter.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://www.albinhasani.net" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://albinhasani.net" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: albihasani94
 github_username:  albihasani94
 linkedin_username: albihasani94
@@ -33,6 +33,7 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 show_excerpts: true # set to false to remove excerpts on the homepage
 

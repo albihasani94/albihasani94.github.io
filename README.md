@@ -25,3 +25,17 @@ Site content lives in the standard Jekyll locations:
 - Pages like the home and about sections in the repository root
 
 To make changes, edit the relevant files, commit the updates, and push to `master`.
+
+## Local deployment
+
+First install:
+
+`bundle install --path vendor/bundle`
+
+Then:
+
+`bundle exec jekyll serve`
+
+or with drafts:
+
+`bundle exec jekyll serve --drafts`

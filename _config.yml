@@ -47,8 +47,12 @@ show_excerpts: true # set to false to remove excerpts on the homepage
 # their entries' file path in the `include:` list.
 #
 exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
   - Gemfile
   - Gemfile.lock
+  - node_modules/
   - vendor/bundle/
   - vendor/cache/
   - vendor/gems/

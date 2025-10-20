@@ -39,3 +39,8 @@ Then:
 or with drafts:
 
 `bundle exec jekyll serve --drafts`
+
+## Social branding assets
+
+- Custom X icon lives at [`assets/custom_icons/x.svg`](assets/custom_icons/x.svg) and originates from the official X brand toolkit. Keep the asset optimized (≤10 KB) and update the checksum in [`assets/custom_icons/README.md`](assets/custom_icons/README.md) if you replace it.
+- Document any future social branding changes (source URL, optimization steps, analytics expectations) alongside the feature specification in `specs/<feature>/`.

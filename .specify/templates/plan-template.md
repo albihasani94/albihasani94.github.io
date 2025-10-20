@@ -1,9 +1,9 @@
 # Implementation Plan: [FEATURE]
 
-**Branch**: `[###-feature-name]` | **Date**: [DATE] | **Spec**: [link]
+**Branch**: `feature/[short-slug]` | **Date**: [DATE] | **Spec**: [link]
 **Input**: Feature specification from `/specs/[###-feature-name]/spec.md`
 
-**Note**: This template is filled in by the `/speckit.plan` command. See `.specify/templates/commands/plan.md` for the execution workflow.
+**Note**: This template is filled in by the `/speckit.plan` command. See `.specify/scripts/bash/setup-plan.sh` for the execution workflow.
 
 ## Summary
 
@@ -12,26 +12,29 @@
 ## Technical Context
 
 <!--
-  ACTION REQUIRED: Replace the content in this section with the technical details
-  for the project. The structure here is presented in advisory capacity to guide
-  the iteration process.
+  ACTION REQUIRED: Replace the content in this section if the change deviates
+  from the default project context captured below.
 -->
 
-**Language/Version**: [e.g., Python 3.11, Swift 5.9, Rust 1.75 or NEEDS CLARIFICATION]  
-**Primary Dependencies**: [e.g., FastAPI, UIKit, LLVM or NEEDS CLARIFICATION]  
-**Storage**: [if applicable, e.g., PostgreSQL, CoreData, files or N/A]  
-**Testing**: [e.g., pytest, XCTest, cargo test or NEEDS CLARIFICATION]  
-**Target Platform**: [e.g., Linux server, iOS 15+, WASM or NEEDS CLARIFICATION]
-**Project Type**: [single/web/mobile - determines source structure]  
-**Performance Goals**: [domain-specific, e.g., 1000 req/s, 10k lines/sec, 60 fps or NEEDS CLARIFICATION]  
-**Constraints**: [domain-specific, e.g., <200ms p95, <100MB memory, offline-capable or NEEDS CLARIFICATION]  
-**Scale/Scope**: [domain-specific, e.g., 10k users, 1M LOC, 50 screens or NEEDS CLARIFICATION]
+**Language/Version**: Ruby 3.x (GitHub Pages managed runtime)  
+**Primary Dependencies**: `github-pages` suite (`jekyll`, `jekyll-feed`, `jekyll-seo-tag`, `jekyll-sitemap`)  
+**Storage**: N/A (static content)  
+**Testing**: `bundle exec jekyll build` (must complete without warnings)  
+**Target Platform**: GitHub Pages → modern desktop & mobile browsers  
+**Project Type**: Static Jekyll site (minima-derived)  
+**Performance Goals**: Maintain Lighthouse scores ≥ 90 and limit asset bloat  
+**Constraints**: Only use GitHub Pages–supported plugins/themes; never commit `Gemfile.lock` or `_site/`; keep content accessible  
+**Scale/Scope**: Single-author personal site — document impacted pages, posts, includes, and assets
 
 ## Constitution Check
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+- [ ] GitHub Pages compatibility confirmed (supported plugins only, no `Gemfile.lock`, respects existing config)
+- [ ] Markdown front matter + two-space indentation defined for every new/changed page or post
+- [ ] Preview plan includes `bundle exec jekyll build` and `bundle exec jekyll serve [--drafts]` with warning remediation
+- [ ] Branch, spec, plan, and tasks artifacts captured and linked for review
+- [ ] Required updates to `.specify` templates/scripts or site navigation are identified (apply or flag TODO)
 
 ## Project Structure
 
@@ -48,51 +51,21 @@ specs/[###-feature]/
 ```
 
 ### Source Code (repository root)
-<!--
-  ACTION REQUIRED: Replace the placeholder tree below with the concrete layout
-  for this feature. Delete unused options and expand the chosen structure with
-  real paths (e.g., apps/admin, packages/something). The delivered plan must
-  not include Option labels.
--->
-
 ```
-# [REMOVE IF UNUSED] Option 1: Single project (DEFAULT)
-src/
-├── models/
-├── services/
-├── cli/
-└── lib/
-
-tests/
-├── contract/
-├── integration/
-└── unit/
-
-# [REMOVE IF UNUSED] Option 2: Web application (when "frontend" + "backend" detected)
-backend/
-├── src/
-│   ├── models/
-│   ├── services/
-│   └── api/
-└── tests/
-
-frontend/
-├── src/
-│   ├── components/
-│   ├── pages/
-│   └── services/
-└── tests/
-
-# [REMOVE IF UNUSED] Option 3: Mobile + API (when "iOS/Android" detected)
-api/
-└── [same as backend above]
-
-ios/ or android/
-└── [platform-specific structure: feature modules, UI flows, platform tests]
+repository-root/
+├── index.markdown
+├── about.markdown
+├── _posts/
+├── _drafts/
+├── _includes/
+├── _sass/
+├── assets/
+│   └── images/
+├── 404.html
+└── CNAME | favicon.ico | other root-level assets
 ```
 
-**Structure Decision**: [Document the selected structure and reference the real
-directories captured above]
+**Structure Decision**: [Reference precise directories/files touched (e.g., `_posts/2025-10-20-feature.md`, `assets/images/hero.jpg`, `_includes/nav.html`)]
 
 ## Complexity Tracking
 
@@ -102,4 +75,3 @@ directories captured above]
 |-----------|------------|-------------------------------------|
 | [e.g., 4th project] | [current need] | [why 3 projects insufficient] |
 | [e.g., Repository pattern] | [specific problem] | [why direct DB access insufficient] |
-

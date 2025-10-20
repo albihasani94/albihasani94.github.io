@@ -37,9 +37,9 @@ description: "Task list for Update Social Branding to X"
 
 **Purpose**: Ensure the repository has the official X asset and documented provenance before template work begins.
 
-- [ ] T001 Create `assets/custom_icons/` directory and add tracking file `assets/custom_icons/.gitkeep`.
-- [ ] T002 Download the official X SVG logo from the brand kit into `assets/custom_icons/x.svg` and record the source URL in `assets/custom_icons/README.md`.
-- [ ] T003 Optimize `assets/custom_icons/x.svg` with `svgo --multipass`, confirm the file size is ≤ 10 KB, and document the size and checksum in `assets/custom_icons/README.md`.
+- [X] T001 Create `assets/custom_icons/` directory and add tracking file `assets/custom_icons/.gitkeep`.
+- [X] T002 Download the official X SVG logo from the brand kit into `assets/custom_icons/x.svg` and record the source URL in `assets/custom_icons/README.md`.
+- [X] T003 Optimize `assets/custom_icons/x.svg` with `svgo --multipass`, confirm the file size is ≤ 10 KB, and document the size and checksum in `assets/custom_icons/README.md`.
 
 ---
 
@@ -47,8 +47,8 @@ description: "Task list for Update Social Branding to X"
 
 **Purpose**: Align global configuration with the new social presence before user story work.
 
-- [ ] T004 Update `_config.yml` social configuration to expose `site.x_username` pointing to `https://x.com/albihasani94` and remove active references to `site.twitter_username`.
-- [ ] T005 Run `bundle exec jekyll build` from project root `./` to confirm the site builds cleanly with the new asset and configuration baseline.
+- [X] T004 Update `_config.yml` social configuration to expose `site.x_username` pointing to `https://x.com/albihasani94` and remove active references to `site.twitter_username`.
+- [X] T005 Run `bundle exec jekyll build` from project root `./` to confirm the site builds cleanly with the new asset and configuration baseline.
 
 ---
 
@@ -60,9 +60,9 @@ description: "Task list for Update Social Branding to X"
 
 ### Implementation
 
-- [ ] T006 [US1] Replace the Twitter entry in `_includes/social.html` with an X link that loads `/assets/custom_icons/x.svg`, points to `https://x.com/albihasani94`, and sets `aria-label="Follow Albi on X"`.
-- [ ] T007 [US1] Ensure the X list item in `_includes/social.html` opens in a new tab with `target="_blank"` and `rel="noopener noreferrer"`, and the visible label displays “X”.
-- [ ] T008 [US1] Run `bundle exec jekyll serve --drafts` in project root `./` and validate icon rendering, link destination, and screen-reader announcement for the X social link.
+- [X] T006 [US1] Replace the Twitter entry in `_includes/social.html` with an X link that loads `/assets/custom_icons/x.svg`, points to `https://x.com/albihasani94`, and sets `aria-label="Follow Albi on X"`.
+- [X] T007 [US1] Ensure the X list item in `_includes/social.html` opens in a new tab with `target="_blank"` and `rel="noopener noreferrer"`, and the visible label displays “X”.
+- [X] T008 [US1] Run `bundle exec jekyll serve --drafts` in project root `./` and validate icon rendering, link destination, and screen-reader announcement for the X social link.
 
 **Checkpoint**: US1 content live-ready; build passes locally with zero warnings.
 
@@ -74,9 +74,9 @@ description: "Task list for Update Social Branding to X"
 
 **Independent Test**: Repository-wide search (excluding `_posts/`, `_drafts/`) yields no active “Twitter” references, and social UI still renders uniformly.
 
-- [ ] T009 [US2] Update `_config.yml` metadata (e.g., SEO or social link labels) to say “X” where the social link is surfaced, removing “Twitter” text outside historical content.
-- [ ] T010 [US2] Replace remaining non-legacy “Twitter” mentions by auditing repository root `./` (excluding `_posts/`, `_drafts/`) and document any intentional exceptions in `specs/001-x-brand-update/research.md`.
-- [ ] T011 [US2] Re-run `bundle exec jekyll serve --drafts` in project root `./` and verify layout, spacing, and styling for all social icons remain consistent after copy updates.
+- [X] T009 [US2] Update `_config.yml` metadata (e.g., SEO or social link labels) to say “X” where the social link is surfaced, removing “Twitter” text outside historical content.
+- [X] T010 [US2] Replace remaining non-legacy “Twitter” mentions by auditing repository root `./` (excluding `_posts/`, `_drafts/`) and document any intentional exceptions in `specs/001-x-brand-update/research.md`.
+- [X] T011 [US2] Re-run `bundle exec jekyll serve --drafts` in project root `./` and verify layout, spacing, and styling for all social icons remain consistent after copy updates.
 
 **Checkpoint**: US2 renders independently and is linkable without US1 dependencies.
 
@@ -88,8 +88,8 @@ description: "Task list for Update Social Branding to X"
 
 **Independent Test**: Documentation details expected referral names and manual validation steps sourced in analytics tooling.
 
-- [ ] T012 [US3] Expand the analytics guidance in `specs/001-x-brand-update/quickstart.md` to include explicit steps for validating X referral attribution post-deploy.
-- [ ] T013 [US3] Record the expected analytics referrer label (“x.com” or provider-specific equivalent) and validation notes in `specs/001-x-brand-update/research.md`.
+- [X] T012 [US3] Expand the analytics guidance in `specs/001-x-brand-update/quickstart.md` to include explicit steps for validating X referral attribution post-deploy.
+- [X] T013 [US3] Record the expected analytics referrer label (“x.com” or provider-specific equivalent) and validation notes in `specs/001-x-brand-update/research.md`.
 
 **Checkpoint**: US3 documentation enables attribution checks without additional implementation dependencies.
 
@@ -97,9 +97,9 @@ description: "Task list for Update Social Branding to X"
 
 ## Phase N: Polish & Cross-Cutting Concerns
 
-- [ ] T014 Document the official X asset source and optimization steps in `README.md` to assist future maintainers.
-- [ ] T015 Capture before/after screenshots of the social section and save them to `specs/001-x-brand-update/assets/x-icon-before-after.png` for PR evidence.
-- [ ] T016 Run final `bundle exec jekyll build` from project root `./` and confirm zero warnings ahead of review.
+- [X] T014 Document the official X asset source and optimization steps in `README.md` to assist future maintainers.
+- [X] T015 Capture before/after screenshots of the social section and save them to `specs/001-x-brand-update/assets/x-icon-before-after.png` for PR evidence.
+- [X] T016 Run final `bundle exec jekyll build` from project root `./` and confirm zero warnings ahead of review.
 
 ---
 

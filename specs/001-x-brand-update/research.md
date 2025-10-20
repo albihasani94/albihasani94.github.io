@@ -22,3 +22,11 @@
 - **Rationale**: Ensures consistent icon usage across site footer/header and maintains ARIA labeling.
 - **Alternatives considered**:
   - Embedding inline SVG markup per page (rejected: duplicates code and increases maintenance effort).
+
+## Reference Audit
+- Removed active “Twitter” copy from configuration and includes; remaining occurrences exist only within planning/specification documents that describe the migration history.
+- Legacy blog content under `_posts/` and `_drafts/` is intentionally untouched to preserve historical accuracy.
+
+## Analytics Attribution
+- Expected referral domain: `x.com` (with possible redirect domain `t.co` when shortened).
+- Validation approach: After deployment, trigger a real click-through and confirm analytics dashboards classify traffic under X-branded sources; document evidence alongside release artifacts.

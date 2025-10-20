@@ -24,7 +24,5 @@
 - Watch the console for warnings (broken links, missing includes) and resolve them before opening a PR.
 
 ## Commit & Pull Request Guidelines
-- Keep commits small with imperative, Title-Case messages similar to recent history (`Update README`, `Drop the version from github pages gem`).
-- Reference issues in the message body when applicable and explain the why alongside the what.
-- PRs should include a summary of visible changes, screenshots for UI tweaks, and call out any content needing review.
-- Confirm the Pages build will succeed by keeping `_site/` untracked and ensuring the preview build is clean.
+
+Follow the Pro Git book style for commits: a single-sentence subject in the imperative (aim for 50 characters or fewer), a blank line, then wrap any body text at ~72 characters to explain the why. Use the body only when it adds context or references issues. Pull requests should link issues, capture proof of tests, and call out deployment or configuration impacts. When this cheat sheet diverges from the contributor docs, update both to prevent drift.

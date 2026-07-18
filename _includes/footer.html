@@ -18,6 +18,7 @@
           {%- if site.email -%}
           <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
           {%- endif -%}
+          <li class="site-copyright">&copy; {{ site.time | date: "%Y" }} {{ site.author | escape }}</li>
         </ul>
       </div>
 
@@ -29,8 +30,6 @@
         <p>{{- site.description | escape -}}</p>
       </div>
     </div>
-
-    <p class="site-copyright">&copy; {{ site.time | date: "%Y" }} {{ site.author | escape }}</p>
 
   </div>
 

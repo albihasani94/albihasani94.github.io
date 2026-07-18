@@ -1,28 +1,61 @@
 # Repository Guidelines
 
-## Project Structure & Module Organization
-- The root directory stores page content (`index.markdown`, `about.markdown`) and standalone assets such as `404.html` and `favicon.ico`.
-- Jekyll posts live under `_posts/` using dated filenames; drafts stay in `_drafts/` until promoted.
-- Shared includes sit in `_includes/`, while Sass partials stay in `_sass/` and are composed through `assets/main.scss` alongside `assets/images/`.
-- The generated `_site/` output and Bundler artifacts are ignored; never commit them or `Gemfile.lock`.
+## Project Structure
 
-## Build, Test, and Development Commands
-- `bundle install --path vendor/bundle` — install Ruby gems locally inside `vendor/` so the repository stays clean.
-- `bundle exec jekyll serve` — start a local preview at http://127.0.0.1:4000 with incremental rebuilding.
-- `bundle exec jekyll serve --drafts` — include `_drafts/` content in the preview for editorial review.
-- `JEKYLL_ENV=production bundle exec jekyll build` — produce a production build in `_site/` to sanity-check GitHub Pages output.
+- This is a Jekyll site published from `master` by GitHub Pages at
+  `albinhasani.net`. Treat `_config.yml`, `CNAME`, and `Gemfile` as
+  deployment-sensitive files.
+- Root-level pages include `index.markdown`, `about.markdown`, and `404.html`.
+  Blog posts live in `_posts/` and use `YYYY-MM-DD-title.md` filenames. Put
+  unpublished work in `_drafts/`, creating that directory when needed.
+- `_includes/social.html` overrides the theme's social links. Sass partials in
+  `_sass/` are imported through `assets/main.scss`; images and icons belong
+  under `assets/`.
+- `_site/`, Jekyll caches, `.bundle/`, `vendor/`, and `Gemfile.lock` are ignored
+  local artifacts. Do not edit or commit them.
 
-## Coding Style & Naming Conventions
-- Posts and pages use YAML front matter matching the minima theme; prefer Markdown for prose and fenced code blocks with language tags.
-- Name posts `YYYY-MM-DD-title.md`; drafts can keep the same pattern until published.
-- Follow two-space indentation for HTML snippets, Markdown front matter, and SCSS, mirroring existing files; keep SCSS rules minimal and import via `assets/main.scss`.
-- Do not add a `Gemfile.lock`; GitHub Pages supplies dependency versions.
+## Build and Development Commands
+
+- `bundle install --path vendor/bundle` installs the dependencies in the
+  ignored `vendor/` directory.
+- `bundle exec jekyll serve` starts a preview at <http://127.0.0.1:4000>.
+- `bundle exec jekyll serve --drafts` includes content from `_drafts/`.
+- `JEKYLL_ENV=production bundle exec jekyll build` performs the production
+  build used for final validation.
+- Restart the Jekyll server after changing `_config.yml`; configuration changes
+  are not reloaded automatically.
+
+## Content and Style Conventions
+
+- Use YAML front matter on every page and post. Posts require `layout: post`,
+  `title`, and `date`; preserve an existing `permalink` because changing it
+  breaks published URLs. Add `description`, `image`, `categories`, `tags`, and
+  excerpt metadata when they improve discovery or the home-page summary.
+- Prefer Markdown for prose and fenced code blocks with a language identifier.
+  Put post images in `assets/images/` and use descriptive lowercase filenames.
+- Use two spaces for nested YAML and SCSS. For HTML and Liquid, match the
+  surrounding file and keep whitespace-control markers such as `{%-` intact.
+- Keep site-wide identity, plugin, and social-handle settings in `_config.yml`.
+  Update `_includes/social.html` only when the rendered social markup changes.
+- Keep Sass rules in `_sass/` and import new partials from `assets/main.scss`.
+  Avoid duplicating styles already supplied by the Minima theme.
 
 ## Testing Guidelines
-- Rely on `bundle exec jekyll build` to surface Liquid syntax or front matter errors before pushing.
-- Preview changes with `bundle exec jekyll serve (--drafts)` and click through navigation, feeds, and social cards.
-- Watch the console for warnings (broken links, missing includes) and resolve them before opening a PR.
+
+- Run the production build before pushing. Resolve Liquid, YAML, plugin, and
+  missing-include errors and review all warnings.
+- Preview affected pages for visible changes. Check navigation, social links,
+  `/feed.xml`, `/sitemap.xml`, image loading, and relevant SEO metadata.
+- Jekyll does not comprehensively validate hyperlinks. Manually check any
+  internal links, external links, and asset paths touched by the change.
+- Do not treat generated `_site/` files as source or include them in reviews.
 
 ## Commit & Pull Request Guidelines
 
-Follow the Pro Git book style for commits: a single-sentence subject in the imperative (aim for 50 characters or fewer), a blank line, then wrap any body text at ~72 characters to explain the why. Use the body only when it adds context or references issues. Pull requests should link issues, capture proof of tests, and call out deployment or configuration impacts. When this cheat sheet diverges from the contributor docs, update both to prevent drift.
+Follow the Pro Git style: write an imperative subject of about 50 characters or
+fewer. When a body adds useful context, separate it with a blank line and wrap
+it at about 72 characters; explain why the change is needed and reference
+issues when applicable. Pull requests should summarize visible changes, list
+validation performed, include screenshots for UI changes, and call out
+deployment or configuration impacts. Keep contributor-facing commands and
+deployment details here and in `README.md` synchronized.

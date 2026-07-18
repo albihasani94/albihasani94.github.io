@@ -6,6 +6,7 @@ permalink: /as-a-matter-of-jep
 categories: [java9]
 tags: [java9]
 excerpt_separator: <!--more-->
+description: "A concise guide to the JDK Enhancement Proposal process used to design and deliver changes to Java."
 ---
 
 The improvements and additions to the Java language come as a result of the JDK Enhancement Proposal process.

@@ -22,12 +22,34 @@ title: Albi's Blog
 author: Albin Hasani
 email: hi@albinhasani.net
 description: >- # this means to ignore newlines until "baseurl:"
-  Bytes of Java
+  Practical notes on Java, the JVM, cloud-native development, and
+  AI-assisted software engineering by Albin Hasani.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://albinhasani.net" # the base hostname & protocol for your site, e.g. http://example.com
+lang: en
 x_username: albihasani94
 github_username:  albihasani94
 linkedin_username: albihasani94
+twitter:
+  username: albihasani94
+  card: summary_large_image
+social:
+  name: Albin Hasani
+  links:
+    - https://github.com/albihasani94
+    - https://www.linkedin.com/in/albihasani94
+    - https://x.com/albihasani94
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image:
+        path: /assets/images/albis-blog-social.png
+        width: 1200
+        height: 630
+        alt: "Albi's Blog — Java, JVM, cloud, and AI engineering notes"
+
 # Build settings
 theme: minima
 

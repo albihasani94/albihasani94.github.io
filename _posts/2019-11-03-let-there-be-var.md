@@ -6,6 +6,7 @@ permalink: /let-there-be-var
 categories: [java10, var]
 tags: [java10, var]
 excerpt: "Being late to the game with var in Java? No problem."
+description: "How Java's local variable type inference works, where var can be used, and what it means for readable code."
 ---
 
 *This is old news.*

@@ -2,12 +2,17 @@
 layout: page
 title: About
 permalink: /about/
+description: "About Albin Hasani and the Java, JVM, cloud, and AI engineering topics covered on Albi's Blog."
 ---
 
-Welcome to my blog!
+Hi, I’m Albin Hasani. I write about Java, the JVM, cloud-native development,
+and AI-assisted software engineering.
 
-How dare you step here..!!
+This blog is where I work through language features, frameworks, conference
+notes, and ideas that are useful enough to keep and share. The goal is
+practical writing grounded in code and first-hand engineering experience.
 
-You made it on this farther corner of the internet so you must really have some free time in your hands.
-
-If you want this to be a fun blog, look elsewhere.
+You can also find me on
+[GitHub](https://github.com/albihasani94),
+[LinkedIn](https://www.linkedin.com/in/albihasani94), and
+[X](https://x.com/albihasani94).

@@ -6,6 +6,7 @@ permalink: /static-factory-collection-methods
 categories: [java9, collections]
 tags: [java9, collections]
 excerpt_separator: <!--more-->
+description: "A practical introduction to Java 9 collection factory methods including List.of, Set.of, and Map.of."
 ---
 
 In this post, I have written about some improvements to collections. I think these methods would provide a great starting spot for Java Developers looking to find what lurks beyond Java 8.

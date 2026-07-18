@@ -4,7 +4,7 @@ title: "Hello World"
 date: 2019-10-20
 excerpt_separator: <!--more-->
 permalink: /hello-world
-description: "An introduction to Albi's Blog and its focus on Java, software engineering, and ideas worth sharing."
+description: "An introduction to Albin Hasani's Blog and its focus on Java, software engineering, and ideas worth sharing."
 ---
 
 Hi friends. I'm going to share a new part of my work: a blog.

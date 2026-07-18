@@ -34,24 +34,3 @@ Site content lives in the standard Jekyll locations:
 
 To make changes, edit the relevant files, commit the updates, and push to
 `master`.
-
-## Local deployment
-
-First install:
-
-`bundle install --path vendor/bundle`
-
-Then:
-
-`bundle exec jekyll serve`
-
-or with drafts:
-
-`bundle exec jekyll serve --drafts`
-
-Restart the server after changing `_config.yml`, because Jekyll does not reload
-configuration changes automatically.
-
-Before pushing, run a production build:
-
-`JEKYLL_ENV=production bundle exec jekyll build`

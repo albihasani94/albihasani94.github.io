@@ -8,17 +8,18 @@
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
-          <li class="p-name">
+          <li>&copy; {{ site.time | date: "%Y" }}
+            <span class="p-name">
             {%- if site.author -%}
               {{ site.author | escape }}
             {%- else -%}
               {{ site.title | escape }}
             {%- endif -%}
+            </span>
           </li>
           {%- if site.email -%}
           <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
           {%- endif -%}
-          <li class="site-copyright">&copy; {{ site.time | date: "%Y" }} {{ site.author | escape }}</li>
         </ul>
       </div>
 

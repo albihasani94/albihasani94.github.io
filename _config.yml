@@ -24,9 +24,11 @@ email: hi@albinhasani.net
 description: >- # this means to ignore newlines until "baseurl:"
   Practical notes on Java, the JVM, cloud-native development, and
   AI-assisted software engineering by Albin Hasani.
+tagline: Java, JVM, cloud, and AI engineering
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://albinhasani.net" # the base hostname & protocol for your site, e.g. http://example.com
 lang: en
+locale: en_US
 x_username: albihasani94
 github_username:  albihasani94
 linkedin_username: albihasani94

@@ -3,3 +3,9 @@
 
 @import "minima";
 @import "code_syntax";
+
+.site-copyright {
+  color: $grey-color;
+  font-size: $small-font-size;
+  margin-bottom: 0;
+}

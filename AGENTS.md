@@ -34,34 +34,13 @@
 - Prefer Markdown for prose and fenced code blocks with a language identifier.
   Put post images in `assets/images/` and use descriptive lowercase filenames.
 - For every new post being published, suggest a dedicated social-preview image
-  for both X and LinkedIn. Prefer a 1200×630 PNG or JPEG in `assets/images/`
-  and set the post's `image.path`, `image.width`, `image.height`, and
-  `image.alt` front matter so `jekyll-seo-tag` emits the sharing metadata.
-- Use `assets/images/post-social-background.svg` as the authoring base for new
-  post previews. It carries the visual language established by
-  `fable-5-handover-social.png`: a deep navy field, a quiet square grid,
-  oversized cropped indigo circles, and a warm amber vertical rail. Keep the
-  background SVG free of post-specific text or illustrations so it remains
-  reusable.
-- Layer each post's identity over that base with a bold off-white sans-serif
-  title, a shorter muted blue-gray description, and a footer containing
-  `ALBINHASANI.NET` in amber plus `JAVA · JVM · CLOUD · AI` in blue-gray.
-  Keep text left-aligned, begin it to the right of the amber rail, preserve
-  generous negative space, and keep essential content at least 60 px from the
-  canvas edges. Aim for a title around 72–88 px, description around 28–32 px,
-  and footer around 22–26 px, reducing or wrapping text rather than crowding
-  it.
-- Keep the card copy to the post title, description, and established footer.
-  Do not invent eyebrow labels such as `FIVE KEEPERS`, alternate footer topics
-  such as `TOOLS · MEDIA`, button-like decorations, status dots, app grids, or
-  other post-specific motifs unless the user explicitly requests them.
-- Preserve the navy, indigo, amber, off-white, and blue-gray palette across
-  posts. When a design choice is ambiguous, reproduce the Fable card's
-  composition instead of embellishing it.
-- Use the reusable background SVG as an authoring input, but deliver and commit
-  only the finished 1200×630 PNG or JPEG unless the user explicitly asks to
-  keep a post-specific editable source. Check the raster at thumbnail size for
-  legibility and point front matter at it.
+  for both X and LinkedIn. Use `assets/images/post-social-template.svg` as the
+  complete source of truth and replace only its `{{POST_TITLE}}` and
+  `{{POST_DESCRIPTION}}` values; do not alter the fixed design or footer.
+- Render the completed template in a browser and export it to a 1200×630 PNG
+  or JPEG in `assets/images/`. Check it at thumbnail size and commit only the
+  raster export unless editable source was requested. Set `image.path`,
+  `image.width`, `image.height`, and `image.alt` in the post front matter.
 - Use two spaces for nested YAML and SCSS. For HTML and Liquid, match the
   surrounding file and keep whitespace-control markers such as `{%-` intact.
 - Keep site-wide identity, plugin, and social-handle settings in `_config.yml`.

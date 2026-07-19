@@ -5,7 +5,7 @@ permalink: /about/
 description: "About Albin Hasani and the Java, JVM, cloud, and AI engineering topics covered on Albin Hasani's Blog."
 ---
 
-Hi, I’m Albin Hasani. I write about Java, the JVM, cloud-native development,
+Hi, I’m Albin. I write about Java, the JVM, cloud-native development,
 and AI-assisted software engineering.
 
 This blog is where I work through language features, frameworks, conference

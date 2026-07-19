@@ -3,7 +3,7 @@ layout: post
 title: "Fable 5 Handover"
 date: 2026-07-19 12:48:00 +0200
 permalink: fable-5-handover
-description: "Structure a single prompt for Fable 5 to hand over this project. Focus on architecture evaluation, where we should focus next, human handover, agent handover, and any points I am missing."
+description: "A meta-prompt for asking Fable 5 to evaluate a project and produce a practical handover for engineers and AI agents."
 categories: [notes]
 tags: [ai, anthropic, claude-code]
 excerpt_separator: <!--more-->
@@ -21,15 +21,15 @@ Join me in some meta-prompting.
 
 Here is my prompt to get the prompt ready:
 
-```
-Structure a single prompt for Fable 5 to hand over this project. 
-Focus on architecture evaluation, where we should focus next, 
+```text
+Structure a single prompt for Fable 5 to hand over this project.
+Focus on architecture evaluation, where we should focus next,
 human handover, agent handover, and any points I am missing.
 ```
 
 ## The prompt out of the prompt
 
-```
+```markdown
 # Final Session — Handover & Judgment Transfer
 
 This is your last working session on **[PROJECT NAME]**. You have read access to the full codebase and to our Jira project **[JIRA PROJECT KEY]**. Your job today is not to write code — it is to transfer your judgment about this system to the people and agents who come after you.
@@ -105,6 +105,6 @@ Begin with Phase 1.
 
 ## The Result
 
-I'm going to keep the results private, because the project is private. I still had fun with Fable's handover. 
+I'm going to keep the results private, because the project is private. I still had fun with Fable's handover.
 
 Perhaps it has become not super-critical right now that they're permanently offering it: [Claude make Fable 5 permanent](https://simonwillison.net/2026/Jul/18/claude-make-fable-5-permanent/). You're just going to have to pay the premium.

@@ -24,7 +24,7 @@ Join me in some meta-prompting.
 
 ## The prompt to the prompt
 
-Here is my _(lazy, I know)_ prompt to get the prompt ready after a few initial discussions:
+Here is my final prompt _(lazy, I know)_ to get the prompt ready after a few **longer** initial discussions:
 
 ```text
 Structure a single prompt for Fable 5 to hand over this project.

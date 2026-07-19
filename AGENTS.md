@@ -33,6 +33,10 @@
   excerpt metadata when they improve discovery or the home-page summary.
 - Prefer Markdown for prose and fenced code blocks with a language identifier.
   Put post images in `assets/images/` and use descriptive lowercase filenames.
+- For every new post being published, suggest a dedicated social-preview image
+  for both X and LinkedIn. Prefer a 1200×630 PNG or JPEG in `assets/images/`
+  and set the post's `image.path`, `image.width`, `image.height`, and
+  `image.alt` front matter so `jekyll-seo-tag` emits the sharing metadata.
 - Use two spaces for nested YAML and SCSS. For HTML and Liquid, match the
   surrounding file and keep whitespace-control markers such as `{%-` intact.
 - Keep site-wide identity, plugin, and social-handle settings in `_config.yml`.

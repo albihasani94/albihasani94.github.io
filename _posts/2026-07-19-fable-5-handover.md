@@ -7,6 +7,11 @@ description: "A meta-prompt for asking Fable 5 to evaluate a project and produce
 categories: [notes]
 tags: [ai, anthropic, claude-code]
 excerpt_separator: <!--more-->
+image:
+  path: /assets/images/fable-5-handover-social.png
+  width: 1200
+  height: 630
+  alt: "Fable 5 Handover — a meta-prompt for creating human and AI project handovers"
 ---
 
 > Structure a single prompt for Fable 5 to hand over this project. Focus on architecture evaluation, where we should focus next, human handover, agent handover, and any points I am missing.

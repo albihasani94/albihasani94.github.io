@@ -18,7 +18,7 @@ image:
 
 <!--more-->
 
-Today, being Fable 5's last day (for normie plans), I would like to ask Fable for a prompt to ask himself to hand over the project. This way, weaker agents and us, flawed humans, can continue to work on his/her (are there any degenerates calling their agent _it_?) vision.
+Today, being Fable 5's last day (for normie plans), I would like to ask Claude for a prompt to ask Fable to hand over the project. This way, weaker agents and us, flawed humans, can continue to work on his/her (are there any degenerates calling their agent _it_?) vision.
 
 Join me in some meta-prompting.
 

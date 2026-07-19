@@ -2,7 +2,7 @@
 layout: page
 title: About
 permalink: /about/
-description: "About Albin Hasani and the Java, JVM, cloud, and AI engineering topics covered on Albin Hasani's Blog."
+description: "About Albin and the Java, JVM, cloud, and AI engineering topics covered on Albin Hasani's Blog."
 ---
 
 Hi, I’m Albin. I write about Java, the JVM, cloud-native development,

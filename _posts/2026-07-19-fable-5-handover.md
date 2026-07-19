@@ -120,7 +120,7 @@ docs/
     └── GLOSSARY.md
 ```
 
-I used `/max` effort to produce the initial prompt, then `/xhigh` effort to run the main prompt. Executing the main prompt took about 24 minutes.
+I used `/max` effort to produce the initial prompt, then `/xhigh` effort to run the main prompt. Executing the main prompt took about 24 minutes and spanned five parallel subagents (~650k tokens).
 
 I'm going to keep further results private, because the project is confidential. I still had fun with Fable's handover.
 

@@ -37,6 +37,26 @@
   for both X and LinkedIn. Prefer a 1200×630 PNG or JPEG in `assets/images/`
   and set the post's `image.path`, `image.width`, `image.height`, and
   `image.alt` front matter so `jekyll-seo-tag` emits the sharing metadata.
+- Use `assets/images/post-social-background.svg` as the authoring base for new
+  post previews. It carries the visual language established by
+  `fable-5-handover-social.png`: a deep navy field, a quiet square grid,
+  oversized cropped indigo circles, and a warm amber vertical rail. Keep the
+  background SVG free of post-specific text or illustrations so it remains
+  reusable.
+- Layer each post's identity over that base with a bold off-white sans-serif
+  title, a shorter muted blue-gray description, and a footer containing
+  `ALBINHASANI.NET` in amber plus a compact topic line in blue-gray. Keep text
+  left-aligned, begin it to the right of the amber rail, preserve generous
+  negative space, and keep essential content at least 60 px from the canvas
+  edges. Aim for a title around 72–88 px, description around 28–32 px, and
+  footer around 22–26 px, reducing or wrapping text rather than crowding it.
+- A post-specific motif may replace or complement one of the circles, but keep
+  it simple, geometric, low-contrast, and subordinate to the title. Preserve
+  the navy, indigo, amber, off-white, and blue-gray palette across posts; use
+  the Fable card as the reference when a design choice is ambiguous.
+- Treat SVGs as editable source assets. Export the finished post preview to a
+  1200×630 PNG or JPEG, check it at thumbnail size for legibility, and point
+  front matter at the raster export rather than the authoring SVG.
 - Use two spaces for nested YAML and SCSS. For HTML and Liquid, match the
   surrounding file and keep whitespace-control markers such as `{%-` intact.
 - Keep site-wide identity, plugin, and social-handle settings in `_config.yml`.

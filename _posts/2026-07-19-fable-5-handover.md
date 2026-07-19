@@ -105,6 +105,25 @@ Begin with Phase 1.
 
 ## The Result
 
+I used `/max` effort to produce the initial prompt, then `/Extra` effort to run the main prompt. Executing the main prompt took about 24 minutes.
+
+Claude produced a handover pack containing eight documents:
+
+```text
+docs/
+└── handover/
+    ├── INDEX.md
+    ├── ARCHITECTURE_EVALUATION.md
+    ├── NEXT_FOCUS.md
+    ├── HANDOVER_HUMAN.md
+    ├── HANDOVER_AGENT.md
+    ├── ASSUMPTIONS_AND_RISKS.md
+    ├── OPEN_QUESTIONS.md
+    └── GLOSSARY.md
+```
+
+The glossary was an additional deliverable Claude identified as necessary while exploring the project.
+
 I'm going to keep the results private, because the project is private. I still had fun with Fable's handover.
 
 Perhaps it has become not super-critical right now that they're permanently offering it: [Claude make Fable 5 permanent](https://simonwillison.net/2026/Jul/18/claude-make-fable-5-permanent/). You're just going to have to pay the premium.

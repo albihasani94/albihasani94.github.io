@@ -9,7 +9,7 @@ tags: [ai, anthropic, claude-code]
 excerpt_separator: <!--more-->
 ---
 
-> Structure a single prompt for Fable 5 to hand over this project. Focus on architecture evaluation, where we should focus next, human handover, agent handover, and any points I am missing."
+> Structure a single prompt for Fable 5 to hand over this project. Focus on architecture evaluation, where we should focus next, human handover, agent handover, and any points I am missing.
 
 <!--more-->
 
@@ -17,7 +17,7 @@ Today, being Fable 5's last day (for normie plans), I would like to ask Fable fo
 
 Join me in some meta-prompting.
 
-# The prompt to the prompt
+## The prompt to the prompt
 
 Here is my prompt to get the prompt ready:
 
@@ -27,7 +27,7 @@ Focus on architecture evaluation, where we should focus next,
 human handover, agent handover, and any points I am missing.
 ```
 
-# The prompt out of the prompt
+## The prompt out of the prompt
 
 ```
 # Final Session — Handover & Judgment Transfer
@@ -103,8 +103,8 @@ Write this one machine-first: terse, imperative, exact.
 Begin with Phase 1.
 ```
 
-# The Result
+## The Result
 
-I'm going to keep the results private, due to project's privacy. I still had fun with Fable's handover. 
+I'm going to keep the results private, because the project is private. I still had fun with Fable's handover. 
 
 Perhaps it has become not super-critical right now that they're permanently offering it: [Claude make Fable 5 permanent](https://simonwillison.net/2026/Jul/18/claude-make-fable-5-permanent/). You're just going to have to pay the premium.

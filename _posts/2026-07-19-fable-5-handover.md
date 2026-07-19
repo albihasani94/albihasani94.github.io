@@ -9,11 +9,11 @@ tags: [ai, anthropic, claude-code]
 excerpt_separator: <!--more-->
 ---
 
-Structure a single prompt for Fable 5 to hand over this project. Focus on architecture evaluation, where we should focus next, human handover, agent handover, and any points I am missing.
+> Structure a single prompt for Fable 5 to hand over this project. Focus on architecture evaluation, where we should focus next, human handover, agent handover, and any points I am missing."
 
 <!--more-->
 
-Today, being Fable 5's last day (for normie plans), I would like to ask Fable for a prompt to ask himself to hand over the project. This way, weaker agents and us, flawed humans, can continue to work on his/her (does anybody call their agent it?) vision.
+Today, being Fable 5's last day (for normie plans), I would like to ask Fable for a prompt to ask himself to hand over the project. This way, weaker agents and us, flawed humans, can continue to work on his/her (are there any degenerates calling their agent _it_?) vision.
 
 Join me in some meta-prompting.
 
@@ -104,3 +104,7 @@ Begin with Phase 1.
 ```
 
 # The Result
+
+I'm going to keep the results private, due to project's privacy. I still had fun with Fable's handover. 
+
+Perhaps it has become not super-critical right now that they're permanently offering it: [Claude make Fable 5 permanent](https://simonwillison.net/2026/Jul/18/claude-make-fable-5-permanent/). You're just going to have to pay the premium.

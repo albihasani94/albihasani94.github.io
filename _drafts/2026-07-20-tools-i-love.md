@@ -1,5 +1,8 @@
+# Tools I love
+
 ---
-layout: post
+
+## layout: post
 title: "Tools I Love"
 date: 2026-07-20 12:00:00 +0200
 permalink: tools-i-love
@@ -7,11 +10,8 @@ description: "Tools I love, plus a few honorable mentions across software, learn
 categories: [notes]
 tags: [tools, software, productivity, ai, media]
 excerpt_separator: <!--more-->
----
 
 I love simple and fast software. Software that feels native to the platform you are using, and is almost invisible. Frictionless.
-
-<!--more-->
 
 This is a list of the software I find myself using the most in my daily life nowadays. I am using them for a reason.
 There is nothing more diverging between people than "Personal Taste", so I have kept myself from pushing them to my family and friends, except in some occassions.
@@ -47,15 +47,13 @@ Could he have predicted that developers are going back to the terminal in 2026 t
 
 It is written in Zig and it boasts very fast loading times and GPU rendering. I prefer it over the electron GUIs of Claude and ChatGPT to talk to my agents.
 
-== until here
-
 ## Codex
 
 [Codex](https://openai.com/codex/)
 
 ## uBlock Origin Lite
 
-[uBlock Origin Lite]()
+[uBlock Origin Lite](https://github.com/uBlockOrigin/uBOL-home)
 
 ## NetNewsWire
 
@@ -64,15 +62,9 @@ It is written in Zig and it boasts very fast loading times and GPU rendering. I 
 ## Honorable mentions
 
 - [BBEdit](https://www.barebones.com/products/bbedit/)
-
 - [Babbel](https://www.babbel.com/)
-
 - [Docker](https://www.docker.com/)
-
-- [Apple TV+](https://tv.apple.com/)
-
+- [Apple TV](https://tv.apple.com/)
 - [Apple Music](https://music.apple.com)
-
 - [9292](https://9292.nl/en/app-and-website/download-the-app/)
-
 - [Apple Podcasts](https://podcasts.apple.com/us/new)

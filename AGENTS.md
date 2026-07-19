@@ -45,18 +45,23 @@
   reusable.
 - Layer each post's identity over that base with a bold off-white sans-serif
   title, a shorter muted blue-gray description, and a footer containing
-  `ALBINHASANI.NET` in amber plus a compact topic line in blue-gray. Keep text
-  left-aligned, begin it to the right of the amber rail, preserve generous
-  negative space, and keep essential content at least 60 px from the canvas
-  edges. Aim for a title around 72–88 px, description around 28–32 px, and
-  footer around 22–26 px, reducing or wrapping text rather than crowding it.
-- A post-specific motif may replace or complement one of the circles, but keep
-  it simple, geometric, low-contrast, and subordinate to the title. Preserve
-  the navy, indigo, amber, off-white, and blue-gray palette across posts; use
-  the Fable card as the reference when a design choice is ambiguous.
-- Treat SVGs as editable source assets. Export the finished post preview to a
-  1200×630 PNG or JPEG, check it at thumbnail size for legibility, and point
-  front matter at the raster export rather than the authoring SVG.
+  `ALBINHASANI.NET` in amber plus `JAVA · JVM · CLOUD · AI` in blue-gray.
+  Keep text left-aligned, begin it to the right of the amber rail, preserve
+  generous negative space, and keep essential content at least 60 px from the
+  canvas edges. Aim for a title around 72–88 px, description around 28–32 px,
+  and footer around 22–26 px, reducing or wrapping text rather than crowding
+  it.
+- Keep the card copy to the post title, description, and established footer.
+  Do not invent eyebrow labels such as `FIVE KEEPERS`, alternate footer topics
+  such as `TOOLS · MEDIA`, button-like decorations, status dots, app grids, or
+  other post-specific motifs unless the user explicitly requests them.
+- Preserve the navy, indigo, amber, off-white, and blue-gray palette across
+  posts. When a design choice is ambiguous, reproduce the Fable card's
+  composition instead of embellishing it.
+- Use the reusable background SVG as an authoring input, but deliver and commit
+  only the finished 1200×630 PNG or JPEG unless the user explicitly asks to
+  keep a post-specific editable source. Check the raster at thumbnail size for
+  legibility and point front matter at it.
 - Use two spaces for nested YAML and SCSS. For HTML and Liquid, match the
   surrounding file and keep whitespace-control markers such as `{%-` intact.
 - Keep site-wide identity, plugin, and social-handle settings in `_config.yml`.

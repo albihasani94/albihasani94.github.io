@@ -1,8 +1,5 @@
-# Tools I love
-
 ---
-
-## layout: post
+layout: post
 title: "Tools I Love"
 date: 2026-07-20 12:00:00 +0200
 permalink: tools-i-love
@@ -10,8 +7,11 @@ description: "Tools I love, plus a few honorable mentions across software, learn
 categories: [notes]
 tags: [tools, software, productivity, ai, media]
 excerpt_separator: <!--more-->
+---
 
 I love simple and fast software. Software that feels native to the platform you are using, and is almost invisible. Frictionless.
+
+<!--more-->
 
 This is a list of the software I find myself using the most in my daily life nowadays. I am using them for a reason.
 There is nothing more diverging between people than "Personal Taste", so I have kept myself from pushing them to my family and friends, except in some occassions.

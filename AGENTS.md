@@ -31,6 +31,9 @@
   `title`, and `date`; preserve an existing `permalink` because changing it
   breaks published URLs. Add `description`, `image`, `categories`, `tags`, and
   excerpt metadata when they improve discovery or the home-page summary.
+- When editing `about.markdown`, set `seo.date_modified` in its front matter
+  to the current date. GitHub Pages cannot derive it automatically, and a
+  stale value is worse than none.
 - Prefer Markdown for prose and fenced code blocks with a language identifier.
   Put post images in `assets/images/` and use descriptive lowercase filenames.
 - For every new post being published, suggest a dedicated social-preview image

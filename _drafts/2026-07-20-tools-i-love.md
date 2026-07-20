@@ -63,8 +63,6 @@ It is written in Zig and it boasts very fast loading times and GPU rendering. I 
 
 - [BBEdit](https://www.barebones.com/products/bbedit/)
 - [Babbel](https://www.babbel.com/)
-- [Docker](https://www.docker.com/)
 - [Apple TV](https://tv.apple.com/)
-- [Apple Music](https://music.apple.com)
 - [9292](https://9292.nl/en/app-and-website/download-the-app/)
 - [Apple Podcasts](https://podcasts.apple.com/us/new)

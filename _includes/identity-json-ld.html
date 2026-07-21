@@ -1,0 +1,48 @@
+{%- comment -%}
+  Identity JSON-LD, embedded in the body of the page that includes it
+  (about.markdown). JSON-LD is valid outside <head>. Other pages link
+  here through the author.url that jekyll-seo-tag emits.
+{%- endcomment -%}
+{%- assign person = site.person -%}
+{%- assign canonical_url = page.url | absolute_url -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": {{ person.id | jsonify }},
+      "name": {{ person.name | jsonify }},
+      "givenName": {{ person.given_name | jsonify }},
+      "familyName": {{ person.family_name | jsonify }},
+      "alternateName": {{ person.alternate_name | jsonify }},
+      "url": {{ person.profile_url | jsonify }},
+      "jobTitle": {{ person.job_title | jsonify }},
+      "description": {{ person.description | jsonify }},
+      "disambiguatingDescription": {{ person.disambiguating_description | jsonify }},
+      "sameAs": {{ site.social.links | jsonify }},
+      "knowsAbout": {{ person.knows_about | jsonify }},
+      "workLocation": {
+        "@type": "Place",
+        "name": {{ person.location | jsonify }}
+      }
+    }{% if canonical_url == person.profile_url %},
+    {
+      "@type": "ProfilePage",
+      "@id": {{ canonical_url | append: "#profile-page" | jsonify }},
+      "url": {{ canonical_url | jsonify }},
+      "name": {{ person.name | jsonify }},
+      "description": {{ page.description | jsonify }},
+      {%- if page.seo.date_created %}
+      "dateCreated": {{ page.seo.date_created | date_to_xmlschema | jsonify }},
+      {%- endif %}
+      {%- if page.seo.date_modified %}
+      "dateModified": {{ page.seo.date_modified | date_to_xmlschema | jsonify }},
+      {%- endif %}
+      "mainEntity": {
+        "@id": {{ person.id | jsonify }}
+      }
+    }{% endif %}
+  ]
+}
+</script>

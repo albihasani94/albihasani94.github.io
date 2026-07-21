@@ -35,12 +35,38 @@ linkedin_username: albihasani94
 twitter:
   username: albihasani94
   card: summary_large_image
+header_pages:
+  - about.markdown
+
 social:
-  name: Albin Hasani
   links:
     - https://github.com/albihasani94
     - https://www.linkedin.com/in/albihasani94
     - https://x.com/albihasani94
+
+person:
+  id: "https://albinhasani.net/about/#person"
+  profile_url: "https://albinhasani.net/about/"
+  name: Albin Hasani
+  given_name: Albin
+  family_name: Hasani
+  alternate_name: albihasani94
+  job_title: Software Engineer
+  location: Amsterdam, Netherlands
+  description: >-
+    Amsterdam-based software engineer and technical writer specializing in
+    Java, Spring, backend systems, cloud platforms, and AI-assisted development.
+  disambiguating_description: >-
+    The Amsterdam-based software engineer and technical writer behind
+    albinhasani.net, known online as albihasani94, writing about Java,
+    the JVM, and backend systems.
+  knows_about:
+    - Java
+    - Java Virtual Machine
+    - Spring Framework
+    - Backend software engineering
+    - Cloud-native development
+    - AI-assisted software development
 
 defaults:
   - scope:
@@ -51,6 +77,11 @@ defaults:
         width: 1200
         height: 630
         alt: "Albin Hasani's Blog — Java, JVM, cloud, and AI engineering"
+  - scope:
+      path: ""
+      type: posts
+    values:
+      author: Albin Hasani
 
 # Build settings
 theme: minima

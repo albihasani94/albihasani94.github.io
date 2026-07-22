@@ -48,6 +48,11 @@
   surrounding file and keep whitespace-control markers such as `{%-` intact.
 - Keep site-wide identity, plugin, and social-handle settings in `_config.yml`.
   Update `_includes/social.html` only when the rendered social markup changes.
+- `_includes/identity-json-ld.html` owns the canonical `Person` and
+  `ProfilePage` graph. Keep `site.person.id` stable, keep
+  `ProfilePage.mainEntity` pointing to that identifier, and reuse the identifier
+  instead of minting additional Person IDs. Use absolute canonical URLs and
+  reserve `sameAs` for authoritative profiles belonging to Albin.
 - Keep Sass rules in `_sass/` and import new partials from `assets/main.scss`.
   Avoid duplicating styles already supplied by the Minima theme.
 
@@ -57,6 +62,25 @@
   missing-include errors and review all warnings.
 - Preview affected pages for visible changes. Check navigation, social links,
   `/feed.xml`, `/sitemap.xml`, image loading, and relevant SEO metadata.
+- When structured data changes, run the production build and validate the
+  rendered HTML for the homepage, About page, and a representative post using
+  the code-input modes of both the Schema.org Validator and Google's Rich
+  Results Test. After deployment, use their URL modes when public
+  accessibility, crawling, or production rendering also needs verification.
+  Schema.org checks general vocabulary usage; Google's tool reports only markup
+  used by supported Google Search features, so their results are not expected
+  to match.
+- Under the current GitHub Pages dependency set, `jekyll-seo-tag` 2.8.0 copies
+  `image.alt` into its JSON-LD `ImageObject`, although `alt` is not a Schema.org
+  property. Preserve `image.alt` because it generates valid Open Graph and X
+  image-alt metadata. Treat the repeated Schema.org warning as a known plugin
+  limitation and re-evaluate it after dependency upgrades.
+- Minima's post layout emits `BlogPosting` Microdata while `jekyll-seo-tag`
+  emits a separate JSON-LD `BlogPosting`. Two detected post items are therefore
+  expected. The JSON-LD author includes the profile URL; Minima's Microdata
+  author includes only the name. Treat a missing optional `author.url` on the
+  Microdata item as non-blocking unless the post layout is intentionally
+  overridden.
 - Jekyll does not comprehensively validate hyperlinks. Manually check any
   internal links, external links, and asset paths touched by the change.
 - Do not treat generated `_site/` files as source or include them in reviews.

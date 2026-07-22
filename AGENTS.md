@@ -40,6 +40,30 @@
   not update `.ruby-version`; handle Ruby updates manually and regenerate
   `Gemfile.lock`.
 
+## External Services, Branding, and Tools
+
+- When adding or changing a link, icon, badge, embed, or integration for an
+  external service, verify the current canonical URL, account identifier, and
+  branding against a first-party source at the time of the change.
+- Use current official brand assets from the service owner's brand kit, press
+  or media page, production site, or officially distributed package. Prefer an
+  official SVG for icons when one exists. Do not silently substitute Simple
+  Icons, Font Awesome, community icon sets, search-result downloads, traced or
+  generated artwork, or a remembered version of the mark.
+- Preserve official geometry, proportions, and usage guidance. Do not redraw,
+  distort, or recolor a mark unless the owner's guidelines allow it. When a
+  compact mark is taken from an official wordmark, keep its path geometry
+  unchanged and record the first-party source in the asset or nearby code.
+- For integrations and verification, prefer the service owner's official
+  connector, API, SDK, CLI, documentation, and validation tools over browser
+  automation or third-party wrappers. Use a third-party tool only when the
+  official option cannot perform the required task and the user approves the
+  fallback.
+- If the required official asset, source, connector, or tool is unavailable,
+  inaccessible, incompatible with the project, or cannot be verified, stop and
+  prompt the user before approximating the result, installing or switching to
+  an unofficial alternative, or omitting the branded or integrated element.
+
 ## Content and Style Conventions
 
 - Use YAML front matter on every page and post. Posts require `layout: post`,

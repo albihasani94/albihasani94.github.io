@@ -32,6 +32,7 @@ locale: en_US
 x_username: albihasani94
 github_username:  albihasani94
 linkedin_username: albihasani94
+goodreads_username: albihasani94
 twitter:
   username: albihasani94
   card: summary_large_image
@@ -43,6 +44,7 @@ social:
     - https://github.com/albihasani94
     - https://www.linkedin.com/in/albihasani94
     - https://x.com/albihasani94
+    - https://www.goodreads.com/albihasani94
 
 person:
   id: "https://albinhasani.net/about/#person"

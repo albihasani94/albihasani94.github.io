@@ -20,7 +20,6 @@ practical writing grounded in code and first-hand engineering experience.
 
 I am currently very fond of working with AI, exploring these tools, planning and playing with, steering and tailoring them.
 I am so invested in them sometimes at the risk of burning out. 
-
 While I am very impressed by their potential to reshape the coding angle of software development, I still pretty much review every line of code myself; and one thing I do not see them replacing is human connection. I find that precious, and this is the reason why I will not be using any AI to write these blog entries. As much as I am impressed by their techincal abilities, their idea of human communication leaves a bad taste in my mouth.
 
 I believe the potential of these tools is a huge paradigm shift, but their potential lies elsewhere, not as a replacement to human interactions, and humans' quest to reach someone, to make art, and to be understood.

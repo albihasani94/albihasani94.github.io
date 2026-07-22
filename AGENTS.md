@@ -2,16 +2,21 @@
 
 ## Project Structure
 
-- This is a Jekyll site published from `master` by GitHub Pages at
-  `albinhasani.net`. Treat `_config.yml`, `CNAME`, `Gemfile`, `Gemfile.lock`,
+- This is a Jekyll site built from `master` by
+  `.github/workflows/pages.yml` and published through GitHub Pages at
+  `albinhasani.net`. The Pages publishing source must remain **GitHub
+  Actions**, and the `github-pages` environment must permit deployments only
+  from `master`. Treat `_config.yml`, `CNAME`, `Gemfile`, `Gemfile.lock`,
   `.ruby-version`, and `.github/workflows/pages.yml` as deployment-sensitive
   files.
+- Do not restore the `github-pages` gem unless intentionally returning to
+  GitHub's managed Jekyll build.
 - Root-level pages include `index.markdown`, `about.markdown`, and `404.html`.
   Blog posts live in `_posts/` and use `YYYY-MM-DD-title.md` filenames. Put
   unpublished work in `_drafts/`, creating that directory when needed.
 - `_includes/social.html` overrides the theme's social links. Sass partials in
-  `_sass/` are imported through `assets/main.scss`; images and icons belong
-  under `assets/`.
+  `_sass/` are loaded through `assets/main.scss` using `@use`; images and icons
+  belong under `assets/`.
 - `_site/`, Jekyll caches, `.bundle/`, and `vendor/` are ignored local
   artifacts. Do not edit or commit them. `Gemfile.lock` is tracked; update it
   only through Bundler and review its diff.
@@ -22,8 +27,8 @@
   install path; `bundle install` installs the locked dependencies there.
 - `bundle exec jekyll serve` starts a preview at <http://127.0.0.1:4000>.
 - `bundle exec jekyll serve --drafts` includes content from `_drafts/`.
-- `JEKYLL_ENV=production bundle exec jekyll build` performs the production
-  build used for final validation.
+- `JEKYLL_ENV=production bundle exec jekyll build --trace` performs the
+  production build used for final validation.
 - Restart the Jekyll server after changing `_config.yml`; configuration changes
   are not reloaded automatically.
 
@@ -55,11 +60,16 @@
   `ProfilePage.mainEntity` pointing to that identifier, and reuse the identifier
   instead of minting additional Person IDs. Use absolute canonical URLs and
   reserve `sameAs` for authoritative profiles belonging to Albin.
-- Keep Sass rules in `_sass/` and import new partials from `assets/main.scss`.
-  Avoid duplicating styles already supplied by the Minima theme.
+- Keep Sass rules in `_sass/` and load new partials from `assets/main.scss`
+  using `@use`. Avoid duplicating styles already supplied by the Minima theme.
 
 ## Testing Guidelines
 
+- Changes to `Gemfile`, `Gemfile.lock`, `.ruby-version`, `_config.yml`, or the
+  Pages workflow require a production build.
+- When editing the Pages workflow, run Actionlint, preserve the separation
+  between read-only build permissions and deployment permissions, and verify
+  that pull requests build without deploying.
 - Run the production build before pushing. Resolve Liquid, YAML, plugin, and
   missing-include errors and review all warnings.
 - Preview affected pages for visible changes. Check navigation, social links,
@@ -86,6 +96,8 @@
 - Jekyll does not comprehensively validate hyperlinks. Manually check any
   internal links, external links, and asset paths touched by the change.
 - Do not treat generated `_site/` files as source or include them in reviews.
+- After deployment, confirm that both workflow jobs succeeded and check the
+  homepage, `/about/`, `/feed.xml`, `/sitemap.xml`, and `/assets/main.css`.
 
 ## Commit & Pull Request Guidelines
 

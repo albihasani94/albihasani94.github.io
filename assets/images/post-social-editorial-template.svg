@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+  width="1200"
+  height="630"
+  viewBox="0 0 1200 630"
+  role="img"
+  aria-labelledby="title description">
+  <!--
+    Reusable brand frame only.
+    Analyze the full post before authoring the intentionally empty post-visual
+    group. Never inherit a metaphor from a previous post or example.
+  -->
+  <title id="title">{{POST_TITLE}}</title>
+  <desc id="description">Branded social preview for {{POST_TITLE}}</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#12182f"/>
+      <stop offset="1" stop-color="#10162c"/>
+    </linearGradient>
+    <linearGradient id="rail" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffc13b"/>
+      <stop offset="1" stop-color="#ffa426"/>
+    </linearGradient>
+    <linearGradient id="visual-accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffa426" stop-opacity=".2"/>
+      <stop offset=".58" stop-color="#ffc13b"/>
+      <stop offset="1" stop-color="#ffa426" stop-opacity=".52"/>
+    </linearGradient>
+    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path
+        d="M 44 0 L 0 0 0 44"
+        fill="none"
+        stroke="#8290b6"
+        stroke-opacity=".1"
+        stroke-width="1"/>
+    </pattern>
+    <filter id="amber-glow" x="-40%" y="-200%" width="180%" height="500%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <style>
+      .post-copy,
+      .post-label,
+      .site-name,
+      .site-topics {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      .post-title {
+        fill: #f5f1e8;
+        font-size: 86px;
+        font-weight: 800;
+        letter-spacing: -2px;
+      }
+
+      .visual-line {
+        fill: none;
+        stroke: #8798d4;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2.6;
+      }
+
+      .visual-detail {
+        fill: none;
+        stroke: #6170aa;
+        stroke-dasharray: 8 9;
+        stroke-linecap: round;
+        stroke-width: 2;
+      }
+
+      .visual-muted {
+        fill: none;
+        stroke: #536394;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2;
+      }
+    </style>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#background)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <circle cx="1070" cy="20" r="255" fill="#27325e" fill-opacity=".76"/>
+  <circle cx="930" cy="666" r="190" fill="#222c56" fill-opacity=".68"/>
+  <rect x="64" y="72" width="10" height="486" rx="5" fill="url(#rail)"/>
+
+  <!-- For a two-line title, use tspans with x="112" and dy="76". -->
+  <text class="post-copy post-title" x="112" y="215">{{POST_TITLE}}</text>
+
+  <g aria-label="Post category">
+    <rect
+      x="112"
+      y="250"
+      width="230"
+      height="48"
+      rx="9"
+      fill="#18213f"
+      stroke="#53669f"
+      stroke-width="2"/>
+    <text class="post-label"
+      x="137"
+      y="282"
+      fill="#ffc13b"
+      font-size="22"
+      font-weight="800"
+      letter-spacing="2">{{POST_LABEL}}</text>
+  </g>
+
+  <!--
+    Intentionally empty. After analyzing the post, place one post-specific
+    geometric metaphor here. The recommended visual stage is x=280..1135 and
+    y=305..515. Reuse the visual-line, visual-detail and visual-muted classes.
+  -->
+  <g id="post-visual" aria-label="Post-specific visual metaphor">
+  </g>
+
+  <text class="site-name"
+    x="112"
+    y="551"
+    fill="#ffc13b"
+    font-size="24"
+    font-weight="800"
+    letter-spacing="2">ALBINHASANI.NET</text>
+  <text class="site-topics"
+    x="380"
+    y="551"
+    fill="#9ca9c9"
+    font-size="22"
+    font-weight="500">Java · JVM · Cloud · AI</text>
+</svg>

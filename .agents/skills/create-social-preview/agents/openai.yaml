@@ -1,0 +1,4 @@
+interface:
+  display_name: "Create Social Preview"
+  short_description: "Create branded LinkedIn and X post cards"
+  default_prompt: "Use $create-social-preview to design and export a social-preview image for this post."

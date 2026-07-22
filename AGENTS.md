@@ -51,10 +51,16 @@
   stale value is worse than none.
 - Prefer Markdown for prose and fenced code blocks with a language identifier.
   Put post images in `assets/images/` and use descriptive lowercase filenames.
-- For every new post being published, suggest a dedicated social-preview image
-  for both X and LinkedIn. Use `assets/images/post-social-template.svg` as the
-  complete source of truth and replace only its `{{POST_TITLE}}` and
-  `{{POST_DESCRIPTION}}` values; do not alter the fixed design or footer.
+- For every new post being published, create a dedicated social-preview image
+  for both X and LinkedIn by following the project-local
+  `$create-social-preview` skill in
+  `.agents/skills/create-social-preview/SKILL.md`. Default to
+  `assets/images/post-social-editorial-template.svg`: read the full post first,
+  derive its metaphor from the content, and only then fill the template's
+  intentionally empty `post-visual` group. Preserve the fixed brand and footer;
+  never inherit or lightly reskin a previous post's visual. Keep
+  `assets/images/post-social-template.svg` as the conservative text-first
+  fallback.
 - Render the completed template in a browser and export it to a 1200×630 PNG
   or JPEG in `assets/images/`. Check it at thumbnail size and commit only the
   raster export unless editable source was requested. Set `image.path`,

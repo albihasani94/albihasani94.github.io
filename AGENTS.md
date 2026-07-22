@@ -3,21 +3,23 @@
 ## Project Structure
 
 - This is a Jekyll site published from `master` by GitHub Pages at
-  `albinhasani.net`. Treat `_config.yml`, `CNAME`, and `Gemfile` as
-  deployment-sensitive files.
+  `albinhasani.net`. Treat `_config.yml`, `CNAME`, `Gemfile`, `Gemfile.lock`,
+  `.ruby-version`, and `.github/workflows/pages.yml` as deployment-sensitive
+  files.
 - Root-level pages include `index.markdown`, `about.markdown`, and `404.html`.
   Blog posts live in `_posts/` and use `YYYY-MM-DD-title.md` filenames. Put
   unpublished work in `_drafts/`, creating that directory when needed.
 - `_includes/social.html` overrides the theme's social links. Sass partials in
   `_sass/` are imported through `assets/main.scss`; images and icons belong
   under `assets/`.
-- `_site/`, Jekyll caches, `.bundle/`, `vendor/`, and `Gemfile.lock` are ignored
-  local artifacts. Do not edit or commit them.
+- `_site/`, Jekyll caches, `.bundle/`, and `vendor/` are ignored local
+  artifacts. Do not edit or commit them. `Gemfile.lock` is tracked; update it
+  only through Bundler and review its diff.
 
 ## Build and Development Commands
 
-- `bundle install --path vendor/bundle` installs the dependencies in the
-  ignored `vendor/` directory.
+- `bundle config set --local path vendor/bundle` configures the ignored local
+  install path; `bundle install` installs the locked dependencies there.
 - `bundle exec jekyll serve` starts a preview at <http://127.0.0.1:4000>.
 - `bundle exec jekyll serve --drafts` includes content from `_drafts/`.
 - `JEKYLL_ENV=production bundle exec jekyll build` performs the production
@@ -70,7 +72,7 @@
   Schema.org checks general vocabulary usage; Google's tool reports only markup
   used by supported Google Search features, so their results are not expected
   to match.
-- Under the current GitHub Pages dependency set, `jekyll-seo-tag` 2.8.0 copies
+- Under the current locked dependency set, `jekyll-seo-tag` 2.9.0 copies
   `image.alt` into its JSON-LD `ImageObject`, although `alt` is not a Schema.org
   property. Preserve `image.alt` because it generates valid Open Graph and X
   image-alt metadata. Treat the repeated Schema.org warning as a known plugin

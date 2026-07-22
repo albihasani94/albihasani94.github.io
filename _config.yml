@@ -86,6 +86,11 @@ defaults:
 # Build settings
 theme: minima
 
+sass:
+  quiet_deps: true
+  sourcemap: development
+  style: compressed
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag

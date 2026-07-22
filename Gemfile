@@ -1,11 +1,12 @@
 source "https://rubygems.org"
 
-# Use the GitHub Pages gem so the local environment matches the production build.
-gem "github-pages", group: :jekyll_plugins
+# Keep the site on the current Jekyll 4 release series.
+gem "jekyll", "~> 4.4.1"
+gem "minima", "~> 2.5.2"
 
-# Explicitly list the plugins that GitHub Pages will load for this site.
+# Plugins enabled in _config.yml.
 group :jekyll_plugins do
-  gem "jekyll-feed"
-  gem "jekyll-seo-tag"
-  gem "jekyll-sitemap"
+  gem "jekyll-feed", "~> 0.17"
+  gem "jekyll-seo-tag", "~> 2.9.0"
+  gem "jekyll-sitemap", "~> 1.4"
 end

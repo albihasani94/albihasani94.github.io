@@ -32,6 +32,14 @@
 - Restart the Jekyll server after changing `_config.yml`; configuration changes
   are not reloaded automatically.
 
+## Dependency Updates
+
+- `.github/dependabot.yml` checks Bundler and GitHub Actions monthly. Minor and
+  patch updates are grouped; major updates receive separate pull requests.
+- Review updates before merging and run production validation. Dependabot does
+  not update `.ruby-version`; handle Ruby updates manually and regenerate
+  `Gemfile.lock`.
+
 ## Content and Style Conventions
 
 - Use YAML front matter on every page and post. Posts require `layout: post`,
@@ -67,7 +75,7 @@
 
 - Changes to `Gemfile`, `Gemfile.lock`, `.ruby-version`, `_config.yml`, or the
   Pages workflow require a production build.
-- When editing the Pages workflow, run Actionlint, preserve the separation
+- When editing the Pages workflow, preserve the separation
   between read-only build permissions and deployment permissions, and verify
   that pull requests build without deploying.
 - Run the production build before pushing. Resolve Liquid, YAML, plugin, and

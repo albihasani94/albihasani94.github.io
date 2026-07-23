@@ -78,13 +78,14 @@
 - For every new post being published, create a dedicated social-preview image
   for both X and LinkedIn by following the project-local
   `$create-social-preview` skill in
-  `.agents/skills/create-social-preview/SKILL.md`. Default to
-  `assets/images/post-social-editorial-template.svg`: read the full post first,
-  derive its metaphor from the content, and only then fill the template's
-  intentionally empty `post-visual` group. Preserve the fixed brand and footer;
-  never inherit or lightly reskin a previous post's visual. Keep
-  `assets/images/post-social-template.svg` as the conservative text-first
-  fallback.
+  `.agents/skills/create-social-preview/SKILL.md`. Default to the fixed
+  `assets/images/post-social-editorial-template.svg` with an empty
+  `post-visual` group. Use the exact post title and set the single label to the
+  uppercase first category and first tag joined by ` · `. Do not add a
+  description, metaphor, illustration, icon or photograph unless explicitly
+  requested. Never change taxonomy to alter the label. Use
+  `assets/images/post-social-template.svg` only when the description-based
+  classic template is explicitly requested.
 - Render the completed template in a browser and export it to a 1200×630 PNG
   or JPEG in `assets/images/`. Check it at thumbnail size and commit only the
   raster export unless editable source was requested. Set `image.path`,

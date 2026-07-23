@@ -75,6 +75,12 @@
   stale value is worse than none.
 - Prefer Markdown for prose and fenced code blocks with a language identifier.
   Put post images in `assets/images/` and use descriptive lowercase filenames.
+- Encode in-post raster images as WebP, resized to at most 1600 px wide
+  (2× the ~740 px content column) with height following the aspect ratio, at
+  quality 75–82. Use Google's official WebP tooling: [Squoosh](https://squoosh.app)
+  or `cwebp` from libwebp (`brew install webp`). Give every image descriptive
+  alt text, not a filename. Social-preview images are the exception: keep them
+  1200×630 PNG or JPEG for crawler compatibility.
 - For every new post being published, create a dedicated social-preview image
   for both X and LinkedIn by following the project-local
   `$create-social-preview` skill in

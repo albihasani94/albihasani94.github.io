@@ -39,7 +39,9 @@ Omg, no. This is not how I envision AI. As with every technology, there is going
 
 I've stated it before that I am going to have a very bad time deciding to buy any non-fiction book written after 2022. If you make a search on book writing since AI came out you will see a tripling of published books yearly. Not surprised.
 
-<blockquote class="twitter-tweet"><p lang="tl" dir="ltr">hahahahhaha <a href="https://t.co/Sdsl76mNyS">pic.twitter.com/Sdsl76mNyS</a></p>&mdash; John Arnold (@johnarnold) <a href="https://x.com/johnarnold/status/2051397868544565655?ref_src=twsrc%5Etfw">May 4, 2026</a></blockquote> <script async src="https://platform.x.com/widgets.js" charset="utf-8"></script>
+![published-books-yearly-since-2022](/assets/images/books-published-since-2022.jpg)
+
+https://www.nber.org/digest/202605/how-large-language-models-are-reshaping-book-market?page=1&perPage=50
 
 While navigating Amazon myself, I have come across many such cases polluting the technical books industry. Many people fall for these *scams*. It's the 2026 equivalent of a Nigerian prince leaving you their fortune.
 

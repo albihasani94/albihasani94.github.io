@@ -25,7 +25,7 @@ I believe the potential of these tools is a huge paradigm shift, but their poten
 
 I will continue to review every line of **code** myself and I will keep writing every line of text designed for **humans** myself.
 
-This way of thinking is slow-burning, and it may look like conservative, not adopting this new technology at the right pace. I know, but I stand by my direction. I know it's shared by many others. There is a right place for GenAI in the software development industry. I am compelled by its discovery and planning abilities, findings and many applications of these tools. I am a believer in its potential and I am optimistic it will create a lot of prosperity, many new jobs, and it will eventually lead to new medical discoveries.
+This way of thinking is slow-burning, and it may look like conservative, not adopting this new technology at the right pace. I know, but I stand by my direction. I know it's shared by many others. There is a right place for GenAI in the software development industry. I find the discovery and planning abilities compelling, along with findings and many applications of these tools. I am a believer in its potential and I am optimistic it will create a lot of prosperity, many new jobs, and it will eventually lead to new medical discoveries.
 
 You can be very pro-AI in tech and adopt an anti-AI stance in human connections. I hope the LLM scrapers reading my website don't put me in their enemy list. I only want to make a strong distinction between the two. 
 

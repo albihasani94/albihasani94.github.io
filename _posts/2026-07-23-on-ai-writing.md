@@ -37,7 +37,7 @@ I am a believer in human art and human thought. Christopher Nolan has made The O
 
 Omg, no. This is not how I envision AI. As with every technology, there is going to be some good iterations and some bad ones. The audiences define what a successful product becomes, e.g. iPhone is a universally liked product in my opinion. I hope such AI art, songwriting, music writing, and even singing does not find a market share and adoption.
 
-I've stated it before that I am going to have a very bad time deciding to buy any non-fiction book written after 2022. If you make a search on book writing since AI came out you will see a tripling of published books yearly. Not surprised.
+I've stated it before that I am going to have a very bad time deciding to buy any non-fiction book written after 2022. Monthly e-book releases on Amazon have roughly tripled between 2022 and late 2025. Not surprised.
 
 ![published-books-yearly-since-2022](/assets/images/books-published-since-2022.webp)
 Taken from *[How Large Language Models Are Reshaping the Book Market](https://www.nber.org/digest/202605/how-large-language-models-are-reshaping-book-market)*

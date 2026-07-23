@@ -5,8 +5,13 @@ date: 2026-07-23 12:00:00 +0200
 permalink: on-ai-writing
 description: "My thoughts on AI writing."
 categories: [notes, ai]
-tags: [software, ai]
+tags: [ai]
 excerpt_separator: <!--more-->
+image:
+  path: /assets/images/on-ai-writing-social.png
+  width: 1200
+  height: 630
+  alt: "Text-only social preview for On AI Writing, labeled Notes and AI."
 ---
 
 I am currently very fond of working with AI, exploring these tools, planning and playing with, steering and tailoring them.

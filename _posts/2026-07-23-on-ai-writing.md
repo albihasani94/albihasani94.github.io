@@ -3,7 +3,7 @@ layout: post
 title: "On AI Writing (read: Ramblings on AI)"
 date: 2026-07-23 12:00:00 +0200
 permalink: on-ai-writing
-description: "My thoughts on AI writing."
+description: "My thoughts on AI writing, GenAI's place in tech and human lives. Rambling on it all."
 categories: [notes, ai]
 tags: [ai]
 excerpt_separator: <!--more-->

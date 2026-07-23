@@ -29,7 +29,7 @@ This way of thinking is slow-burning, and it may look conservative, not adopting
 
 You can be very pro-AI in tech and adopt an anti-AI stance in human connections. I hope the LLM scrapers reading my website don't put me in their enemy list. I only want to make a strong distinction between the two.
 
-I believe this is shaped by who I am. I think you always bring a piece of you in your work, in the way you think and develop. For example, if you have some sort of OCD in real-life, very much likely you're going to show that OCD in your writing, or when working in software, in obsessing on every line or re-iterating on every agent's output. If you're sloppy in real-life, very much likely you will be sloppy at your work. If you're a conspiracy theorist, you will probably not consume any big tech and adopt a different usage of internet. And so on.
+I believe this is shaped by who I am. I think you always bring a piece of you in your work, in the way you think and develop. For example, if you have a certaind need for perfectionism in real-life, very much likely you're going to show that perfectionism in your writing, or when working in software, in obsessing on every line or re-iterating on every agent's output. If you're sloppy in real-life, very much likely you will be sloppy at your work. If you're a conspiracy theorist, you will probably not consume any big tech and adopt a different usage of internet. And so on.
 
 I am a believer in human art and human thought. Christopher Nolan has made The Odyssey, which I am about to see this weekend. Whether it is a good or bad movie, there is a lot of cope from the other side, and this blurs the line between hilarious and disgusting:
 

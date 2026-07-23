@@ -130,3 +130,7 @@ I used `/max` effort to produce the initial prompt, then `/xhigh` effort to run 
 I'm going to keep further results private, because the project is confidential. I still had fun with Fable's handover.
 
 Perhaps it has become not super-critical right now that they're permanently offering it: [Claude make Fable 5 permanent](https://simonwillison.net/2026/Jul/18/claude-make-fable-5-permanent/). You're just going to have to pay the premium.
+
+*P.S.*
+
+As it turns out, my work is still giving me access to Fable. Let the good times roll.

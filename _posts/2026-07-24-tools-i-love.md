@@ -40,7 +40,7 @@ This is the fastest launching editor I've used on both Apple Silicon and Intel M
 
 Coming from IntelliJ, and still using it most of the time, I just needed to activate the JetBrains keymap and everything works fine, just faster. Markdown editing, Mermaid graph rendering, even writing Java code with some minor formatting quirks, are a joy.
 
-Even this own blog, I am writing on Zed these days, including this very post.
+Even my own blog, I am writing on Zed these days, including this very post.
 
 ## Ghostty
 

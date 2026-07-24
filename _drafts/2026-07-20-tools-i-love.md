@@ -9,12 +9,12 @@ tags: [tools, software, productivity, ai, media]
 excerpt_separator: <!--more-->
 ---
 
-I love simple and fast software and tools. The ones that feel native to the platform you are using, and are almost invisible. Frictionless.
+I love simple and fast software. The ones that feel native to the platform you are using and are almost invisible. Frictionless.
 
 <!--more-->
 
 This is a list of the tools and services I find myself using most in my daily life nowadays. I keep using them for a reason.
-Few things are more distinct between people than personal taste, so I have kept myself from pushing them on my family and friends, except on rare occassions.
+Few things are more distinct between people than personal taste, so I have kept myself from pushing them on family and friends, except on rare occassions.
 
 ## Things 3
 
@@ -23,7 +23,7 @@ Few things are more distinct between people than personal taste, so I have kept 
 This is my task manager, schedule and reminders system. It feels native, never freezes or crashes, and keeps working fast no matter how much
 of my context accumulates.
 
-It has helped me manage anything from taxes, appointments, deadlines, mortgage applications, tracking investments, cat vaccination schedules, travel checklists and likely a lot more I don't have to remember anymore.
+It has helped me manage everything from taxes, appointments, deadlines, mortgage applications, tracking investments, cat vaccination schedules, travel checklists and likely a lot more I don't have to remember anymore.
 
 I am a paid user (no other way to use it) on my iPhone and my iPad. Next, macOS?
 
@@ -41,7 +41,7 @@ Even this own blog, I am writing on Zed these days, including this very post.
 
 [Ghostty](https://ghostty.org) is an awesome terminal I use as my daily driver.
 
-Written by [Mitchell Hashimoto](https://mitchellh.com) (Terraform, HashiCorp), Ghostty is a fast terminal emulator that I'm using on macOS.
+Created by [Mitchell Hashimoto](https://mitchellh.com) (Terraform, HashiCorp), Ghostty is a fast terminal emulator and my daily driver on macOS.
 
 Could he have predicted that developers are going back to the terminal in 2026 to spend most of the day working with Codex CLI/Claude Code?
 
@@ -63,17 +63,17 @@ I feel so empowered by Codex, I feel like there are fun times ahead.
 
 This is actually the alternative to [uBlock Origin](https://github.com/gorhill/uBlock#firefox) that the browser market made [Raymond Hill](https://x.com/gorhill) build after MV2 was deprecated and later removed from Chromium. No good things come out of a monopoly.
 
-According to its developer, uBlock Origin the most effective on [Firefox](https://github.com/gorhill/uBlock/wiki/uBlock-Origin-works-best-on-Firefox). Using Apple devices and platforms though, the arrival of the Lite version on the App Store last summer made it my Safari's companion.
+According to its developer, uBlock Origin is the most effective on [Firefox](https://github.com/gorhill/uBlock/wiki/uBlock-Origin-works-best-on-Firefox). Using Apple devices and platforms though, the arrival of the Lite version on the App Store last summer made it my Safari's companion.
 
 Browsing an internet without it would make me go back to a flip-phone.
 
-## NetNewsWire 
+## NetNewsWire
 
 [NetNewsWire](https://netnewswire.com/) is a project with a long legacy, that I only discovered last year.
 
 If you want to take a sabbatical from the algorithmic feeds, pick your favorite RSS feeds and subscribe to them.
 
-It's neat, fast and clearly done out of passion. From [How to Support NetNewsWire](https://github.com/Ranchero-Software/NetNewsWire/blob/main/Technotes/HowToSupportNetNewsWire.markdown):
+It's neat, fast and clearly made out of passion. From [How to Support NetNewsWire](https://github.com/Ranchero-Software/NetNewsWire/blob/main/Technotes/HowToSupportNetNewsWire.markdown):
 > First thing: don’t send money. This app is written for love, not money. :)
 
 I like to have it in the set of tools I use, almost on a daily basis. My digital handpicked newspaper of the internet.
@@ -82,7 +82,7 @@ I like to have it in the set of tools I use, almost on a daily basis. My digital
 
 ### BBEdit
 
-[BBEdit](https://www.barebones.com/products/bbedit/) is a bare-bones text editor built by Bare Bones software.
+[BBEdit](https://www.barebones.com/products/bbedit/) is a bare-bones text editor built by Bare Bones Software.
 
 Whenever I want to go back to the simpler days of Sublime Text, this is my Mac's text editor I go to.
 
@@ -96,11 +96,11 @@ Having used it only on iPad, has made learning the language a bit more joyful.
 
 [Apple TV](https://tv.apple.com/) is my favorite streaming service right now.
 
-This has been in the making for a few years, after some great shows sucha as: Severance, Slows Horses, Pluribus.
+This has been in the making for a few years, after some great shows such as: Severance, Slows Horses, Pluribus.
 
-The latest hits have been Widow's Bay and the finale-approaching Cape Fear. If I had to have one streaming service, this would be it.
+The latest hits have been Widow's Bay and the finale-approaching Cape Fear. If I had to keep one streaming service, this would be it.
 
-The cast, acting, production, and the best streaming quality on home TV (Dolby Vision 4K) make it one step ahead of the competition.
+The casts, acting, production, and the best streaming quality on home TV (4K Dolby Vision) make it one step ahead of the competition.
 
 ### 9292
 

@@ -9,11 +9,11 @@ tags: [tools, software, productivity, ai, media]
 excerpt_separator: <!--more-->
 ---
 
-I love simple and fast software. Software that feels native to the platform you are using, and is almost invisible. Frictionless.
+I love simple and fast software and tools. The ones that feel native to the platform you are using, and are almost invisible. Frictionless.
 
 <!--more-->
 
-This is a list of the software I find myself using the most in my daily life nowadays. I am using them for a reason.
+This is a list of the tools and services I find myself using most in my daily life nowadays. I keep using them for a reason.
 There is nothing more diverging between people than "Personal Taste", so I have kept myself from pushing them to my family and friends, except in some occassions.
 
 ## Things 3
@@ -53,7 +53,7 @@ It is written in Zig and it boasts very fast loading times and GPU rendering. I 
 
 Launched by OpenAI as a response to Anthropic's Claude Code, it has been my copilot in the tech I've been learning and developing. I currently use `gpt-5.6-sol` as my model. The fight back to Anthropic has been epic, and Codex/OpenAI has won a huge community of developers on X.
 
-It's distinction from Claude Code and Google's Antigravity CLI is that it's the only harness of the three that is [open-source](https://github.com/openai/codex/releases). Reminder that while all of three have OSS repositories ([Antigravity](https://github.com/google-antigravity/antigravity-cli), [Claude Code](https://github.com/anthropics/claude-code)), only Codex actually publishes its source code. Grok recently became open-source [too](https://github.com/xai-org/grok-build), likely pushed by its public image becoming under scrutinity for uploading users home directories to x.ai servers.
+It's distinction from Claude Code and Google's Antigravity CLI is that it's the only harness of the three that is [open-source](https://github.com/openai/codex/releases). Reminder that while all of three have OSS repositories ([Antigravity](https://github.com/google-antigravity/antigravity-cli), [Claude Code](https://github.com/anthropics/claude-code)), only Codex actually publishes its source code. Grok Build CLI recently became open-source [too](https://github.com/xai-org/grok-build), likely pushed by its public image becoming under scrutinity for uploading users home directories to x.ai servers.
 
 I feel so empowered by Codex, I feel like there are fun times ahead.
 
@@ -61,9 +61,9 @@ I feel so empowered by Codex, I feel like there are fun times ahead.
 
 [uBlock Origin Lite](https://github.com/uBlockOrigin/uBOL-home) lets me see the internet that I want.
 
-No ads, no trackers, and more speed. This is actually the alternative to [uBlock Origin](https://github.com/gorhill/uBlock#firefox) that the browser market made [Raymond Hill](https://x.com/gorhill) build after MV2 was deprecated and later removed from Chromium. No good things come out of a monopoly.
+This is actually the alternative to [uBlock Origin](https://github.com/gorhill/uBlock#firefox) that the browser market made [Raymond Hill](https://x.com/gorhill) build after MV2 was deprecated and later removed from Chromium. No good things come out of a monopoly.
 
-According to its developer, it's the most effective on [Firefox](https://github.com/gorhill/uBlock/wiki/uBlock-Origin-works-best-on-Firefox). Using Apple devices and platforms though, the arrival of the Lite version on the App Store last summer made it my Safari's companion.
+According to its developer, uBlock Origin the most effective on [Firefox](https://github.com/gorhill/uBlock/wiki/uBlock-Origin-works-best-on-Firefox). Using Apple devices and platforms though, the arrival of the Lite version on the App Store last summer made it my Safari's companion.
 
 Browsing an internet without is would make me go back to a flip-phone.
 

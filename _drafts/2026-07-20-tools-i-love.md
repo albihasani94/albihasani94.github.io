@@ -14,7 +14,7 @@ I love simple and fast software and tools. The ones that feel native to the plat
 <!--more-->
 
 This is a list of the tools and services I find myself using most in my daily life nowadays. I keep using them for a reason.
-There is nothing more diverging between people than "Personal Taste", so I have kept myself from pushing them to my family and friends, except in some occassions.
+Few things are more distinct between people than personal taste, so I have kept myself from pushing them on my family and friends, except on rare occassions.
 
 ## Things 3
 
@@ -65,7 +65,7 @@ This is actually the alternative to [uBlock Origin](https://github.com/gorhill/u
 
 According to its developer, uBlock Origin the most effective on [Firefox](https://github.com/gorhill/uBlock/wiki/uBlock-Origin-works-best-on-Firefox). Using Apple devices and platforms though, the arrival of the Lite version on the App Store last summer made it my Safari's companion.
 
-Browsing an internet without is would make me go back to a flip-phone.
+Browsing an internet without it would make me go back to a flip-phone.
 
 ## NetNewsWire 
 
@@ -82,7 +82,7 @@ I like to have it in the set of tools I use, almost on a daily basis. My digital
 
 ### BBEdit
 
-[BBEdit](https://www.barebones.com/products/bbedit/) is a bare-bones text editor built from Bare Bones software.
+[BBEdit](https://www.barebones.com/products/bbedit/) is a bare-bones text editor built by Bare Bones software.
 
 Whenever I want to go back to the simpler days of Sublime Text, this is my Mac's text editor I go to.
 
@@ -96,7 +96,7 @@ Having used it only on iPad, has made learning the language a bit more joyful.
 
 [Apple TV](https://tv.apple.com/) is my favorite streaming service right now.
 
-This has been in the making for a few years, after some great shows: Severance, Slows Horses, Pluribus.
+This has been in the making for a few years, after some great shows sucha as: Severance, Slows Horses, Pluribus.
 
 The latest hits have been Widow's Bay and the finale-approaching Cape Fear. If I had to have one streaming service, this would be it.
 
@@ -114,4 +114,4 @@ I don't even have Google Maps on my phone. 9292 is a lot simpler, fast, and more
 
 The audio quality is in my opinon better than Spotify, UI and UX a different world.
 
-Some of the shows I've been listening to: [The Pragmatic Engineer](https://podcasts.apple.com/nl/podcast/the-pragmatic-engineer/id1769051199?l=en-GB), [Still Burning](https://podcasts.apple.com/nl/podcast/still-burning/id1887873329?l=en-GB) by Kent Beck, [Jill on Money](https://podcasts.apple.com/nl/podcast/jill-on-money-with-jill-schlesinger/id431167790?l=en-GB), and in Albanian: [Besi Andi Podcast](https://podcasts.apple.com/nl/podcast/besi-andi-podcast/id1573247025?l=en-GB)
+Some of the shows I've been listening to: [The Pragmatic Engineer](https://podcasts.apple.com/nl/podcast/the-pragmatic-engineer/id1769051199?l=en-GB), [Still Burning](https://podcasts.apple.com/nl/podcast/still-burning/id1887873329?l=en-GB) by Kent Beck, [Jill on Money](https://podcasts.apple.com/nl/podcast/jill-on-money-with-jill-schlesinger/id431167790?l=en-GB), and in Albanian: [Besi Andi Podcast](https://podcasts.apple.com/nl/podcast/besi-andi-podcast/id1573247025?l=en-GB).

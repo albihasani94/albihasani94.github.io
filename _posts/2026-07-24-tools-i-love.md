@@ -7,6 +7,11 @@ description: "Tools I love, plus a few honorable mentions across software, learn
 categories: [notes]
 tags: [tools, software, productivity, ai, media]
 excerpt_separator: <!--more-->
+image:
+  path: /assets/images/tools-i-love-social.png
+  width: 1200
+  height: 630
+  alt: "Text-only social preview for Tools I Love, labeled notes and tools."
 ---
 
 I love simple and fast software. The ones that feel native to the platform you are using and are almost invisible. Frictionless.

@@ -33,7 +33,7 @@ I am a paid user (no other way to use it) on my iPhone and my iPad. Next, macOS?
 
 This is the fastest launching editor I've used on both Apple Silicon and Intel Mac platforms. It has AI features, which if you find distracting, can turn off with a toggle. It is written in Rust.
 
-Coming from intellij, and still using it most of the time, I just needed to activate the jetbrains keymap and everything works fine, just faster. Markdown editing, Mermaid graph rendering, even writing Java code with some minor formatting quirks, are a joy.
+Coming from IntelliJ, and still using it most of the time, I just needed to activate the JetBrains keymap and everything works fine, just faster. Markdown editing, Mermaid graph rendering, even writing Java code with some minor formatting quirks, are a joy.
 
 Even this own blog, I am writing on Zed these days, including this very post.
 
@@ -45,7 +45,7 @@ Created by [Mitchell Hashimoto](https://mitchellh.com) (Terraform, HashiCorp), G
 
 Could he have predicted that developers are going back to the terminal in 2026 to spend most of the day working with Codex CLI/Claude Code?
 
-It is written in Zig and it boasts very fast loading times and GPU rendering. I prefer it over the electron GUIs of Claude and ChatGPT to talk to my agents.
+It is written in Zig and it boasts very fast loading times and GPU rendering. I prefer it over the Electron GUIs of Claude and ChatGPT to talk to my agents.
 
 ## Codex
 
@@ -53,7 +53,7 @@ It is written in Zig and it boasts very fast loading times and GPU rendering. I 
 
 Launched by OpenAI as a response to Anthropic's Claude Code, it has been my copilot in the tech I've been learning and developing. I currently use `gpt-5.6-sol` as my model. The fight back to Anthropic has been epic, and Codex/OpenAI has won a huge community of developers on X.
 
-Its distinction from Claude Code and Google's Antigravity CLI is that it's the only harness of the three that is [open-source](https://github.com/openai/codex/releases). Reminder that while all of the three have OSS repositories ([Antigravity](https://github.com/google-antigravity/antigravity-cli), [Claude Code](https://github.com/anthropics/claude-code)), only Codex actually publishes its source code. Grok Build CLI recently became open-source [too](https://github.com/xai-org/grok-build), likely pushed by its public image becoming under scrutiny for uploading entire users home directories to x.ai servers.
+Its distinction from Claude Code and Google's Antigravity CLI is that it's the only harness of the three that is [open-source](https://github.com/openai/codex/releases). Reminder that while all three have OSS repositories ([Antigravity](https://github.com/google-antigravity/antigravity-cli), [Claude Code](https://github.com/anthropics/claude-code)), only Codex actually publishes its source code. Grok Build CLI recently became open-source [too](https://github.com/xai-org/grok-build), likely pushed by its public image becoming under scrutiny for uploading entire users home directories to x.ai servers.
 
 I feel so empowered by Codex, I feel like there are fun times ahead.
 
@@ -88,9 +88,9 @@ Whenever I want to go back to the simpler days of Sublime Text, this is my Mac's
 
 ### Babbel
 
-[Babbel](https://www.babbel.com/) has recently been my companion in my Dutch learning journey.
+[Babbel](https://www.babbel.com/) has recently been my companion to learn Dutch.
 
-Having used it only on iPad, has made learning the language a bit more joyful.
+I have only used it on my iPad, and it has succeeded in making the language-learning process a bit more joyful.
 
 ### Apple TV
 
@@ -112,6 +112,6 @@ I don't even have Google Maps on my phone. 9292 is a lot simpler, faster, and mo
 
 [Apple Podcasts](https://podcasts.apple.com/us/new) is my commute companion.
 
-The audio quality is in my opinon, better than Spotify, UI and UX a different world.
+The audio quality is in my opinion, better than Spotify, UI and UX a different world.
 
 Some of the shows I've been listening to: [The Pragmatic Engineer](https://podcasts.apple.com/nl/podcast/the-pragmatic-engineer/id1769051199?l=en-GB), [Still Burning](https://podcasts.apple.com/nl/podcast/still-burning/id1887873329?l=en-GB) by Kent Beck, [Jill on Money](https://podcasts.apple.com/nl/podcast/jill-on-money-with-jill-schlesinger/id431167790?l=en-GB), and in Albanian: [Besi Andi Podcast](https://podcasts.apple.com/nl/podcast/besi-andi-podcast/id1573247025?l=en-GB).

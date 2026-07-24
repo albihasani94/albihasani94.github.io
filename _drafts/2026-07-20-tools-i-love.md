@@ -14,7 +14,7 @@ I love simple and fast software. The ones that feel native to the platform you a
 <!--more-->
 
 This is a list of the tools and services I find myself using most in my daily life nowadays. I keep using them for a reason.
-Few things are more distinct between people than personal taste, so I have kept myself from pushing them on family and friends, except on rare occassions.
+Few things are more distinct between people than personal taste, so I have kept myself from pushing them on family and friends, except on rare occasions.
 
 ## Things 3
 
@@ -31,7 +31,7 @@ I am a paid user (no other way to use it) on my iPhone and my iPad. Next, macOS?
 
 [Zed](https://zed.dev/) is a breath of fresh air in the world of code editors.
 
-This is the fastest launching editor I've used on the both Apple Silicon and Intel mac platforms. It has AI features, which if you find distracting, can turn off with a toggle. It is written in Rust.
+This is the fastest launching editor I've used on both Apple Silicon and Intel Mac platforms. It has AI features, which if you find distracting, can turn off with a toggle. It is written in Rust.
 
 Coming from intellij, and still using it most of the time, I just needed to activate the jetbrains keymap and everything works fine, just faster. Markdown editing, Mermaid graph rendering, even writing Java code with some minor formatting quirks, are a joy.
 
@@ -53,7 +53,7 @@ It is written in Zig and it boasts very fast loading times and GPU rendering. I 
 
 Launched by OpenAI as a response to Anthropic's Claude Code, it has been my copilot in the tech I've been learning and developing. I currently use `gpt-5.6-sol` as my model. The fight back to Anthropic has been epic, and Codex/OpenAI has won a huge community of developers on X.
 
-It's distinction from Claude Code and Google's Antigravity CLI is that it's the only harness of the three that is [open-source](https://github.com/openai/codex/releases). Reminder that while all of three have OSS repositories ([Antigravity](https://github.com/google-antigravity/antigravity-cli), [Claude Code](https://github.com/anthropics/claude-code)), only Codex actually publishes its source code. Grok Build CLI recently became open-source [too](https://github.com/xai-org/grok-build), likely pushed by its public image becoming under scrutinity for uploading users home directories to x.ai servers.
+Its distinction from Claude Code and Google's Antigravity CLI is that it's the only harness of the three that is [open-source](https://github.com/openai/codex/releases). Reminder that while all of the three have OSS repositories ([Antigravity](https://github.com/google-antigravity/antigravity-cli), [Claude Code](https://github.com/anthropics/claude-code)), only Codex actually publishes its source code. Grok Build CLI recently became open-source [too](https://github.com/xai-org/grok-build), likely pushed by its public image becoming under scrutiny for uploading entire users home directories to x.ai servers.
 
 I feel so empowered by Codex, I feel like there are fun times ahead.
 
@@ -88,7 +88,7 @@ Whenever I want to go back to the simpler days of Sublime Text, this is my Mac's
 
 ### Babbel
 
-[Babbel](https://www.babbel.com/) has recently been my companion in my learning Dutch journey.
+[Babbel](https://www.babbel.com/) has recently been my companion in my Dutch learning journey.
 
 Having used it only on iPad, has made learning the language a bit more joyful.
 
@@ -96,7 +96,7 @@ Having used it only on iPad, has made learning the language a bit more joyful.
 
 [Apple TV](https://tv.apple.com/) is my favorite streaming service right now.
 
-This has been in the making for a few years, after some great shows such as: Severance, Slows Horses, Pluribus.
+This has been in the making for a few years, after some great shows such as: Severance, Slow Horses, Pluribus.
 
 The latest hits have been Widow's Bay and the finale-approaching Cape Fear. If I had to keep one streaming service, this would be it.
 
@@ -106,12 +106,12 @@ The casts, acting, production, and the best streaming quality on home TV (4K Dol
 
 [9292](https://9292.nl/en/app-and-website/download-the-app/) is my go-to public transport app in the Netherlands.
 
-I don't even have Google Maps on my phone. 9292 is a lot simpler, fast, and more reliable.
+I don't even have Google Maps on my phone. 9292 is a lot simpler, faster, and more reliable.
 
 ### Apple Podcasts
 
 [Apple Podcasts](https://podcasts.apple.com/us/new) is my commute companion.
 
-The audio quality is in my opinon better than Spotify, UI and UX a different world.
+The audio quality is in my opinon, better than Spotify, UI and UX a different world.
 
 Some of the shows I've been listening to: [The Pragmatic Engineer](https://podcasts.apple.com/nl/podcast/the-pragmatic-engineer/id1769051199?l=en-GB), [Still Burning](https://podcasts.apple.com/nl/podcast/still-burning/id1887873329?l=en-GB) by Kent Beck, [Jill on Money](https://podcasts.apple.com/nl/podcast/jill-on-money-with-jill-schlesinger/id431167790?l=en-GB), and in Albanian: [Besi Andi Podcast](https://podcasts.apple.com/nl/podcast/besi-andi-podcast/id1573247025?l=en-GB).

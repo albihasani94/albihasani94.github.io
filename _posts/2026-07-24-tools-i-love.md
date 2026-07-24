@@ -14,7 +14,7 @@ image:
   alt: "Text-only social preview for Tools I Love, labeled notes and tools."
 ---
 
-I love simple and fast software. The ones that feel native to the platform you are using and are almost invisible. Frictionless.
+I love simple and fast software. The kind that feels native to the platform you are using and tools that are almost invisible. Frictionless.
 
 <!--more-->
 
@@ -58,7 +58,7 @@ It is written in Zig and it boasts very fast loading times and GPU rendering. I 
 
 Launched by OpenAI as a response to Anthropic's Claude Code, it has been my copilot in the tech I've been learning and developing. I currently use `gpt-5.6-sol` as my model. The fight back to Anthropic has been epic, and Codex/OpenAI has won a huge community of developers on X.
 
-Its distinction from Claude Code and Google's Antigravity CLI is that it's the only harness of the three that is [open-source](https://github.com/openai/codex/releases). Reminder that while all three have OSS repositories ([Antigravity](https://github.com/google-antigravity/antigravity-cli), [Claude Code](https://github.com/anthropics/claude-code)), only Codex actually publishes its source code. Grok Build CLI recently became open-source [too](https://github.com/xai-org/grok-build), likely pushed by its public image becoming under scrutiny for uploading entire users home directories to x.ai servers.
+Its distinction from Claude Code and Google's Antigravity CLI is that it's the only harness of the three that is [open-source](https://github.com/openai/codex/releases). Reminder that while all three have OSS repositories ([Antigravity](https://github.com/google-antigravity/antigravity-cli), [Claude Code](https://github.com/anthropics/claude-code)), only Codex actually publishes its source code. Grok Build CLI recently became open-source [too](https://github.com/xai-org/grok-build), likely pushed by its public image becoming under scrutiny for uploading entire users home directories to xAI servers.
 
 I feel so empowered by Codex, I feel like there are fun times ahead.
 

@@ -1,0 +1,25 @@
+.site-footer .contact-list > li,
+.site-footer .social-media-list > li {
+  line-height: 27px;
+}
+
+.site-footer .social-media-list > li + li {
+  padding-top: 0;
+}
+
+.footer-copyright {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 801px) {
+  .footer-col-3 {
+    min-height: 108px;
+    position: relative;
+  }
+
+  .footer-copyright {
+    left: 15px;
+    position: absolute;
+    top: 81px;
+  }
+}

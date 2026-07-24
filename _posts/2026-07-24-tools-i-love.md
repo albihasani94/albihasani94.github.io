@@ -46,7 +46,7 @@ Even my own blog, I am writing on Zed these days, including this very post.
 
 [Ghostty](https://ghostty.org) is an awesome terminal I use as my daily driver.
 
-Created by [Mitchell Hashimoto](https://mitchellh.com) (Terraform, HashiCorp), Ghostty is a fast terminal emulator and my daily driver on macOS.
+Created by [Mitchell Hashimoto](https://mitchellh.com) (Terraform, HashiCorp), Ghostty is a fast terminal emulator that I'm using on macOS.
 
 Could he have predicted that developers are going back to the terminal in 2026 to spend most of the day working with Codex CLI/Claude Code?
 

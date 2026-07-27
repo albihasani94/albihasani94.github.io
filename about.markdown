@@ -7,7 +7,7 @@ seo:
   name: Albin Hasani
   type: WebPage
   date_created: 2019-10-23
-  date_modified: 2026-07-22
+  date_modified: 2026-07-28
 ---
 
 {% include identity-json-ld.html %}
@@ -21,5 +21,5 @@ practical writing grounded in code and first-hand engineering experience.
 You can also find me on
 [GitHub](https://github.com/albihasani94),
 [LinkedIn](https://www.linkedin.com/in/albihasani94),
-[X](https://x.com/albihasani94), and
-[Goodreads](https://www.goodreads.com/albihasani94).
+[X](https://x.com/albihasani94), or follow my
+[reading]({{ '/reading/' | relative_url }}) list.

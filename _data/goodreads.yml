@@ -11,20 +11,24 @@ currently_reading:
   author: Berna de Boer
   url: https://www.goodreads.com/book/show/96802554-nederlands-in-gang
   cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1678877452l/96802554._SX98_.jpg
+  cover_large: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1678877452l/96802554._SX318_.jpg
 - title: 'Kafka: The Definitive Guide: Real-Time Data and Stream Processing at Scale'
   author: Gwen Shapira
   url: https://www.goodreads.com/book/show/59587771-kafka
   cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1636576205l/59587771._SX98_.jpg
+  cover_large: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1636576205l/59587771._SX318_.jpg
   pages: 457
 - title: 'Head First Software Architecture: A Learner''s Guide to Architectural Thinking'
   author: Raju Gandhi
   url: https://www.goodreads.com/book/show/171671941-head-first-software-architecture
   cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1697728094l/171671941._SX98_.jpg
+  cover_large: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1697728094l/171671941._SX318_.jpg
   pages: 483
 - title: 'Historia e Çamërisë: vështrim historik'
   author: Kristo Frashëri
   url: https://www.goodreads.com/book/show/43384436-historia-e-am-ris
   cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1546031071l/43384436._SX98_.jpg
+  cover_large: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1546031071l/43384436._SY475_.jpg
   pages: 330
 read_by_year:
 - year: 2026

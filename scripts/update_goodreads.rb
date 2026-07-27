@@ -72,6 +72,7 @@ begin
       "author" => text(item, "author_name"),
       "url" => book_url(item, book_id),
       "cover" => text(item, "book_medium_image_url"),
+      "cover_large" => text(item, "book_large_image_url"),
       "pages" => pages.nil? || pages.empty? ? nil : pages.to_i
     }.compact
   end

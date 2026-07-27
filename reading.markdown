@@ -17,6 +17,9 @@ Books I am currently reading and ones I have finished.
       <a class="reading-book-cover" href="{{ book.url }}">
         <img
           src="{{ book.cover }}"
+          {% if book.cover_large %}
+            srcset="{{ book.cover }} 1x, {{ book.cover_large }} 2x"
+          {% endif %}
           alt="Cover of {{ book.title | escape }} by {{ book.author | escape }}"
           loading="lazy"
         >

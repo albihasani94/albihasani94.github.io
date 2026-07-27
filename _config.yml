@@ -37,6 +37,7 @@ twitter:
   username: albihasani94
   card: summary_large_image
 header_pages:
+  - reading.markdown
   - about.markdown
 
 social:
@@ -99,6 +100,7 @@ plugins:
   - jekyll-sitemap
 
 show_excerpts: true # set to false to remove excerpts on the homepage
+show_reading_history_covers: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.

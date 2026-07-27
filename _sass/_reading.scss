@@ -1,0 +1,127 @@
+.reading-list {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  list-style: none;
+  margin: 1rem 0 2.5rem;
+}
+
+.reading-book {
+  align-items: flex-start;
+  border-top: 1px solid #e8e8e8;
+  display: flex;
+  gap: 1rem;
+  padding-top: 1.25rem;
+}
+
+.reading-book-cover {
+  align-items: center;
+  aspect-ratio: 2 / 3;
+  background: #f5f5f5;
+  display: flex;
+  flex: 0 0 78px;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.reading-book-cover img {
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
+}
+
+.reading-book-details {
+  min-width: 0;
+}
+
+.reading-book-details h3 {
+  font-size: 1.125rem;
+  line-height: 1.35;
+  margin: 0 0 0.35rem;
+}
+
+.reading-book-details p {
+  margin-bottom: 0.25rem;
+}
+
+.reading-book-meta {
+  color: #828282;
+  font-size: 0.875rem;
+}
+
+.reading-section-title {
+  font-size: 1.5rem;
+  margin: 2rem 0 0.75rem;
+}
+
+.reading-year {
+  border-top: 1px solid #e8e8e8;
+  padding-top: 0.85rem;
+}
+
+.reading-year-heading {
+  align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+}
+
+.reading-year-heading h2 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.reading-year-count {
+  color: #828282;
+  font-size: 0.875rem;
+}
+
+.reading-history {
+  list-style: none;
+  margin: 0.25rem 0 1.5rem;
+}
+
+.reading-history li {
+  align-items: baseline;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: minmax(0, 1fr) auto;
+  padding: 0.6rem 0 0.6rem 1.15rem;
+}
+
+.reading-history li.reading-history-book-with-cover {
+  align-items: start;
+  grid-template-columns: 48px minmax(0, 1fr) auto;
+}
+
+.reading-history-cover {
+  align-items: center;
+  aspect-ratio: 2 / 3;
+  background: #f5f5f5;
+  display: flex;
+  overflow: hidden;
+}
+
+.reading-history-cover img {
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
+}
+
+.reading-history-author {
+  color: #828282;
+  display: block;
+  font-size: 0.875rem;
+}
+
+.reading-history time {
+  color: #828282;
+  font-size: 0.875rem;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 600px) {
+  .reading-list {
+    grid-template-columns: 1fr;
+  }
+}

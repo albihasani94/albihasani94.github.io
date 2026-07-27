@@ -7,7 +7,7 @@ description: "Books Albin Hasani is currently reading and has finished, grouped 
 
 Books I am currently reading and ones I have finished.
 
-> Proudly built, tested and measured with Codex running `gpt-5.6-sol`.
+> Proudly built, tested and measured with Codex running gpt-5.6-sol.
 
 <h2 class="reading-section-title">Currently Reading</h2>
 {% if site.data.goodreads.currently_reading.size > 0 %}

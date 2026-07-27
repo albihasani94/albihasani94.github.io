@@ -37,8 +37,8 @@ twitter:
   username: albihasani94
   card: summary_large_image
 header_pages:
-  - reading.markdown
   - about.markdown
+  - reading.markdown
 
 social:
   links:

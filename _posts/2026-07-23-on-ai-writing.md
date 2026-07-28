@@ -23,7 +23,7 @@ While I am very impressed by their potential to reshape the coding angle of soft
 
 I believe the potential of these tools is a huge paradigm shift, but their potential lies elsewhere, not as a replacement for human interactions, and humans' quest to reach someone, to make art, and to be understood.
 
-I will continue to ~~review every line of **code**~~ myself (while this stays true for my domain, it's no longer entirely true for other domains: e.g. Ruby, PHP) and I will keep writing every line of text designed for **humans** myself.
+I will continue to review every line of **code** myself (while this stays true for my domain, it's no longer entirely true for other domains: e.g. Ruby, PHP)[^edit-1] and I will keep writing every line of text designed for **humans** myself.
 
 This way of thinking is slow-burning, and it may look conservative, not adopting this new technology at the right pace. I know, but I stand by my direction. I know it's shared by many others. There is a right place for GenAI in the software development industry. I find the discovery and planning abilities compelling, along with findings and many applications of these tools. I am a believer in its potential and I am optimistic it will create a lot of prosperity, many new jobs, and it will eventually lead to new medical discoveries.
 
@@ -50,6 +50,6 @@ You have an encyclopedia with you all the time, for good or bad, and we are goin
 
 ## Edits
 
-- *July 28, 2026:* While I keep reviewing every line of Java code myself, I've had to let go in other languages (e.g. Ruby, PHP). This is how I built my [reading list page]({{ '/reading/' | relative_url }}). 
+[^edit-1]: **July 28, 2026.** While I keep reviewing every line of Java code myself, I've had to let go in other languages (e.g. Ruby, PHP). An example of that is how I came up with my [reading list page]({{ '/reading/' | relative_url }}).
 
-I still do rigorous iterations with my agents, and in this case measure the effect of adding all the images, optimize by serving different sizes for retina and normal displays, and lazy-loading them. I guess this is a more results-driven approach that I'm happy to carry forward.
+    I still do rigorous iterations with my agents, and in this case measure the effect of adding all the images, optimize by serving different sizes for retina and normal displays, and lazy-loading them. I guess this is a more results-driven approach that I'm happy to carry forward.

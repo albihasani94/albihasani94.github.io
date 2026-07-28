@@ -75,11 +75,15 @@
   stale value is worse than none.
 - Prefer Markdown for prose and fenced code blocks with a language identifier.
   Put post images in `assets/images/` and use descriptive lowercase filenames.
-- Before adding custom HTML, CSS, JavaScript, or plugins for Markdown content,
-  check whether Jekyll, Kramdown, Liquid, or the active theme provides a native
-  solution. Prefer the native feature when it produces accessible,
-  standards-compliant output. Verify the rendered HTML, including repeated
-  references and navigation where relevant, before introducing custom markup.
+- Before building a custom solution or adding a dependency, check whether the
+  platform, language, framework, theme, existing dependencies, or relevant
+  standard already provides the capability. Prefer the narrowest native,
+  maintained solution that meets the requirement, including Jekyll, Kramdown,
+  Liquid, and Minima features for site content. Verify its actual generated
+  output and behavior, including accessibility and edge cases, before adding
+  custom code. Use a custom implementation only when the native option cannot
+  meet the requirement, and keep the reason evident in nearby code or
+  documentation.
 - Encode in-post raster images as WebP, resized to at most 1600 px wide
   (2× the ~740 px content column) with height following the aspect ratio, at
   quality 75–82. Use Google's official WebP tooling: [Squoosh](https://squoosh.app)

@@ -23,7 +23,7 @@ While I am very impressed by their potential to reshape the coding angle of soft
 
 I believe the potential of these tools is a huge paradigm shift, but their potential lies elsewhere, not as a replacement for human interactions, and humans' quest to reach someone, to make art, and to be understood.
 
-I will continue to review every line of **code** myself and I will keep writing every line of text designed for **humans** myself.
+I will continue to ~~review every line of **code**~~ myself (Edit: while this stays true for my domain, Java, it's not true anymore for other domaings: e.g. Ruby, php) and I will keep writing every line of text designed for **humans** myself.
 
 This way of thinking is slow-burning, and it may look conservative, not adopting this new technology at the right pace. I know, but I stand by my direction. I know it's shared by many others. There is a right place for GenAI in the software development industry. I find the discovery and planning abilities compelling, along with findings and many applications of these tools. I am a believer in its potential and I am optimistic it will create a lot of prosperity, many new jobs, and it will eventually lead to new medical discoveries.
 

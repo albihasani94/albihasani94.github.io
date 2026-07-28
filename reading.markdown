@@ -100,3 +100,5 @@ I don't have a book marked as currently reading.
     </ul>
   </section>
 {% endif %}
+
+Source: [Goodreads]({{ site.data.goodreads.profile_url }}).

@@ -101,4 +101,4 @@ I don't have a book marked as currently reading.
   </section>
 {% endif %}
 
-Source: [Goodreads]({{ site.data.goodreads.profile_url }}).
+Source: [Goodreads](https://www.goodreads.com/user/show/9618785-albin-hasani).

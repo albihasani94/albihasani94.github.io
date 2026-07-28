@@ -21,5 +21,5 @@ practical writing grounded in code and first-hand engineering experience.
 You can also find me on
 [GitHub](https://github.com/albihasani94),
 [LinkedIn](https://www.linkedin.com/in/albihasani94),
-[X](https://x.com/albihasani94), or follow my
+[X](https://x.com/albihasani94), or check out my
 [Reading]({{ '/reading/' | relative_url }}) list.

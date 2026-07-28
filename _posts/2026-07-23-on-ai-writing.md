@@ -50,4 +50,6 @@ You have an encyclopedia with you all the time, for good or bad, and we are goin
 
 ## Edits
 
-- **July 28, 2026:** While I keep reviewing every line of Java code myself, I've had to let go in other languages (e.g. Ruby, PHP). This is how I built my [reading list page]({{ '/reading/' | relative_url }}). I still do rigorous iterations with my agents, and in this case measure the effect of adding all the images, optimize by serving different sizes for retina and normal displays, and lazy-loading them. I guess this is a more results-driven approach that I'm happy to carry forward.
+- *July 28, 2026:* While I keep reviewing every line of Java code myself, I've had to let go in other languages (e.g. Ruby, PHP). This is how I built my [reading list page]({{ '/reading/' | relative_url }}). 
+
+I still do rigorous iterations with my agents, and in this case measure the effect of adding all the images, optimize by serving different sizes for retina and normal displays, and lazy-loading them. I guess this is a more results-driven approach that I'm happy to carry forward.

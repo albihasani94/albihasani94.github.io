@@ -48,6 +48,6 @@ Where we are going we will need a lot of good faith, due diligence, but also hop
 
 You have an encyclopedia with you all the time, for good or bad, and we are going to carry that burden of information, which is a blessing and a curse. There is no denying there will be an abundance of everything where we're going. If we cultivate what's been given to us, and make the right choices that are shaped by our character and values, we will find a way and the future will be brighter.
 
-### Edits
+## Edits
 
-- **July 28, 2026:** I've changed my mind, while I keep reviewing every line of Java code myself, I've had to let go in other languages (e.g. Ruby, PHP). This is how I ended up with my [reading]({{ '/reading/' | relative_url }} list page.
+- **July 28, 2026:** While I keep reviewing every line of Java code myself, I've had to let go in other languages (e.g. Ruby, PHP). This is how I built my [reading list page]({{ '/reading/' | relative_url }}). I still do rigorous iterations with my agents, and in this case measure the effect of adding all the images, optimize by serving different sizes for retina and normal displays, and lazy-loading them. I guess this is a more results-driven approach that I'm happy to carry forward.

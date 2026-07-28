@@ -23,4 +23,4 @@ You can also find me on
 [LinkedIn](https://www.linkedin.com/in/albihasani94),
 [X](https://x.com/albihasani94), check out my
 [reading]({{ '/reading/' | relative_url }}) list,
-or say [hello](mailto:{{ site.email }}).
+or just [say hi](mailto:{{ site.email }}).

@@ -30,6 +30,8 @@
 - For agent-run previews, use a managed long-running session. Retain its handle,
   wait for Jekyll to report readiness, verify the local URL, and leave it
   running after replying.
+- When reporting a running preview, tell the user to ask the agent to stop it
+  before using `/exit`; do not imply that `/exit` performs cleanup.
 - When asked to stop, terminate the retained session and verify port 4000 is
   closed. If its handle is unavailable, resolve the exact listener; never use
   broad process-kill commands.

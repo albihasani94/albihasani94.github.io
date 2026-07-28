@@ -23,7 +23,7 @@ While I am very impressed by their potential to reshape the coding angle of soft
 
 I believe the potential of these tools is a huge paradigm shift, but their potential lies elsewhere, not as a replacement for human interactions, and humans' quest to reach someone, to make art, and to be understood.
 
-I will continue to ~~review every line of **code**~~ myself (while this stays true for my domain, Java, it's no longer entirely true for other domains: e.g. Ruby, PHP) and I will keep writing every line of text designed for **humans** myself.
+I will continue to ~~review every line of **code**~~ myself (while this stays true for my domain, it's no longer entirely true for other domains: e.g. Ruby, PHP) and I will keep writing every line of text designed for **humans** myself.
 
 This way of thinking is slow-burning, and it may look conservative, not adopting this new technology at the right pace. I know, but I stand by my direction. I know it's shared by many others. There is a right place for GenAI in the software development industry. I find the discovery and planning abilities compelling, along with findings and many applications of these tools. I am a believer in its potential and I am optimistic it will create a lot of prosperity, many new jobs, and it will eventually lead to new medical discoveries.
 
@@ -47,3 +47,7 @@ While navigating Amazon myself, I have come across many such cases polluting the
 Where we are going we will need a lot of good faith, due diligence, but also hope, dreaming and imagining a better vision of the future. There will always be nostalgia, _the grass was greener_ when you were a child, holding a VHS will never be the same as pointing your remote to a thumbnail and clicking play on your smart tv; an Apple Music digital master doesn't quite speak to you like a vinyl record coming alive in your room with all its static and imperfections; but you don't have to wait on a phone line to speak to your parents on FaceTime, and you have crazy amounts of power in your pocket phone and your desk today, that you would barely dare to dream at the dawn of computing.
 
 You have an encyclopedia with you all the time, for good or bad, and we are going to carry that burden of information, which is a blessing and a curse. There is no denying there will be an abundance of everything where we're going. If we cultivate what's been given to us, and make the right choices that are shaped by our character and values, we will find a way and the future will be brighter.
+
+### Edits
+
+- **July 28, 2026:** I've changed my mind, while I keep reviewing every line of Java code myself, I've had to let go in other languages (e.g. Ruby, PHP). This is how I ended up with my [reading]({{ '/reading/' | relative_url }} list page.

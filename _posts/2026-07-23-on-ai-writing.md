@@ -19,11 +19,11 @@ I am currently very fond of working with AI, exploring these tools, planning and
 <!--more-->
 
 I am so invested in them sometimes at the risk of burning out.
-While I am very impressed by their potential to reshape the coding angle of software development, I still pretty much review every line of code myself; and one thing I do not see them replacing is human connection. I find that precious, and this is the reason why I will not be using any AI to write these blog entries. As much as I am impressed by their technical abilities, their idea of human communication leaves a bad taste in my mouth.
+While I am very impressed by their potential to reshape the coding angle of software development, I still pretty much review every line of Java code myself; and one thing I do not see them replacing is human connection. I find that precious, and this is the reason why I will not be using any AI to write these blog entries. As much as I am impressed by their technical abilities, their idea of human communication leaves a bad taste in my mouth.
 
 I believe the potential of these tools is a huge paradigm shift, but their potential lies elsewhere, not as a replacement for human interactions, and humans' quest to reach someone, to make art, and to be understood.
 
-I will continue to ~~review every line of **code**~~ myself (Edit: while this stays true for my domain, Java, it's no longer entirely true for other domains: e.g. Ruby, PHP) and I will keep writing every line of text designed for **humans** myself.
+I will continue to ~~review every line of **code**~~ myself (while this stays true for my domain, Java, it's no longer entirely true for other domains: e.g. Ruby, PHP) and I will keep writing every line of text designed for **humans** myself.
 
 This way of thinking is slow-burning, and it may look conservative, not adopting this new technology at the right pace. I know, but I stand by my direction. I know it's shared by many others. There is a right place for GenAI in the software development industry. I find the discovery and planning abilities compelling, along with findings and many applications of these tools. I am a believer in its potential and I am optimistic it will create a lot of prosperity, many new jobs, and it will eventually lead to new medical discoveries.
 

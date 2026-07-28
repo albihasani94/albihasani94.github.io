@@ -22,4 +22,4 @@ You can also find me on
 [GitHub](https://github.com/albihasani94),
 [LinkedIn](https://www.linkedin.com/in/albihasani94),
 [X](https://x.com/albihasani94), or follow my
-[reading]({{ '/reading/' | relative_url }}) list.
+[Reading]({{ '/reading/' | relative_url }}) list.

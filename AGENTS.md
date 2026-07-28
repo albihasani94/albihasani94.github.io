@@ -75,6 +75,11 @@
   stale value is worse than none.
 - Prefer Markdown for prose and fenced code blocks with a language identifier.
   Put post images in `assets/images/` and use descriptive lowercase filenames.
+- Before adding custom HTML, CSS, JavaScript, or plugins for Markdown content,
+  check whether Jekyll, Kramdown, Liquid, or the active theme provides a native
+  solution. Prefer the native feature when it produces accessible,
+  standards-compliant output. Verify the rendered HTML, including repeated
+  references and navigation where relevant, before introducing custom markup.
 - Encode in-post raster images as WebP, resized to at most 1600 px wide
   (2× the ~740 px content column) with height following the aspect ratio, at
   quality 75–82. Use Google's official WebP tooling: [Squoosh](https://squoosh.app)

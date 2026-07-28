@@ -39,7 +39,7 @@ jobs:
         run: ruby scripts/update_goodreads.rb
 
       - name: Build site
-        run: bundle exec jekyll build --trace
+        run: bundle exec jekyll build
         env:
           JEKYLL_ENV: production
 

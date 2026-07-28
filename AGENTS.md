@@ -35,7 +35,7 @@
 - When asked to stop, terminate the retained session and verify port 4000 is
   closed. If its handle is unavailable, resolve the exact listener; never use
   broad process-kill commands.
-- `JEKYLL_ENV=production bundle exec jekyll build --trace` performs the
+- `JEKYLL_ENV=production bundle exec jekyll build` performs the
   production build used for final validation.
 - Restart the Jekyll server after changing `_config.yml`; configuration changes
   are not reloaded automatically.
@@ -98,21 +98,9 @@
   or `cwebp` from libwebp (`brew install webp`). Give every image descriptive
   alt text, not a filename. Social-preview images are the exception: keep them
   1200×630 PNG or JPEG for crawler compatibility.
-- For every new post being published, create a dedicated social-preview image
-  for both X and LinkedIn by following the project-local
-  `$create-social-preview` skill in
-  `.agents/skills/create-social-preview/SKILL.md`. Default to the fixed
-  `assets/images/post-social-editorial-template.svg` with an empty
-  `post-visual` group. Use the exact post title and set the single label to the
-  uppercase first category and first tag joined by ` · `. Do not add a
-  description, metaphor, illustration, icon or photograph unless explicitly
-  requested. Never change taxonomy to alter the label. Use
-  `assets/images/post-social-template.svg` only when the description-based
-  classic template is explicitly requested.
-- Render the completed template in a browser and export it to a 1200×630 PNG
-  or JPEG in `assets/images/`. Check it at thumbnail size and commit only the
-  raster export unless editable source was requested. Set `image.path`,
-  `image.width`, `image.height`, and `image.alt` in the post front matter.
+- When publishing a new post or changing its image metadata, use the
+  project-local `$create-social-preview` skill; its template, export,
+  verification, and front-matter requirements are mandatory.
 - Use two spaces for nested YAML and SCSS. For HTML and Liquid, match the
   surrounding file and keep whitespace-control markers such as `{%-` intact.
 - Keep site-wide identity, plugin, and social-handle settings in `_config.yml`.

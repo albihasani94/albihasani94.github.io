@@ -20,7 +20,8 @@ set to **GitHub Actions**.
 
 The repository tracks its complete build environment:
 
-- [`.ruby-version`](.ruby-version) selects Ruby 3.4.10 locally and in Actions.
+- [`.ruby-version`](.ruby-version) selects the project Ruby version locally and
+  in Actions.
 - [`Gemfile`](Gemfile) pins the supported Jekyll, theme, and plugin series.
 - [`Gemfile.lock`](Gemfile.lock) makes local and production builds reproducible.
 - `_config.yml` enables
@@ -42,6 +43,12 @@ Start a local preview at <http://127.0.0.1:4000>:
 
 ```sh
 bundle exec jekyll serve
+```
+
+To include unpublished drafts in the preview:
+
+```sh
+bundle exec jekyll serve --drafts
 ```
 
 Run the production build before pushing:

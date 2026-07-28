@@ -27,15 +27,12 @@
   install path; `bundle install` installs the locked dependencies there.
 - `bundle exec jekyll serve` starts a preview at <http://127.0.0.1:4000>.
 - `bundle exec jekyll serve --drafts` includes content from `_drafts/`.
-- When an agent starts a preview, run it as a managed long-running process,
-  retain its exact process or session handle, wait for Jekyll to report that
-  the server is running, and verify that the local URL responds. Then return
-  control to the user while leaving the preview running.
-- When the user asks to stop the preview, the agent must stop the retained
-  process or session and verify that port 4000 is no longer listening. The user
-  should not need access to the serving terminal. Avoid broad process-kill
-  commands; if the original handle is unavailable, first resolve the exact
-  process listening on port 4000.
+- For agent-run previews, use a managed long-running session. Retain its handle,
+  wait for Jekyll to report readiness, verify the local URL, and leave it
+  running after replying.
+- When asked to stop, terminate the retained session and verify port 4000 is
+  closed. If its handle is unavailable, resolve the exact listener; never use
+  broad process-kill commands.
 - `JEKYLL_ENV=production bundle exec jekyll build --trace` performs the
   production build used for final validation.
 - Restart the Jekyll server after changing `_config.yml`; configuration changes

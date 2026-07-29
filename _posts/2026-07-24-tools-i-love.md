@@ -61,7 +61,7 @@ Launched by OpenAI as a response to Anthropic's Claude Code, it has been my copi
 Its distinction from Claude Code and Google's Antigravity CLI is that it's the only harness of the three that is [open-source](https://github.com/openai/codex).
 Reminder that while all three have OSS repositories ([Antigravity CLI](https://github.com/google-antigravity/antigravity-cli), [Claude Code](https://github.com/anthropics/claude-code)),
 only Codex actually publishes its source code.
-[Grok Build](https://github.com/xai-org/grok-build) recently became open-source too[^footnotes-1], likely fuelled by its public image coming under scrutiny over allegations of uploading entire users home directories to xAI servers[^footnotes-2].
+[Grok Build](https://github.com/xai-org/grok-build) recently became open-source[^footnotes-1] too, likely fuelled by its public image coming under scrutiny over allegations of uploading entire users home directories to xAI servers[^footnotes-2].
 
 I feel so empowered by Codex, I feel like there are fun times ahead.
 

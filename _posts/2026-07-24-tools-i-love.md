@@ -61,8 +61,7 @@ Launched by OpenAI as a response to Anthropic's Claude Code, it has been my copi
 Its distinction from Claude Code and Google's Antigravity CLI is that it's the only harness of the three that is [open-source](https://github.com/openai/codex).
 Reminder that while all three have OSS repositories ([Antigravity CLI](https://github.com/google-antigravity/antigravity-cli), [Claude Code](https://github.com/anthropics/claude-code)),
 only Codex actually publishes its source code.
-Grok Build CLI recently became [open-source](https://github.com/xai-org/grok-build) too,
-likely fuelled by its public image coming under scrutiny over allegations of uploading entire users home directories to xAI servers[^footnotes-1].
+[Grok Build](https://github.com/xai-org/grok-build) recently became open-source to [^footnotes-1], likely fuelled by its public image coming under scrutiny over allegations of uploading entire users home directories to xAI servers[^footnotes-2].
 
 I feel so empowered by Codex, I feel like there are fun times ahead.
 
@@ -72,7 +71,7 @@ I feel so empowered by Codex, I feel like there are fun times ahead.
 
 This is actually the alternative to [uBlock Origin](https://github.com/gorhill/uBlock#firefox) that the browser market made [Raymond Hill](https://x.com/gorhill) build after MV2 was deprecated and later removed from Chromium. No good things come out of a monopoly.
 
-According to its developer, uBlock Origin is the most effective on Firefox[^footnotes-2]. Using Apple devices and platforms though, the arrival of the Lite version on the App Store last summer made it my Safari's companion.
+According to its developer, uBlock Origin is the most effective on Firefox[^footnotes-3]. Using Apple devices and platforms though, the arrival of the Lite version on the App Store last summer made it my Safari's companion.
 
 Browsing an internet without it would make me go back to a flip-phone.
 
@@ -127,6 +126,8 @@ Some of the shows I've been listening to: [The Pragmatic Engineer](https://podca
 
 ### Footnotes
 
-[^footnotes-1]: [https://x.com/a_green_being/status/2076598897779020159](https://x.com/a_green_being/status/2076598897779020159)
+[^footnotes-1]: [xai-org/grok-build, now open source](https://simonwillison.net/2026/Jul/15/grok-build/)
 
-[^footnotes-2]: [uBlock Origin works best on Firefox](https://github.com/gorhill/uBlock/wiki/uBlock-Origin-works-best-on-Firefox)
+[^footnotes-2]: [https://x.com/a_green_being/status/2076598897779020159](https://x.com/a_green_being/status/2076598897779020159)
+
+[^footnotes-3]: [uBlock Origin works best on Firefox](https://github.com/gorhill/uBlock/wiki/uBlock-Origin-works-best-on-Firefox)

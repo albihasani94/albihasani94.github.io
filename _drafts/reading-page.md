@@ -104,15 +104,11 @@ the `lastBuildDate` value from each feed. Jekyll loads that file through
 There is no client-side JavaScript and no runtime call from a reader’s browser
 to Goodreads for the book data.
 
-The snapshot is also a fallback. If a network, HTTP, XML, date or other parsing
-error occurs and `_data/goodreads.yml` already exists, the script warns and
-keeps the previous file. It exits successfully so an unrelated site deployment
-can continue. If no snapshot exists, it exits with an error and stops the
-build.
-
-That choice favors site availability over freshness. It is useful, but it also
-means a scheduled refresh can stay green while serving stale data. I will come
-back to that.
+The snapshot is also a fallback. In its default tolerant mode, a network, HTTP,
+XML, date or other parsing error leaves an existing `_data/goodreads.yml`
+unchanged and exits successfully. That keeps optional local refreshes from
+blocking unrelated work. The scheduled workflow sets `GOODREADS_STRICT=1`, so
+the same failure stops the refresh and remains visible in Actions.
 
 ## The page kept changing
 
@@ -151,25 +147,36 @@ None of these are difficult changes. They are still product decisions. The
 fact that a model can change a label in seconds does not decide whether the
 label belongs there.
 
-## Refreshing it on the third of every month
+## Refreshing it on the third and eighteenth of every month
 
-The existing Pages workflow already ran the Ruby importer before Jekyll, so the
-same workflow became the refresh mechanism. It still runs on pushes, pull
-requests and manual dispatches, and it now has this monthly schedule:
+The first implementation ran the importer before every Jekyll build. That made
+push and pull-request validation depend on Goodreads, and a scheduled update
+existed only inside its temporary Actions checkout. A later build could
+therefore redeploy the older committed snapshot.
+
+The final implementation separates the jobs. The Pages workflow always builds
+from committed data. A dedicated refresh workflow can be dispatched manually
+and has this twice-monthly schedule:
 
 ```yaml
 schedule:
-  - cron: "17 5 3 * *"
+  - cron: "17 5 3,18 * *"
 ```
 
-That means 05:17 UTC on the third day of every month. The choice of minute 17
-is modestly intentional: it avoids scheduling at the exact start of the hour,
-when many jobs tend to be submitted. It is not a guarantee of punctual
-execution.
+That means 05:17 UTC on the third and eighteenth days of every month. The
+choice of minute 17 is modestly intentional: it avoids scheduling at the exact
+start of the hour, when many jobs tend to be submitted. It is not a guarantee
+of punctual execution.
 
-On a scheduled run, Actions checks out the repository, sets up Ruby, refreshes
-the YAML inside that checkout, builds Jekyll in production mode, and deploys the
-generated site. Pull requests build but do not deploy.
+On a refresh run, Actions checks out `master`, tests the parser, fetches both
+feeds in strict mode, and checks whether the snapshot changed. If it did, the
+workflow performs a production build, commits only `_data/goodreads.yml`, and
+pushes it to `master`.
+
+A commit made with the workflow's `GITHUB_TOKEN` does not trigger another push
+workflow, so the refresh explicitly dispatches the Pages workflow after the
+commit. If the snapshot did not change, there is nothing to commit or deploy.
+Normal pushes and pull requests never contact Goodreads.
 
 ## The cover-image rabbit hole
 
@@ -280,32 +287,17 @@ and a reader is serving the same generation.
 
 ## What I would harden next
 
-The importer is small and readable, but a later review found several reliability
-gaps.
+The importer now rejects missing required fields and an empty historical shelf,
+writes through a temporary file and atomic rename, and has fixture tests for
+valid, empty, malformed and failed responses. Strict scheduled runs no longer
+hide stale-data failures.
 
-First, a syntactically valid feed with a `<channel>` and zero or only some items
-is accepted as authoritative. It can replace a known-good snapshot with an
-empty or truncated one. The fallback only protects against exceptions.
-
-Second, preserving the stale snapshot exits successfully. That is good for an
-ordinary site deployment, but it can hide a broken monthly refresh. A strict
-mode for scheduled runs could keep the resilient behavior on pushes while
-making refresh failures visible.
-
-Third, the importer does not explicitly paginate. The current snapshot fits in
-one response, but the script assumes that one feed response remains complete as
-the shelf grows.
-
-Fourth, `File.write` replaces the YAML non-atomically. An interrupted write
-could leave a truncated snapshot. Writing a temporary file in the same
-directory and renaming it would be safer.
-
-Finally, there are no parser tests. Fixtures for an empty feed, a partial feed,
-missing image fields, malformed dates, pagination and network failure would
-turn several assumptions into executable checks.
-
-These are future hardening items, not details I want to pretend the current
-script already handles.
+Two limitations remain. A syntactically valid but non-empty partial feed can
+still look authoritative, and the importer does not explicitly paginate. The
+current snapshot fits in one response, but the script assumes that one feed
+response remains complete as the shelf grows. Fixtures for partial feeds,
+pagination and more upstream field variations would be the next hardening
+work.
 
 ## The useful part of working with an agent
 

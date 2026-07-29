@@ -1,137 +1,196 @@
 #!/usr/bin/env ruby
 
 # Refreshes the local reading snapshot from Goodreads' official public shelf
-# RSS feed. Goodreads supplies the book links and cover URLs in that feed.
+# RSS feeds. Goodreads supplies the book links and cover URLs in those feeds.
 
 require "cgi"
 require "net/http"
 require "rexml/document"
+require "tempfile"
 require "time"
 require "uri"
 require "yaml"
 
-CURRENTLY_READING_URL = "https://www.goodreads.com/review/list_rss/9618785?shelf=currently-reading"
-READ_URL = "https://www.goodreads.com/review/list_rss/9618785?shelf=read"
-PROFILE_URL = "https://www.goodreads.com/user/show/9618785-albin-hasani"
-OUTPUT_PATH = File.expand_path("../_data/goodreads.yml", __dir__)
+module GoodreadsImporter
+  CURRENTLY_READING_URL = "https://www.goodreads.com/review/list_rss/9618785?shelf=currently-reading"
+  READ_URL = "https://www.goodreads.com/review/list_rss/9618785?shelf=read"
+  PROFILE_URL = "https://www.goodreads.com/user/show/9618785-albin-hasani"
+  OUTPUT_PATH = File.expand_path("../_data/goodreads.yml", __dir__)
 
-def fetch(uri, redirects_remaining = 3)
-  raise "Too many redirects" if redirects_remaining.negative?
+  module_function
 
-  request = Net::HTTP::Get.new(
-    uri,
-    "Accept" => "application/rss+xml, application/xml;q=0.9",
-    "User-Agent" => "albinhasani.net Goodreads shelf importer"
-  )
+  def fetch(uri, redirects_remaining = 3)
+    raise "Too many redirects" if redirects_remaining.negative?
 
-  http = Net::HTTP.new(uri.host, uri.port)
-  http.use_ssl = uri.scheme == "https"
-  http.open_timeout = 10
-  http.read_timeout = 10
+    request = Net::HTTP::Get.new(
+      uri,
+      "Accept" => "application/rss+xml, application/xml;q=0.9",
+      "User-Agent" => "albinhasani.net Goodreads shelf importer"
+    )
 
-  response = http.request(request)
+    http = Net::HTTP.new(uri.host, uri.port)
+    http.use_ssl = uri.scheme == "https"
+    http.open_timeout = 10
+    http.read_timeout = 10
 
-  case response
-  when Net::HTTPSuccess
-    response.body
-  when Net::HTTPRedirection
-    location = response["location"]
-    raise "Goodreads redirected without a location" unless location
+    response = http.request(request)
 
-    fetch(URI.join(uri, location), redirects_remaining - 1)
-  else
-    raise "Goodreads returned HTTP #{response.code}"
-  end
-end
+    case response
+    when Net::HTTPSuccess
+      response.body
+    when Net::HTTPRedirection
+      location = response["location"]
+      raise "Goodreads redirected without a location" unless location
 
-def text(element, path)
-  child = element.elements[path]
-  child&.texts&.map(&:value)&.join&.strip
-end
-
-def book_url(item, book_id)
-  description = text(item, "description").to_s
-  match = description.match(
-    %r{href="(https://www\.goodreads\.com/book/show/[^"?]+)(?:\?[^"]*)?"}
-  )
-
-  match ? CGI.unescapeHTML(match[1]) : "https://www.goodreads.com/book/show/#{book_id}"
-end
-
-begin
-  current_document = REXML::Document.new(fetch(URI(CURRENTLY_READING_URL)))
-  current_channel = REXML::XPath.first(current_document, "//channel")
-  raise "Goodreads returned an invalid currently-reading RSS document" unless current_channel
-
-  current_books = REXML::XPath.match(current_channel, "item").map do |item|
-    book_id = text(item, "book_id")
-    pages = text(item, "book/num_pages")
-
-    {
-      "title" => text(item, "title"),
-      "author" => text(item, "author_name"),
-      "url" => book_url(item, book_id),
-      "cover" => text(item, "book_medium_image_url"),
-      "cover_large" => text(item, "book_large_image_url"),
-      "pages" => pages.nil? || pages.empty? ? nil : pages.to_i
-    }.compact
-  end
-
-  read_document = REXML::Document.new(fetch(URI(READ_URL)))
-  read_channel = REXML::XPath.first(read_document, "//channel")
-  raise "Goodreads returned an invalid read-shelf RSS document" unless read_channel
-
-  read_books = REXML::XPath.match(read_channel, "item").map do |item|
-    book_id = text(item, "book_id")
-    read_at = text(item, "user_read_at")
-    read_on = read_at.nil? || read_at.empty? ? nil : Time.parse(read_at).strftime("%Y-%m-%d")
-
-    {
-      "title" => text(item, "title"),
-      "author" => text(item, "author_name"),
-      "url" => book_url(item, book_id),
-      "cover" => text(item, "book_medium_image_url"),
-      "read_at" => read_on
-    }.compact
-  end
-
-  dated_read, undated_read = read_books.partition { |book| book["read_at"] }
-  read_by_year = dated_read
-    .group_by { |book| book["read_at"][0, 4].to_i }
-    .sort_by { |year, _books| -year }
-    .map do |year, books|
-      {
-        "year" => year,
-        "books" => books.sort_by { |book| book["read_at"] }.reverse
-      }
+      fetch(URI.join(uri, location), redirects_remaining - 1)
+    else
+      raise "Goodreads returned HTTP #{response.code}"
     end
-
-  data = {
-    "profile_url" => PROFILE_URL,
-    "currently_reading_source_url" => CURRENTLY_READING_URL,
-    "read_source_url" => READ_URL,
-    "currently_reading_updated_at" => Time.parse(text(current_channel, "lastBuildDate")).iso8601,
-    "read_updated_at" => Time.parse(text(read_channel, "lastBuildDate")).iso8601,
-    "currently_reading" => current_books,
-    "read_by_year" => read_by_year,
-    "undated_read" => undated_read
-  }
-
-  header = <<~YAML
-    # Generated by scripts/update_goodreads.rb from Goodreads' official public
-    # shelf RSS feeds. Do not edit this file by hand.
-  YAML
-
-  File.write(OUTPUT_PATH, "#{header}#{YAML.dump(data)}")
-  puts(
-    "Updated #{OUTPUT_PATH} with #{current_books.length} current, " \
-    "#{dated_read.length} dated read, and #{undated_read.length} undated book(s)."
-  )
-rescue StandardError => error
-  if File.exist?(OUTPUT_PATH)
-    warn "Goodreads refresh skipped; keeping the existing snapshot: #{error.message}"
-  else
-    warn "Goodreads refresh failed and no snapshot exists: #{error.message}"
-    exit 1
   end
+
+  def text(element, path)
+    child = element.elements[path]
+    child&.texts&.map(&:value)&.join&.strip
+  end
+
+  def required_text(element, path, context)
+    value = text(element, path)
+    raise "Goodreads #{context} is missing #{path}" if value.nil? || value.empty?
+
+    value
+  end
+
+  def channel_from(xml, shelf)
+    document = REXML::Document.new(xml)
+    channel = REXML::XPath.first(document, "//channel")
+    raise "Goodreads returned an invalid #{shelf} RSS document" unless channel
+
+    channel
+  end
+
+  def book_url(item, book_id)
+    description = text(item, "description").to_s
+    match = description.match(
+      %r{href="(https://www\.goodreads\.com/book/show/[^"?]+)(?:\?[^"]*)?"}
+    )
+
+    match ? CGI.unescapeHTML(match[1]) : "https://www.goodreads.com/book/show/#{book_id}"
+  end
+
+  def current_books(channel)
+    REXML::XPath.match(channel, "item").map.with_index do |item, index|
+      context = "currently-reading item #{index + 1}"
+      book_id = required_text(item, "book_id", context)
+      pages = text(item, "book/num_pages")
+
+      {
+        "title" => required_text(item, "title", context),
+        "author" => required_text(item, "author_name", context),
+        "url" => book_url(item, book_id),
+        "cover" => required_text(item, "book_medium_image_url", context),
+        "cover_large" => text(item, "book_large_image_url"),
+        "pages" => pages.nil? || pages.empty? ? nil : Integer(pages, 10)
+      }.compact
+    end
+  end
+
+  def read_books(channel)
+    REXML::XPath.match(channel, "item").map.with_index do |item, index|
+      context = "read item #{index + 1}"
+      book_id = required_text(item, "book_id", context)
+      read_at = text(item, "user_read_at")
+      read_on = read_at.nil? || read_at.empty? ? nil : Time.parse(read_at).strftime("%Y-%m-%d")
+
+      {
+        "title" => required_text(item, "title", context),
+        "author" => required_text(item, "author_name", context),
+        "url" => book_url(item, book_id),
+        "cover" => required_text(item, "book_medium_image_url", context),
+        "read_at" => read_on
+      }.compact
+    end
+  end
+
+  def build_snapshot(current_xml, read_xml)
+    current_channel = channel_from(current_xml, "currently-reading")
+    read_channel = channel_from(read_xml, "read-shelf")
+    current = current_books(current_channel)
+    read = read_books(read_channel)
+    raise "Goodreads returned an empty read shelf" if read.empty?
+
+    dated_read, undated_read = read.partition { |book| book["read_at"] }
+    read_by_year = dated_read
+      .group_by { |book| book["read_at"][0, 4].to_i }
+      .sort_by { |year, _books| -year }
+      .map do |year, books|
+        {
+          "year" => year,
+          "books" => books.sort_by { |book| book["read_at"] }.reverse
+        }
+      end
+
+    {
+      "profile_url" => PROFILE_URL,
+      "currently_reading_source_url" => CURRENTLY_READING_URL,
+      "read_source_url" => READ_URL,
+      "currently_reading_updated_at" => Time.parse(
+        required_text(current_channel, "lastBuildDate", "currently-reading channel")
+      ).iso8601,
+      "read_updated_at" => Time.parse(
+        required_text(read_channel, "lastBuildDate", "read-shelf channel")
+      ).iso8601,
+      "currently_reading" => current,
+      "read_by_year" => read_by_year,
+      "undated_read" => undated_read
+    }
+  end
+
+  def serialized_snapshot(data)
+    header = <<~YAML
+      # Generated by scripts/update_goodreads.rb from Goodreads' official public
+      # shelf RSS feeds. Do not edit this file by hand.
+    YAML
+
+    "#{header}#{YAML.dump(data)}"
+  end
+
+  def write_snapshot(output_path, data)
+    directory = File.dirname(output_path)
+    mode = File.exist?(output_path) ? File.stat(output_path).mode & 0o777 : 0o644
+
+    Tempfile.create([".goodreads-", ".yml"], directory) do |file|
+      file.write(serialized_snapshot(data))
+      file.flush
+      file.fsync
+      file.chmod(mode)
+      file.close
+      File.rename(file.path, output_path)
+    end
+  end
+
+  def run(output_path: OUTPUT_PATH, strict: ENV["GOODREADS_STRICT"] == "1", fetcher: method(:fetch))
+    current_xml = fetcher.call(URI(CURRENTLY_READING_URL))
+    read_xml = fetcher.call(URI(READ_URL))
+    data = build_snapshot(current_xml, read_xml)
+    write_snapshot(output_path, data)
+
+    dated_count = data["read_by_year"].sum { |group| group["books"].length }
+    puts(
+      "Updated #{output_path} with #{data["currently_reading"].length} current, " \
+      "#{dated_count} dated read, and #{data["undated_read"].length} undated book(s)."
+    )
+    true
+  rescue StandardError => error
+    if File.exist?(output_path)
+      warn "Goodreads refresh failed; keeping the existing snapshot: #{error.message}"
+      !strict
+    else
+      warn "Goodreads refresh failed and no snapshot exists: #{error.message}"
+      false
+    end
+  end
+end
+
+if $PROGRAM_NAME == __FILE__
+  exit(GoodreadsImporter.run ? 0 : 1)
 end

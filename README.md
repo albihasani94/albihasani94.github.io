@@ -13,6 +13,13 @@ Pull requests run the same production build without deploying. The custom
 domain is configured via the [`CNAME`](CNAME) file and DNS `ALIAS` records
 pointing `albinhasani.net` at GitHub's infrastructure.
 
+The [`refresh-goodreads.yml`](.github/workflows/refresh-goodreads.yml) workflow
+refreshes the committed reading snapshot at 05:17 UTC on the third and
+eighteenth days of each month or through a manual dispatch. When the snapshot
+changes, the workflow validates it, commits it to `master`, and explicitly
+dispatches `pages.yml`. Normal site builds use the committed snapshot and do
+not contact Goodreads.
+
 In the repository's Pages settings, **Build and deployment > Source** must be
 set to **GitHub Actions**.
 
@@ -55,6 +62,12 @@ Run the production build before pushing:
 
 ```sh
 JEKYLL_ENV=production bundle exec jekyll build
+```
+
+Run the Goodreads importer tests after changing its parser or workflow:
+
+```sh
+ruby test/update_goodreads_test.rb
 ```
 
 When intentionally updating dependencies, run `bundle update`, review the

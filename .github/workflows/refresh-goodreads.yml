@@ -1,0 +1,68 @@
+name: Refresh Goodreads data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 5 3,18 * *"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: goodreads-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+      contents: write
+    steps:
+      - name: Check out master
+        uses: actions/checkout@v7
+        with:
+          ref: master
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+
+      - name: Test Goodreads importer
+        run: ruby test/update_goodreads_test.rb
+
+      - name: Refresh Goodreads snapshot
+        run: ruby scripts/update_goodreads.rb
+        env:
+          GOODREADS_STRICT: "1"
+
+      - name: Check for snapshot changes
+        id: snapshot
+        run: |
+          if git diff --quiet -- _data/goodreads.yml; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Build site
+        if: steps.snapshot.outputs.changed == 'true'
+        run: bundle exec jekyll build
+        env:
+          JEKYLL_ENV: production
+
+      - name: Commit snapshot
+        if: steps.snapshot.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add _data/goodreads.yml
+          git commit -m "Refresh Goodreads reading data"
+          git push origin HEAD:master
+
+      - name: Deploy refreshed snapshot
+        if: steps.snapshot.outputs.changed == 'true'
+        run: gh workflow run pages.yml --ref master
+        env:
+          GH_TOKEN: ${{ github.token }}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <lastBuildDate>Wed, 29 Jul 2026 05:18:00 +0000</lastBuildDate>
+    <item>
+      <title>Newer Book</title>
+      <author_name>Rita Reader</author_name>
+      <book_id>202</book_id>
+      <description><![CDATA[
+        <a href="https://www.goodreads.com/book/show/202-newer-book?ref=nav_sb_ss_1_5">Book</a>
+      ]]></description>
+      <book_medium_image_url>https://images.example/202-medium.jpg</book_medium_image_url>
+      <user_read_at>Tue, 14 Jul 2026 00:00:00 +0000</user_read_at>
+    </item>
+    <item>
+      <title>Older Book</title>
+      <author_name>Rita Reader</author_name>
+      <book_id>203</book_id>
+      <book_medium_image_url>https://images.example/203-medium.jpg</book_medium_image_url>
+      <user_read_at>Sat, 20 Dec 2025 00:00:00 +0000</user_read_at>
+    </item>
+    <item>
+      <title>Undated Book</title>
+      <author_name>Rita Reader</author_name>
+      <book_id>204</book_id>
+      <book_medium_image_url>https://images.example/204-medium.jpg</book_medium_image_url>
+      <user_read_at></user_read_at>
+    </item>
+  </channel>
+</rss>

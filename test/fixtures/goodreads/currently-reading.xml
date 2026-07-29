@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <lastBuildDate>Wed, 29 Jul 2026 05:17:00 +0000</lastBuildDate>
+    <item>
+      <title>Example Architecture</title>
+      <author_name>Ada Architect</author_name>
+      <book_id>101</book_id>
+      <description><![CDATA[
+        <a href="https://www.goodreads.com/book/show/101-example-architecture?from_search=true">Book</a>
+      ]]></description>
+      <book_medium_image_url>https://images.example/101-medium.jpg</book_medium_image_url>
+      <book_large_image_url>https://images.example/101-large.jpg</book_large_image_url>
+      <book>
+        <num_pages>320</num_pages>
+      </book>
+    </item>
+  </channel>
+</rss>

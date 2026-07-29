@@ -8,8 +8,6 @@ on:
     branches:
       - master
   workflow_dispatch:
-  schedule:
-    - cron: "17 5 3 * *"
 
 permissions:
   contents: read
@@ -34,9 +32,6 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
-
-      - name: Refresh Goodreads reading shelf
-        run: ruby scripts/update_goodreads.rb
 
       - name: Build site
         run: bundle exec jekyll build

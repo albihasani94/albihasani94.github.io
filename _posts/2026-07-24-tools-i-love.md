@@ -126,7 +126,7 @@ Some of the shows I've been listening to: [The Pragmatic Engineer](https://podca
 
 ## Footnotes
 
-[^footnotes-1]: [About Ghostty > Native](https://ghostty.org/docs/about#native)
+[^footnotes-1]: [About Ghostty](https://ghostty.org/docs/about#native)
 
 [^footnotes-2]: [xai-org/grok-build, now open source](https://simonwillison.net/2026/Jul/15/grok-build/)
 

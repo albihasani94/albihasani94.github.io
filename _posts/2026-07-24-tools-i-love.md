@@ -124,9 +124,9 @@ The audio quality is in my opinion, better than Spotify, UI and UX a different w
 
 Some of the shows I've been listening to: [The Pragmatic Engineer](https://podcasts.apple.com/nl/podcast/the-pragmatic-engineer/id1769051199?l=en-GB), [Still Burning](https://podcasts.apple.com/nl/podcast/still-burning/id1887873329?l=en-GB) by Kent Beck, [Jill on Money](https://podcasts.apple.com/nl/podcast/jill-on-money-with-jill-schlesinger/id431167790?l=en-GB), and in Albanian: [Besi Andi Podcast](https://podcasts.apple.com/nl/podcast/besi-andi-podcast/id1573247025?l=en-GB).
 
-### Footnotes
+## Footnotes
 
-[^footnotes-1]: [Native](https://ghostty.org/docs/about#native)
+[^footnotes-1]: [About Ghostty, Native](https://ghostty.org/docs/about#native)
 
 [^footnotes-2]: [xai-org/grok-build, now open source](https://simonwillison.net/2026/Jul/15/grok-build/)
 

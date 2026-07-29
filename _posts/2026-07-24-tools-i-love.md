@@ -128,6 +128,6 @@ Some of the shows I've been listening to: [The Pragmatic Engineer](https://podca
 
 [^footnotes-1]: [xai-org/grok-build, now open source](https://simonwillison.net/2026/Jul/15/grok-build/)
 
-[^footnotes-2]: [https://x.com/a_green_being/status/2076598897779020159](https://x.com/a_green_being/status/2076598897779020159)
+[^footnotes-2]: [Grok CLI uploaded the whole home directory to GCS](https://news.ycombinator.com/item?id=48892468)
 
 [^footnotes-3]: [uBlock Origin works best on Firefox](https://github.com/gorhill/uBlock/wiki/uBlock-Origin-works-best-on-Firefox)

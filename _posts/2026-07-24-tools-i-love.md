@@ -128,5 +128,6 @@ Some of the shows I've been listening to: [The Pragmatic Engineer](https://podca
 ### Footnotes
 
 [^footnotes-1]: [https://x.com/a_green_being/status/2076598897779020159](https://x.com/a_green_being/status/2076598897779020159)
+
 [^footnotes-2]: [uBlock Origin works best on Firefox
 ](https://github.com/gorhill/uBlock/wiki/uBlock-Origin-works-best-on-Firefox)

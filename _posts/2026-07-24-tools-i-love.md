@@ -72,7 +72,7 @@ I feel so empowered by Codex, I feel like there are fun times ahead.
 
 This is actually the alternative to [uBlock Origin](https://github.com/gorhill/uBlock#firefox) that the browser market made [Raymond Hill](https://x.com/gorhill) build after MV2 was deprecated and later removed from Chromium. No good things come out of a monopoly.
 
-According to its developer, uBlock Origin is the most effective on [Firefox](https://github.com/gorhill/uBlock/wiki/uBlock-Origin-works-best-on-Firefox). Using Apple devices and platforms though, the arrival of the Lite version on the App Store last summer made it my Safari's companion.
+According to its developer, uBlock Origin is the most effective on Firefox[^footnotes-2]. Using Apple devices and platforms though, the arrival of the Lite version on the App Store last summer made it my Safari's companion.
 
 Browsing an internet without it would make me go back to a flip-phone.
 
@@ -128,3 +128,5 @@ Some of the shows I've been listening to: [The Pragmatic Engineer](https://podca
 ### Footnotes
 
 [^footnotes-1]: [https://x.com/a_green_being/status/2076598897779020159](https://x.com/a_green_being/status/2076598897779020159)
+[^footnotes-2]: [uBlock Origin works best on Firefox
+](https://github.com/gorhill/uBlock/wiki/uBlock-Origin-works-best-on-Firefox)

@@ -62,7 +62,7 @@ Its distinction from Claude Code and Google's Antigravity CLI is that it's the o
 Reminder that while all three have OSS repositories ([Antigravity](https://github.com/google-antigravity/antigravity-cli), [Claude Code](https://github.com/anthropics/claude-code)),
 only Codex actually publishes its source code.
 Grok Build CLI recently became [open-source](https://github.com/xai-org/grok-build) too,
-likely fuelled by its public image coming under scrutiny over allegations of uploading entire users home directories to xAI servers.
+likely fuelled by its public image coming under scrutiny over allegations of uploading entire users home directories to xAI servers.[^footnotes-1]
 
 I feel so empowered by Codex, I feel like there are fun times ahead.
 
@@ -124,3 +124,7 @@ I don't even have Google Maps on my phone. 9292 is a lot simpler, faster, and mo
 The audio quality is in my opinion, better than Spotify, UI and UX a different world.
 
 Some of the shows I've been listening to: [The Pragmatic Engineer](https://podcasts.apple.com/nl/podcast/the-pragmatic-engineer/id1769051199?l=en-GB), [Still Burning](https://podcasts.apple.com/nl/podcast/still-burning/id1887873329?l=en-GB) by Kent Beck, [Jill on Money](https://podcasts.apple.com/nl/podcast/jill-on-money-with-jill-schlesinger/id431167790?l=en-GB), and in Albanian: [Besi Andi Podcast](https://podcasts.apple.com/nl/podcast/besi-andi-podcast/id1573247025?l=en-GB).
+
+### Footnotes
+
+[^footnotes-1]: https://x.com/a_green_being/status/2076598897779020159

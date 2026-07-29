@@ -46,7 +46,7 @@ Even my own blog, I am writing on Zed these days, including this very post.
 
 [Ghostty](https://ghostty.org) is an awesome terminal I use as my daily driver.
 
-Created by [Mitchell Hashimoto](https://mitchellh.com) (Terraform, HashiCorp), Ghostty is a fast terminal emulator that I'm using on macOS.
+Created by [Mitchell Hashimoto](https://mitchellh.com) (Terraform, HashiCorp), Ghostty is a native[^footnotes-1] and fast terminal emulator that I'm using on macOS.
 
 Could he have predicted that developers are going back to the terminal in 2026 to spend most of the day working with Codex CLI/Claude Code?
 
@@ -61,7 +61,7 @@ Launched by OpenAI as a response to Anthropic's Claude Code, it has been my copi
 Its distinction from Claude Code and Google's Antigravity CLI is that it's the only harness of the three that is [open-source](https://github.com/openai/codex).
 Reminder that while all three have OSS repositories ([Antigravity CLI](https://github.com/google-antigravity/antigravity-cli), [Claude Code](https://github.com/anthropics/claude-code)),
 only Codex actually publishes its source code.
-[Grok Build](https://github.com/xai-org/grok-build) recently became open-source too[^footnotes-1], likely fuelled by its public image coming under scrutiny over allegations of uploading entire users home directories to xAI servers[^footnotes-2].
+[Grok Build](https://github.com/xai-org/grok-build) recently became open-source too[^footnotes-2], likely fuelled by its public image coming under scrutiny over allegations of uploading entire users home directories to xAI servers[^footnotes-3].
 
 I feel so empowered by Codex, I feel like there are fun times ahead.
 
@@ -71,7 +71,7 @@ I feel so empowered by Codex, I feel like there are fun times ahead.
 
 This is actually the alternative to [uBlock Origin](https://github.com/gorhill/uBlock#firefox) that the browser market made [Raymond Hill](https://x.com/gorhill) build after MV2 was deprecated and later removed from Chromium. No good things come out of a monopoly.
 
-According to its developer, uBlock Origin is the most effective on Firefox[^footnotes-3]. Using Apple devices and platforms though, the arrival of the Lite version on the App Store last summer made it my Safari's companion.
+According to its developer, uBlock Origin is the most effective on Firefox[^footnotes-4]. Using Apple devices and platforms though, the arrival of the Lite version on the App Store last summer made it my Safari's companion.
 
 Browsing an internet without it would make me go back to a flip-phone.
 
@@ -126,8 +126,10 @@ Some of the shows I've been listening to: [The Pragmatic Engineer](https://podca
 
 ### Footnotes
 
-[^footnotes-1]: [xai-org/grok-build, now open source](https://simonwillison.net/2026/Jul/15/grok-build/)
+[^footnotes-1]: [Native](https://ghostty.org/docs/about#native)
 
-[^footnotes-2]: [Grok CLI uploaded the whole home directory to GCS](https://news.ycombinator.com/item?id=48892468)
+[^footnotes-2]: [xai-org/grok-build, now open source](https://simonwillison.net/2026/Jul/15/grok-build/)
 
-[^footnotes-3]: [uBlock Origin works best on Firefox](https://github.com/gorhill/uBlock/wiki/uBlock-Origin-works-best-on-Firefox)
+[^footnotes-3]: [Grok CLI uploaded the whole home directory to GCS](https://news.ycombinator.com/item?id=48892468)
+
+[^footnotes-4]: [uBlock Origin works best on Firefox](https://github.com/gorhill/uBlock/wiki/uBlock-Origin-works-best-on-Firefox)

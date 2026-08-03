@@ -91,17 +91,17 @@ read_by_year:
     read_at: '2025-07-14'
 - year: 2024
   books:
-  - title: 'Software Architecture: The Hard Parts: Modern Trade-Off Analyses for Distributed
-      Architectures'
-    author: Neal Ford
-    url: https://www.goodreads.com/book/show/58153482-software-architecture
-    cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1629825122l/58153482._SX98_.jpg
-    read_at: '2024-12-30'
   - title: 'Spring Boot Persistence Best Practices: Optimize Java Persistence Performance
       in Spring Boot Applications'
     author: Anghel Leonard
     url: https://www.goodreads.com/book/show/48992212-spring-boot-persistence-best-practices
     cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1588573638l/48992212._SX98_.jpg
+    read_at: '2024-12-30'
+  - title: 'Software Architecture: The Hard Parts: Modern Trade-Off Analyses for Distributed
+      Architectures'
+    author: Neal Ford
+    url: https://www.goodreads.com/book/show/58153482-software-architecture
+    cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1629825122l/58153482._SX98_.jpg
     read_at: '2024-12-30'
   - title: 'The Daily Stoic: 366 Meditations on Wisdom, Perseverance, and the Art
       of Living'

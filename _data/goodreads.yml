@@ -4,26 +4,22 @@
 profile_url: https://www.goodreads.com/user/show/9618785-albin-hasani
 currently_reading_source_url: https://www.goodreads.com/review/list_rss/9618785?shelf=currently-reading
 read_source_url: https://www.goodreads.com/review/list_rss/9618785?shelf=read
-currently_reading_updated_at: '2026-07-06T00:27:10-07:00'
-read_updated_at: '2026-07-05T12:46:15-07:00'
+currently_reading_updated_at: '2026-08-17T12:21:14-07:00'
+read_updated_at: '2026-08-12T14:11:43-07:00'
 currently_reading:
-- title: Nederlands in Gang
-  author: Berna de Boer
-  url: https://www.goodreads.com/book/show/96802554-nederlands-in-gang
-  cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1678877452l/96802554._SX98_.jpg
-  cover_large: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1678877452l/96802554._SX318_.jpg
+- title: 'Grokking Algorithms, Second Edition: An illustrated guide for programmers
+    and other curious people'
+  author: Aditya Y. Bhargava
+  url: https://www.goodreads.com/book/show/204305350-grokking-algorithms-second-edition
+  cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1711211758l/204305350._SX98_.jpg
+  cover_large: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1711211758l/204305350._SX318_.jpg
+  pages: 320
 - title: 'Kafka: The Definitive Guide: Real-Time Data and Stream Processing at Scale'
   author: Gwen Shapira
   url: https://www.goodreads.com/book/show/59587771-kafka
   cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1636576205l/59587771._SX98_.jpg
   cover_large: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1636576205l/59587771._SX318_.jpg
   pages: 457
-- title: 'Head First Software Architecture: A Learner''s Guide to Architectural Thinking'
-  author: Raju Gandhi
-  url: https://www.goodreads.com/book/show/171671941-head-first-software-architecture
-  cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1697728094l/171671941._SX98_.jpg
-  cover_large: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1697728094l/171671941._SX318_.jpg
-  pages: 483
 - title: 'Historia e Çamërisë: vështrim historik'
   author: Kristo Frashëri
   url: https://www.goodreads.com/book/show/43384436-historia-e-am-ris
@@ -33,6 +29,22 @@ currently_reading:
 read_by_year:
 - year: 2026
   books:
+  - title: A Practical Dutch Grammar
+    author: Yolande Spaans
+    url: https://www.goodreads.com/book/show/16039057-a-practical-dutch-grammar
+    cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1348254674l/16039057._SX98_.jpg
+    read_at: '2026-08-12'
+  - title: 3e editie Dutch for dummies
+    author: Margreet Kwakernaak
+    url: https://www.goodreads.com/book/show/228072047-3e-editie-dutch-for-dummies
+    cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1739741644l/228072047._SX98_.jpg
+    read_at: '2026-08-10'
+  - title: 'Head First Software Architecture: A Learner''s Guide to Architectural
+      Thinking'
+    author: Raju Gandhi
+    url: https://www.goodreads.com/book/show/171671941-head-first-software-architecture
+    cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1697728094l/171671941._SX98_.jpg
+    read_at: '2026-08-04'
   - title: 'The Checklist Manifesto: How to Get Things Right'
     author: Atul Gawande
     url: https://www.goodreads.com/book/show/6667514-the-checklist-manifesto
@@ -114,10 +126,10 @@ read_by_year:
     url: https://www.goodreads.com/book/show/13539043-thinking-fast-and-slow
     cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1344314728l/13539043._SX98_.jpg
     read_at: '2024-11-10'
-  - title: 'Fundamentals of Software Architecture: An Engineering Approach'
-    author: Mark   Richards
-    url: https://www.goodreads.com/book/show/44144493-fundamentals-of-software-architecture
-    cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1580813753l/44144493._SX98_.jpg
+  - title: 'Fundamentals of Software Architecture: A Modern Engineering Approach'
+    author: Mark Richards
+    url: https://www.goodreads.com/book/show/218151117-fundamentals-of-software-architecture
+    cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1725579210l/218151117._SX98_.jpg
     read_at: '2024-09-19'
   - title: High-Performance Java Persistence
     author: Vlad Mihalcea

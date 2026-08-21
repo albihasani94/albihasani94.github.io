@@ -98,9 +98,10 @@
   or `cwebp` from libwebp (`brew install webp`). Give every image descriptive
   alt text, not a filename. Social-preview images are the exception: keep them
   1200×630 PNG or JPEG for crawler compatibility.
-- When publishing a new post or changing its image metadata, use the
-  project-local `$create-social-preview` skill; its template, export,
-  verification, and front-matter requirements are mandatory.
+- Before creating a social-preview image or adding image metadata for a new
+  post, ask the user whether one is needed; do not generate one by default. If
+  the user confirms, use the project-local `$create-social-preview` skill; its
+  template, export, verification, and front-matter requirements are mandatory.
 - Use two spaces for nested YAML and SCSS. For HTML and Liquid, match the
   surrounding file and keep whitespace-control markers such as `{%-` intact.
 - Keep site-wide identity, plugin, and social-handle settings in `_config.yml`.

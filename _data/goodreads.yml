@@ -5,7 +5,7 @@ profile_url: https://www.goodreads.com/user/show/9618785-albin-hasani
 currently_reading_source_url: https://www.goodreads.com/review/list_rss/9618785?shelf=currently-reading
 read_source_url: https://www.goodreads.com/review/list_rss/9618785?shelf=read
 currently_reading_updated_at: '2026-08-17T12:21:14-07:00'
-read_updated_at: '2026-08-12T14:11:43-07:00'
+read_updated_at: '2026-09-08T23:51:34-07:00'
 currently_reading:
 - title: 'Grokking Algorithms, Second Edition: An illustrated guide for programmers
     and other curious people'
@@ -20,12 +20,6 @@ currently_reading:
   cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1636576205l/59587771._SX98_.jpg
   cover_large: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1636576205l/59587771._SX318_.jpg
   pages: 457
-- title: 'Historia e Çamërisë: vështrim historik'
-  author: Kristo Frashëri
-  url: https://www.goodreads.com/book/show/43384436-historia-e-am-ris
-  cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1546031071l/43384436._SX98_.jpg
-  cover_large: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1546031071l/43384436._SY475_.jpg
-  pages: 330
 read_by_year:
 - year: 2026
   books:

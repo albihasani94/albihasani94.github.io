@@ -4,9 +4,15 @@
 profile_url: https://www.goodreads.com/user/show/9618785-albin-hasani
 currently_reading_source_url: https://www.goodreads.com/review/list_rss/9618785?shelf=currently-reading
 read_source_url: https://www.goodreads.com/review/list_rss/9618785?shelf=read
-currently_reading_updated_at: '2026-08-17T12:21:14-07:00'
-read_updated_at: '2026-09-08T23:51:34-07:00'
+currently_reading_updated_at: '2026-09-12T07:01:56-07:00'
+read_updated_at: '2026-09-17T13:44:43-07:00'
 currently_reading:
+- title: The Elements of Style
+  author: William Strunk Jr.
+  url: https://www.goodreads.com/book/show/33514.The_Elements_of_Style
+  cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1682700068l/33514._SX98_.jpg
+  cover_large: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1682700068l/33514._SY475_.jpg
+  pages: 105
 - title: 'Grokking Algorithms, Second Edition: An illustrated guide for programmers
     and other curious people'
   author: Aditya Y. Bhargava
@@ -306,6 +312,10 @@ read_by_year:
     cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1449997951l/24737637._SX98_.jpg
     read_at: '2016-05-28'
 undated_read:
+- title: Java Concurrency in Practice
+  author: Brian Goetz
+  url: https://www.goodreads.com/book/show/127932.Java_Concurrency_in_Practice
+  cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1349044077l/127932._SX98_.jpg
 - title: My Mind is Not a Billboard
   author: Sam Pink
   url: https://www.goodreads.com/book/show/56963240-my-mind-is-not-a-billboard

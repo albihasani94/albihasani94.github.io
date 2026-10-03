@@ -5,7 +5,7 @@ profile_url: https://www.goodreads.com/user/show/9618785-albin-hasani
 currently_reading_source_url: https://www.goodreads.com/review/list_rss/9618785?shelf=currently-reading
 read_source_url: https://www.goodreads.com/review/list_rss/9618785?shelf=read
 currently_reading_updated_at: '2026-09-12T07:01:56-07:00'
-read_updated_at: '2026-09-17T13:44:43-07:00'
+read_updated_at: '2026-09-23T13:12:09-07:00'
 currently_reading:
 - title: The Elements of Style
   author: William Strunk Jr.
@@ -312,6 +312,14 @@ read_by_year:
     cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1449997951l/24737637._SX98_.jpg
     read_at: '2016-05-28'
 undated_read:
+- title: 'System Design Interview – An Insider''s Guide: Volume 2'
+  author: Alex Xu
+  url: https://www.goodreads.com/book/show/60631342-system-design-interview-an-insider-s-guide
+  cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1647464389l/60631342._SX98_.jpg
+- title: System Design Interview – An insider's guide
+  author: Alex Xu
+  url: https://www.goodreads.com/book/show/54109255-system-design-interview-an-insider-s-guide
+  cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1592265780l/54109255._SX98_.jpg
 - title: Java Concurrency in Practice
   author: Brian Goetz
   url: https://www.goodreads.com/book/show/127932.Java_Concurrency_in_Practice
@@ -373,7 +381,7 @@ undated_read:
   author: Sam Pink
   url: https://www.goodreads.com/book/show/29640465-your-glass-head-against-the-brick-parade-of-now-whats
   cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1459209160l/29640465._SX98_.jpg
-- title: The Fall (Vintage International)
+- title: The Fall
   author: Albert Camus
   url: https://www.goodreads.com/book/show/11991.The_Fall
   cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1738704293l/11991._SX98_.jpg
